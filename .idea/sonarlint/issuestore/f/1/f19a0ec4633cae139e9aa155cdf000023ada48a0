@@ -1,0 +1,11 @@
+
+Š
+java:S1319"tThe type of the "arrayList" object should be an interface such as "List" rather than the implementation "ArrayList".(ˆÅ±ı
+Š
+java:S1319:"tThe type of the "arrayList" object should be an interface such as "List" rather than the implementation "ArrayList".(’Ğ…
+C
+java:S1604-"(Make this anonymous inner class a lambda(á²£…øÿÿÿÿ
+t
+java:S1488%"^Immediately return this expression instead of assigning it to the temporary variable "holder".(Ä´áº
+O
+java:S5993"9Change the visibility of this constructor to "protected".(ˆÅ±ı

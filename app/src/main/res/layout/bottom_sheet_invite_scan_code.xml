@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="inviteQRDialog"
+            type="com.digivalet.brandresidential.ui.bottomsheets.InviteQRBottomDialog" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_minus10sdp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:id="@+id/bs_scan_code_root"
+            style="@style/brandGradientRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <ImageView
+                android:id="@+id/bs_scan_code_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bottom_sheet_pin"
+                android:backgroundTint="@color/system_white_alpha_30" />
+
+            <RelativeLayout
+                android:id="@+id/bs_scan_code_header_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/label_scan"
+                    style="@style/bodyBaselineRegSystemWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_scan" />
+
+                <ImageView
+                    android:id="@+id/bs_scan_code_close"
+                    android:layout_width="@dimen/_34sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="@{(view) -> inviteQRDialog.onCloseButtonClick()}"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_close_circle_white" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_55sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/label_invite_friends"
+                    style="@style/bodyLargeMedSystemWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/label_invite_friends" />
+
+                <TextView
+                    android:id="@+id/label_invite_message"
+                    style="@style/bodyBaselineRegSystemWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/_2ssp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/label_invite_message" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/_199sdp"
+                    android:layout_height="@dimen/_199sdp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/qrcode"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:id="@+id/row_send_invite"
+                    style="@style/systemWhiteRadius10Alpha30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/label_send_invite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:lineSpacingExtra="@dimen/_2ssp"
+                        android:text="@string/label_send_invite"
+                        android:textAppearance="@style/bodyBaselineRegSystemWhite" />
+
+                    <com.digivalet.utils.views.toggle.LabeledSwitch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="0sp"
+                        app:colorBorder="@android:color/transparent"
+                        app:colorOff="@color/system_black_alpha_20"
+                        app:colorOn="@color/system_green"
+                        app:on="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/row_call_message"
+                    style="@style/systemWhiteRadius10Alpha30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/label_call_msg"
+                        style="@style/bodyBaselineRegSystemWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:lineSpacingExtra="@dimen/_2ssp"
+                        android:text="@string/label_call_msg" />
+
+                    <com.digivalet.utils.views.toggle.LabeledSwitch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="0sp"
+                        app:colorBorder="@android:color/transparent"
+                        app:colorOff="@color/system_black_alpha_20"
+                        app:colorOn="@color/system_green"
+                        app:on="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/row_access"
+                    style="@style/systemWhiteRadius10Alpha30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/label_access_floor"
+                        style="@style/bodyBaselineRegSystemWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:lineSpacingExtra="@dimen/_2ssp"
+                        android:text="@string/label_access_floor" />
+
+                    <com.digivalet.utils.views.toggle.LabeledSwitch
+                        android:id="@+id/toggleSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="0sp"
+                        app:colorBorder="@android:color/transparent"
+                        app:colorOff="@color/system_black_alpha_20"
+                        app:colorOn="@color/system_green"
+                        app:on="false" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/bs_scan_code_share_btn"
+                    style="@style/systemWhiteBorderRadius10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/_2ssp"
+                    android:onClick="@{(view) -> inviteQRDialog.onShareCodeClick()}"
+                    android:padding="@dimen/_15sdp"
+                    android:text="@string/label_share_code"
+                    android:textAppearance="@style/bodyBaselineSemiBoldSystemWhite" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

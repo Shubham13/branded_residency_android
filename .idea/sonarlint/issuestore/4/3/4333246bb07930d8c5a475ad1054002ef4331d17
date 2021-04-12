@@ -1,0 +1,12 @@
+
+l	java:S116"WRename this field "label_access" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ã×Â
+I
+java:S1172".Remove this unused method parameter "accessX".(æ™Øâúÿÿÿÿ
+l
+java:S32525"QUse static access with "android.view.animation.Animation" for "RELATIVE_TO_SELF".(“¾Ñÿÿÿÿÿ
+l
+java:S32526"QUse static access with "android.view.animation.Animation" for "RELATIVE_TO_SELF".(Ä¾øÿÿÿÿ
+l
+java:S3252:"QUse static access with "android.view.animation.Animation" for "RELATIVE_TO_SELF".(“¾Ñÿÿÿÿÿ
+l
+java:S3252;"QUse static access with "android.view.animation.Animation" for "RELATIVE_TO_SELF".(Ä¾øÿÿÿÿ

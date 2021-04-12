@@ -1,0 +1,9 @@
+
+
+java:S1319"lThe type of the "data" object should be an interface such as "Map" rather than the implementation "HashMap".(Ú™»
+
+D
+java:S3740"/Provide the parametrized type for this generic.(Ú™»
+
+T
+java:S1610"9Convert the abstract class "BaseModel" into an interface.(»à…”ıÿÿÿÿ

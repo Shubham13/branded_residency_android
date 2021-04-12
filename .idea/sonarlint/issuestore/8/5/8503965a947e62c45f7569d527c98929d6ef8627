@@ -1,0 +1,16 @@
+
+e
+java:S2095Ğ"IUse try-with-resources or close this "InputStream" in a "finally" clause.(²Ê–±şÿÿÿÿ
+g	java:S117¬"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ²ùÏ
+j
+java:S3252`"TUse static access with "android.provider.MediaStore$MediaColumns" for "ORIENTATION".(İáöÂ
+>	java:S108h")Either remove or fill this block of code.(”ı¾
+W	java:S125†"<This block of commented-out lines of code should be removed.(ÕÕÓûÿÿÿÿ
+i
+java:S3252ª"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(ÅöÔ¡üÿÿÿÿ
+H
+java:S1874ª",Remove this use of "DATA"; it is deprecated.(ÅöÔ¡üÿÿÿÿ
+d
+java:S3252¬"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(ñ²ùÏ
+C
+java:S1874¬",Remove this use of "DATA"; it is deprecated.(ñ²ùÏ

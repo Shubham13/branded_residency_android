@@ -1,0 +1,13 @@
+
+B
+java:S1659",Declare "mStrokeDashGap" on a separate line.(ÇØ×µ
+@
+java:S1659"*Declare "mStrokeWidth" on a separate line.(ƒãª°
+D
+java:S1659".Declare "mBackgroundColor" on a separate line.(ƒãª°
+K
+java:S1874"0Remove this use of "getColor"; it is deprecated.(îĞ¾ªüÿÿÿÿ
+E
+java:S16592"*Declare "factorStorke" on a separate line.(°©ĞÄùÿÿÿÿ
+U
+java:S1161g":Add the "@Override" annotation above this method signature(Ô”¡ùÿÿÿÿ

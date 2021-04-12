@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="inviteShareDialog"
+            type="com.digivalet.brandresidential.ui.bottomsheets.InviteShareBottomDialog" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/qrCodeRL"
+        style="@style/brandGradientRadius10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_minus10sdp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <ImageView
+                android:id="@+id/bs_scan_code_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bottom_sheet_pin"
+                android:backgroundTint="@color/system_white_alpha_30" />
+
+            <ImageView
+                android:id="@+id/closeBTN"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:onClick="@{(view) -> inviteShareDialog.onCloseButtonClick()}"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_close_circle_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerHolder"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7" />
+
+                <TextView
+                    style="@style/bodyLargeMedSystemWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/label_share_invite" />
+
+                <TextView
+                    style="@style/bodyBaselineRegSystemWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/_2ssp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/label_share_invite_text" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5" />
+
+                <ImageView
+                    android:layout_width="@dimen/_199sdp"
+                    android:layout_height="@dimen/_199sdp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/qrcode"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ABC123"
+                    android:theme="@style/headlineH1SystemWhite" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/shareMyCodeTV"
+                    style="@style/systemWhiteBorderRadius10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/_2ssp"
+                    android:padding="@dimen/_15sdp"
+                    android:text="@string/label_share_invite"
+                    android:textAppearance="@style/bodyBaselineSemiBoldSystemWhite" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

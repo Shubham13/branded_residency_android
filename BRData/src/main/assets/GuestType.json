@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "title": "One Time Guest",
+      "typeID": 1
+    },
+    {
+      "title": "Frequent Guest",
+      "typeID": 2
+    },
+    {
+      "title": "Short-Staying Guest",
+      "typeID": 3
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "repeatOption": [
+    {
+      "optionId": "1",
+      "title": "None",
+      "type":"none",
+      "isSubOption": false
+    },
+    {
+      "optionId": "2",
+      "title": "Daily",
+      "type":"day",
+      "isSubOption": false
+    },
+    {
+      "optionId": "3",
+      "title": "Weekly",
+      "type":"week",
+      "isSubOption": false
+    },
+    {
+      "optionId": "4",
+      "title": "Every 2 Weeks",
+      "type":"twoWeek",
+      "isSubOption": false
+    },
+    {
+      "optionId": "5",
+      "title": "Monthly",
+      "type":"month",
+      "isSubOption": false
+    },
+    {
+      "optionId": "6",
+      "title": "Custom",
+      "type":"custom",
+      "isSubOption": true
+    }
+  ],
+  "timeOption": [
+    {
+      "optionId": "7",
+      "title": "Anytime",
+      "type":"time",
+      "isSubOption": false
+    },
+    {
+      "optionId": "8",
+      "title": "Specific Time",
+      "type":"time",
+      "isSubOption": true
+    },
+    {
+      "optionId": "9",
+      "title": "Morning",
+      "type":"time",
+      "isSubOption": false
+    },
+    {
+      "optionId": "10",
+      "title": "Afternoon",
+      "type":"time",
+      "isSubOption": false
+    },
+    {
+      "optionId": "11",
+      "title": "Evening",
+      "type":"time",
+      "isSubOption": false
+    }
+  ]
+}

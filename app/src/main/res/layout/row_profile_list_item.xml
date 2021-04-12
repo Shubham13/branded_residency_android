@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:stateListAnimator="@animator/statelist_elevation">
+
+        <LinearLayout
+            android:id="@+id/profile_list_item_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/profile_list_item_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:lineHeight="@dimen/_22ssp"
+                android:padding="@dimen/_10sdp"
+                android:theme="@style/bodyBaselineRegSystemBlack" />
+
+            <TextView
+                android:id="@+id/profile_list_item_title_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:theme="@style/bodyBaselineRegBrandAccent"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@mipmap/ic_disclosure" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/profile_list_item_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</layout>

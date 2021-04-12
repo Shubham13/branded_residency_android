@@ -1,0 +1,85 @@
+
+{
+  "amenitiesBookingData": [
+    {
+      "title": "contact",
+      "contacts": [
+        {
+          "title": "Contact Concierge",
+          "areaType": "Special requirements? Let’s chat",
+          "image": "BookingContact",
+          "subTitleId": "1"
+        },
+        {
+          "title": "Contact Concierge",
+          "areaType": "Special requirements? Let’s chat",
+          "image": "BookingContact",
+          "subTitleId": "2"
+        }
+      ]
+    },
+    {
+      "title": "booking",
+      "bookings": [
+        {
+          "title": "Bryant Park",
+          "areaType": "12 pax",
+          "price": "~$120",
+          "date": "Thursday, April 10, 2021 6:30 AM",
+          "capacity": "20",
+          "image": "DemoAmenitiesBooking",
+          "subTitleId": "12",
+          "isAvailable": false
+        },
+        {
+          "title": "John Parsons Executive Lounge ",
+          "areaType": "25 pax",
+          "price": "~$120",
+          "date": "Monday, April 2, 2021 7:30 AM",
+          "capacity": "40",
+          "image": "DemoAmenitiesBooking",
+          "subTitleId": "13",
+          "isAvailable": false
+        },
+        {
+          "title": "Bryant Park",
+          "areaType": "12 pax",
+          "price": "~$200",
+          "date": "Sunday, April 5, 2021 8:30 AM",
+          "capacity": "50",
+          "image": "DemoAmenitiesBooking",
+          "subTitleId": "13",
+          "isAvailable": false
+        },
+        {
+          "title": "Lafayette Hall",
+          "areaType": "150 pax",
+          "price": "~$1,000",
+          "date": "Friday, April 9, 2021 8:30 AM",
+          "capacity": "100",
+          "image": "DemoAmenitiesBooking",
+          "subTitleId": "13",
+          "isAvailable": true
+        }
+      ]
+    }
+  ],
+  "filterData": [
+    {
+      "title": "Any Date",
+      "image": "GuestSmallDateDark",
+      "filterId": "1"
+    },
+    {
+      "title": "Any Time",
+      "image": "clocktime",
+      "filterId": "2"
+    },
+    {
+      "title": "Capacity",
+      "image": "profileHeader",
+      "filterId": "3"
+    }
+  ]
+}
+

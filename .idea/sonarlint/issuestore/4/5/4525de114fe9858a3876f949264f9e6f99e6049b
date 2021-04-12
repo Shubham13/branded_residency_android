@@ -1,0 +1,18 @@
+
+a	java:S112æ"FDefine and throw a dedicated exception instead of using a generic one.(å”ÅÃıÿÿÿÿ
+?
+java:S1604§"(Make this anonymous inner class a lambda(Âøğ¯
+v
+java:S4144"_Update this method so that its implementation is not identical to "setWindowColor" on line 133.(°ÕÈ¾
+F
+java:S1874/"0Remove this use of "getColor"; it is deprecated.(ş¡ªø
+K
+java:S1133…"5Do not forget to remove this deprecated code someday.(›É©
+F
+java:S1874¦"/Remove this use of "Handler"; it is deprecated.(©‚æ°
+<
+java:S1659Î"%Declare "mHeight" on a separate line.(¸÷‡Ù
+H
+java:S2388“",Prefix this call to "dismiss" with "super.".(Ûœîšıÿÿÿÿ
+E
+java:S2388¡".Prefix this call to "isShowing" with "super.".(ğ¢•

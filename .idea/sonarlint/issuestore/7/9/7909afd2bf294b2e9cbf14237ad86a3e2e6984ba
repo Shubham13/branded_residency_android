@@ -1,0 +1,55 @@
+
+>
+java:S1659<"(Declare "buttonNext" on a separate line.(„»ÍÅ
+r
+java:S1450&"\Remove the "weekSixLayout" field and declare it as a local variable in the relevant methods.(Ñª±¤
+Q	java:S1257"<This block of commented-out lines of code should be removed.(‘¦ĞÊ
+s
+java:S1450X"]Remove the "mSelectorColor" field and declare it as a local variable in the relevant methods.(ŸáÔ¶
+R	java:S125µ"<This block of commented-out lines of code should be removed.(ÒÀû
+R	java:S125¾"<This block of commented-out lines of code should be removed.(¼®«²
+I
+java:S10681".Remove this unused "WEEK_NAMES" private field.(÷·‡Îûÿÿÿÿ
+?
+java:S1604Ç"(Make this anonymous inner class a lambda(°Òóƒ
+H
+java:S1135"2Complete the task associated to this TODO comment.(Êõä
+W	java:S125¼"<This block of commented-out lines of code should be removed.(Ö²·ãşÿÿÿÿ
+g
+java:S1192¿"PDefine a constant instead of duplicating this literal "drawable_normal" 4 times.(‡ş¢ã
+t
+java:S1450\"^Remove the "mMonthTextColor" field and declare it as a local variable in the relevant methods.(û·
+Q	java:S125/"<This block of commented-out lines of code should be removed.(ïä“
+H
+java:S1068X"2Remove this unused "mSelectorColor" private field.(ŸáÔ¶
+Q
+java:S1144è":Remove this unused private "getDaysContainerModel" method.(ˆïˆ
+s
+java:S1450%"]Remove the "weekFiveLayout" field and declare it as a local variable in the relevant methods.(ÍíØş
+o
+java:S1450<"YRemove the "buttonNext" field and declare it as a local variable in the relevant methods.(„»ÍÅ
+I
+java:S1068\"3Remove this unused "mMonthTextColor" private field.(û·
+r
+java:S1450!"\Remove the "weekOneLayout" field and declare it as a local variable in the relevant methods.(ûğ«
+R	java:S125ô"<This block of commented-out lines of code should be removed.(Ğ®Á
+n
+java:S3776Ï"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(îÈ¢Ãøÿÿÿÿ
+D
+java:S10689".Remove this unused "TEXT_EVENT" private field.(øæ°Ä
+x
+java:S1450$"]Remove the "weekFourLayout" field and declare it as a local variable in the relevant methods.(Ø¶Øúÿÿÿÿ
+R	java:S125‡"<This block of commented-out lines of code should be removed.(Ğ®Á
+s
+java:S1450#"^Remove the "weekThreeLayout" field and declare it as a local variable in the relevant methods.(¡ÈĞJ
+N
+java:S1135Â"2Complete the task associated to this TODO comment.(®³§øÿÿÿÿ
+w
+java:S1450""\Remove the "weekTwoLayout" field and declare it as a local variable in the relevant methods.(²‘ìêüÿÿÿÿ
+E
+java:S1659I"*Declare "mCurrentYear" on a separate line.(ˆñ»¿ûÿÿÿÿ
+E
+java:S1068:"/Remove this unused "COLOR_EVENT" private field.(äÑÉ
+V	java:S125V"<This block of commented-out lines of code should be removed.(›„àÿÿÿÿÿ
+J
+java:S1172¢".Remove this unused method parameter "metrics".(şø§¬øÿÿÿÿ

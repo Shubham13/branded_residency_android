@@ -1,0 +1,66 @@
+
+{
+  "venue" : {
+    "isAvailable": false,
+    "venueStatus": "Venue is unavailable on date selected.",
+    "venueDescription": "Our vibrant, thoughtfully-designed space is fully equipped and ready to book for your next public or private gathering."
+  },
+  "bookingImages": [
+    {
+      "image": "DemoAmenitiesBooking",
+      "imageId": "12"
+    },
+    {
+      "image": "amenitiesbooking",
+      "imageId": "13"
+    },
+    {
+      "image": "amenitiesbooking3",
+      "imageId": "14"
+    },
+    {
+      "image": "DemoAmenitiesBooking",
+      "imageId": "15"
+    }
+  ],
+  "amenities": [
+    {
+      "title": "Capacity",
+      "type": "12 pax",
+      "amenitiesId": "111"
+    },
+    {
+      "title":"Catering Service",
+      "type": "Yes",
+      "amenitiesId": "121"
+    },
+    {
+      "title": "wifi",
+      "type": "Yes",
+      "amenitiesId": "132"
+    },
+    {
+      "title": "Conference Amenities",
+      "type": "No",
+      "amenitiesId": "143"
+    }
+  ],
+  "filterData": [
+    {
+      "title": "Any Date",
+      "image": "GuestSmallDateDark",
+      "filterId": "1"
+    },
+    {
+      "title": "Any Time",
+      "image": "clocktime",
+      "filterId": "2"
+    },
+    {
+      "title": "Capacity",
+      "image": "profileHeader",
+      "filterId": "3"
+    }
+  ]
+}
+

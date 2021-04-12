@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--fragment residents details-->
+    <array name="label_filters_residents_details">
+        <item>Resident Info</item>
+        <item>Contact</item>
+        <item>Identification</item>
+    </array>
+
+    <array name="label_filters_pet_details">
+        <item>Resident Info</item>
+        <item>Identification</item>
+    </array>
+
+    <array name="label_occupation">
+        <item>Student</item>
+        <item>Business</item>
+        <item>Engineer</item>
+        <item>Software Developer</item>
+        <item>Fashion Designer</item>
+        <item>Architect</item>
+    </array>
+
+    <array name="label_status">
+        <item>Single</item>
+        <item>Married</item>
+    </array>
+
+    <array name="label_relation">
+        <item>Spouse</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Husband</item>
+        <item>Father</item>
+        <item>Mother</item>
+    </array>
+
+    <array name="label_week_array">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </array>
+
+    <array name="label_time_array">
+        <item>Anytime</item>
+        <item>Specific Time</item>
+        <item>Morning</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+    </array>
+
+    <array name="label_repeat_array">
+        <item>None</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Every 2 Weeks</item>
+        <item>Monthly</item>
+        <item>Custom</item>
+    </array>
+
+</resources>

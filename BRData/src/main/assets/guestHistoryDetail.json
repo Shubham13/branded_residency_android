@@ -1,0 +1,55 @@
+{
+  "title": "Pets",
+  "data": [
+    {
+      "sectionTitle": "",
+      "guestInfo": [
+        "name": "Audi Q4",
+        "type": "vehicle",
+        "image": "audi.png"
+      ]
+    },
+    {
+      "residentId": "4",
+      "name": "Rolls Royce",
+      "type": "vehicle",
+      "image": "rollsRoyce1.png"
+    },
+    {
+      "residentId": "5",
+      "name": "Rolls Royce",
+      "type": "vehicle",
+      "image": "rollsRoyce2.png"
+    },
+    {
+      "residentId": "6",
+      "name": "Lamborghini",
+      "type": "vehicle",
+      "image": "lambo1.png"
+    },
+    {
+      "residentId": "7",
+      "name": "Lamborghini",
+      "type": "vehicle",
+      "image": "lambo2.png"
+    },
+    {
+      "residentId": "8",
+      "name": "Porche",
+      "type": "vehicle",
+      "image": "porche.png"
+    },
+    {
+      "residentId": "1",
+      "name": "Hayabusa",
+      "type": "vehicle",
+      "image": "hayabusa.png"
+    },
+    {
+      "residentId": "2",
+      "name": "Hayabusa Falcon",
+      "type": "vehicle",
+      "image": "hayabusaFalcon.png"
+    }
+  ]
+}

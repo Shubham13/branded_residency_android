@@ -1,0 +1,17 @@
+
+K
+java:S1066‰	"/Merge this if statement with the enclosing one.(®¾â·ûÿÿÿÿ
+U
+java:S1155Ú">Use isEmpty() to check whether the collection is empty or not.(¤‹Î™
+O
+java:S5993P"9Change the visibility of this constructor to "protected".(’Ð‚¡
+^	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(¢¿Ä™
+^	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(¢¿Ä™
+=
+java:S1452ì"&Remove usage of generic wildcard type.(„·ö¬
+E
+java:S5413ù")Verify that "remove()" is used correctly.(…û•âùÿÿÿÿ
+E
+java:S5413ë")Verify that "remove()" is used correctly.(Â’µ¬ýÿÿÿÿ
+@
+java:S5413ò")Verify that "remove()" is used correctly.(›¶äØ

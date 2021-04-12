@@ -1,0 +1,25 @@
+
+ˆ
+java:S1319*"rThe type of the "parameters" object should be an interface such as "Map" rather than the implementation "HashMap".(–¨é
+ƒ
+java:S13197"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÕÉä
+‹
+java:S1319;"uThe type of the "requestHeader" object should be an interface such as "Map" rather than the implementation "HashMap".(™ïò
+[
+java:S2259³"?A "NullPointerException" could be thrown; "e" is nullable here.(«ù‹ßúÿÿÿÿ
+[
+java:S2259Ü"?A "NullPointerException" could be thrown; "e" is nullable here.(«ù‹ßúÿÿÿÿ
+[
+java:S2259Œ"?A "NullPointerException" could be thrown; "e" is nullable here.(«ù‹ßúÿÿÿÿ
+D
+java:S1659'")Declare "readTimeout" on a separate line.(º“€úÿÿÿÿ
+E
+java:S1659'"*Declare "writeTimeout" on a separate line.(º“€úÿÿÿÿ
+Q
+java:S2696@"6Make the enclosing method "static" or remove this set.(µ­ı°ûÿÿÿÿ
+L
+java:S2696D"6Make the enclosing method "static" or remove this set.(¿¶€Š
+Q
+java:S2696H"6Make the enclosing method "static" or remove this set.(Íòëªÿÿÿÿÿ
+M
+java:S1135{"2Complete the task associated to this TODO comment.(…¨İ½üÿÿÿÿ

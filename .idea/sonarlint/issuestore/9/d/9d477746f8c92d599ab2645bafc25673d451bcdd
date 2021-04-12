@@ -1,0 +1,8 @@
+
+©
+java:S2681;"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(ªÒ‡•úÿÿÿÿ8ûœ©©æ.
+d
+java:S39739"GUse indentation to denote the code conditionally executed by this "if".(äÁº8ûœ©©æ.
+r	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÅ²Ôûÿÿÿÿ8ûœ©©æ.
+\
+java:S1118":Add a private constructor to hide the implicit public one.(úÚêüÿÿÿÿ8ûœ©©æ.

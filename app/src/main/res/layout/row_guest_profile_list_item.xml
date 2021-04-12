@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp">
+
+    <com.digivalet.utils.views.CircularImageView
+        android:id="@+id/row_guest_profile_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:src="@mipmap/ic_guest_profile" />
+
+    <LinearLayout
+        android:id="@+id/row_guest_profile_content_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_toEndOf="@+id/row_guest_profile_image"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/row_guest_profile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="John Doe"
+                android:theme="@style/bodyBaselineSemiBoldSystemBlack" />
+
+            <TextView
+                style="@style/subXSmallSystemBlackAlpha50"
+                android:id="@+id/row_guest_profile_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/row_guest_profile_back_btn"
+                android:alpha="0.5"
+                android:text="Today, Anytime" />
+
+            <ImageView
+                android:id="@+id/row_guest_profile_back_btn"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_minus8sdp"
+                android:src="@mipmap/ic_disclosure" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/row_guest_profile_sub_title"
+            style="@style/brandGradientPill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="one-time guest"
+            android:textAppearance="@style/subXxSmallSemiSystemWhite" />
+
+        <View
+            style="@style/systemBlackAlpha20"
+            android:id="@+id/row_guest_profile_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

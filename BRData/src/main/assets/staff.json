@@ -1,0 +1,41 @@
+{
+    "title": "Staff",
+    "data": [
+      {
+         "residentId": "3",
+         "name": "Staff 1",
+         "type": "staff",
+         "image": "staff5.png"
+      },
+      {
+         "residentId": "4",
+         "name": "Staff 2",
+         "type": "staff",
+         "image": "staff6.png"
+      },
+      {
+        "residentId": "5",
+        "name": "Staff 3",
+        "type": "staff",
+        "image": "staff1.png"
+      },
+      {
+        "residentId": "6",
+        "name": "Staff 4",
+        "type": "staff",
+        "image": "staff2.png"
+      },
+      {
+        "residentId": "7",
+        "name": "Staff 5",
+        "type": "staff",
+        "image": "staff3.png"
+      },
+      {
+        "residentId": "8",
+        "name": "Staff 6",
+        "type": "staff",
+        "image": "staff4.png"
+      }
+    ]
+  }

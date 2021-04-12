@@ -1,0 +1,61 @@
+{
+    "headerTitles": [
+       {
+         "title": "Health",
+         "subTitles": [
+             {
+                 "title": "Activity",
+                 "stepCount": "7200 steps",
+                 "calCount": "317 cal",
+                 "id": "1"
+             },
+             {
+                 "title": "Heart",
+                 "bpmCount": "140 bpm",
+                 "id": "2"
+             },
+             {
+                 "title": "Nutrition",
+                 "id": "3"
+             }
+          ]
+       },
+       {
+         "title": "Account",
+         "subTitles": [
+            {
+                "title": "Folio",
+                "count": "$1200",
+                "id": "10"
+            },
+            {
+                 "title": "Booking History",
+                 "count": "",
+                 "id": "11"
+            },
+            {
+                "title": "Guest History",
+                "count": "",
+                "id": "12"
+            }
+          ]
+       },
+       {
+         "title": "My Property",
+         "subTitles": [
+             {
+                 "title": "Service Directory",
+                 "id": "1"
+             },
+             {
+                 "title": "Property Map",
+                 "id": "2"
+             },
+             {
+                 "title": "Contact Info",
+                 "id": "3"
+             }
+          ]
+       }
+    ]
+}

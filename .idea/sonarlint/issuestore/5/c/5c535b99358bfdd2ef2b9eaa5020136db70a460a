@@ -1,0 +1,39 @@
+
+
+java:S1319,"rThe type of the "parameters" object should be an interface such as "Map" rather than the implementation "HashMap".(¶“Éôùÿÿÿÿ
+ƒ
+java:S13199"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÕÉä
+‹
+java:S1319="uThe type of the "requestHeader" object should be an interface such as "Map" rather than the implementation "HashMap".(™ïòž
+d
+java:S1128"NRemove this unused import 'io.reactivex.android.schedulers.AndroidSchedulers'.(¶çþ 
+K
+java:S1128	"0Remove this unused import 'org.json.JSONObject'.(œÖ´üþÿÿÿÿ
+Z
+java:S1128"?Remove this unused import 'io.reactivex.schedulers.Schedulers'.(š‰¢Žúÿÿÿÿ
+g
+java:S1128"LRemove this unused import 'io.reactivex.observers.DisposableSingleObserver'.(ÂÉÎÿÿÿÿÿ
+D
+java:S1659(")Declare "readTimeout" on a separate line.(º“ž€úÿÿÿÿ
+E
+java:S1659("*Declare "writeTimeout" on a separate line.(º“ž€úÿÿÿÿ
+L
+java:S2696B"6Make the enclosing method "static" or remove this set.(ØÓ•ñ
+Q
+java:S2696F"6Make the enclosing method "static" or remove this set.(È¶¤ÿÿÿÿÿ
+Q
+java:S2696J"6Make the enclosing method "static" or remove this set.(º²ðÉúÿÿÿÿ
+H
+java:S1135j"2Complete the task associated to this TODO comment.(¥ùº¡
+N
+java:S1135"2Complete the task associated to this TODO comment.(…¨Ý½üÿÿÿÿ
+Z
+java:S1854¬">Remove this useless assignment to local variable "apiFactory".(íÖ Ïþÿÿÿÿ
+Z
+java:S1854®">Remove this useless assignment to local variable "apiFactory".(·íª±úÿÿÿÿ
+K
+java:S1481£"/Remove this unused "apiFactory" local variable.(–¿¥àûÿÿÿÿ
+G
+java:S1068&",Remove this unused "filePart" private field.(œÊÊŒþÿÿÿÿ
+M
+java:S1068)"7Remove this unused "compositeDisposable" private field.(ÏŠ±û

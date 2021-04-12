@@ -1,0 +1,41 @@
+{
+    "title": "Pets",
+    "data": [
+      {
+        "residentId": "1",
+        "name": "Poppy Bella",
+        "type": "Pet",
+        "image": "pet1.png"
+      },
+      {
+        "residentId": "2",
+        "name": "Molly Alfie",
+        "type": "Pet",
+        "image": "pet2.png"
+      },
+      {
+         "residentId": "3",
+         "name": "Charlie Daisy",
+         "type": "Pet",
+         "image": "pet3.png"
+      },
+      {
+         "residentId": "4",
+         "name": "Rosie Teddy",
+         "type": "Pet",
+         "image": "pet4.png"
+      },
+      {
+        "residentId": "5",
+        "name": "Lola Millie",
+        "type": "Pet",
+        "image": "pet5.png"
+      },
+      {
+        "residentId": "6",
+        "name": "Bella Tilly.",
+        "type": "Pet",
+        "image": "pet6.png"
+      }
+    ]
+  }

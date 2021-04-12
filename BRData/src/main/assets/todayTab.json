@@ -1,0 +1,44 @@
+{
+    "headerToday": {
+        "day": "Today",
+        "profileImage": "EditProfile",
+        "calender": ""
+    },
+    "headerTitles": [
+       {
+         "title": "Today",
+         "subTitles": [
+             {
+                 "id": "1",
+                 "title": "Residents",
+                 "time": "1:30",
+                 "date": "1/3/5"
+             },
+             {
+                 "id": "2",
+                 "title": "Residents",
+                 "time": "1:30",
+                 "date": "1/3/5"
+             }
+          ]
+       },
+       {
+         "title": "Tomorrow",
+         "subTitles": [
+             {
+                "id": "10",
+                "title": "Residents",
+                "time": "1:30",
+                "date": "1/3/5"
+             },
+             {
+                "id": "11",
+                "title": "Residents",
+                "time": "1:30",
+                "date": "1/3/5"
+             }
+          ]
+       }
+    ]
+}
+

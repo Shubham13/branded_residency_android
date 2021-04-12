@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label_resident_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_resident_info"
+            android:theme="@style/headlineH4SystemBlack" />
+
+        <RelativeLayout
+            android:id="@+id/row_profile_image"
+            style="@style/grayBorderRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.digivalet.utils.views.CircularImageView
+                android:id="@+id/profile_image_view"
+                android:layout_width="@dimen/_74sdp"
+                android:layout_height="@dimen/_74sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_10sdp" />
+
+            <ImageView
+                android:id="@+id/edit_btn"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@mipmap/ic_edit"
+                app:tint="@color/gray_gray" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/row_name"
+            style="@style/grayBorderRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/label_name"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/label_name"
+                android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:inputType="text|textVisiblePassword"
+                android:singleLine="true"
+                android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                android:theme="@style/brandAccentEditText" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_preferred_name"
+            style="@style/grayBorderRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/label_preferred_name"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/label_preferred_name"
+                android:theme="@style/bodySmallRegSystemBlackAlpha50" />
+
+            <EditText
+                android:id="@+id/edit_preferred_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:inputType="text|textVisiblePassword"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                android:theme="@style/brandAccentEditText" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_relation_to_owner"
+            style="@style/grayBorderRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/label_relation_to_owner"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/label_relation_to_owner"
+                android:theme="@style/bodySmallRegSystemBlackAlpha50" />
+
+            <TextView
+                android:id="@+id/edit_relation_to_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textAppearance="@style/bodyBaselineRegSystemBlack" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_birthday"
+            style="@style/grayBorderRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/label_birthday"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/label_birthday"
+                android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+
+            <TextView
+                android:id="@+id/edit_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textAppearance="@style/bodyBaselineRegSystemBlack" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/row_gender"
+            layout="@layout/row_radio_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp" />
+
+        <LinearLayout
+            android:id="@+id/row_status"
+            style="@style/grayBorderRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/label_status"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/label_status"
+                android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+
+            <TextView
+                android:id="@+id/edit_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textAppearance="@style/bodyBaselineRegSystemBlack" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_occupation"
+            style="@style/grayBorderRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/label_occupation"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/label_occupation"
+                android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+
+            <TextView
+                android:id="@+id/edit_occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textAppearance="@style/bodyBaselineRegSystemBlack" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            style="@style/systemBlackAlpha20"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/_25sdp" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,123 @@
+
+W
+java:S1118":Add a private constructor to hide the implicit public one.(¬˜Êœ8ì×°ªæ.
+{
+java:S3008"YRename this field "SPORTS_BOOKING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„×á†üÿÿÿÿ8™Ä÷©æ.
+y
+java:S3008"WRename this field "GUEST_ACCESS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß‘°ùÿÿÿÿ8åËí©æ.
+r
+java:S3008"URename this field "GUEST_TYPE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉğÏ8»ğ©æ.
+‚
+java:S1104"`Make MEETING_ROOM_BOOKING a static final constant or non-public and provide accessors if needed.(§äéêıÿÿÿÿ8„øñ©æ.
+
+java:S3008"]Rename this field "RESIDENTS_RELATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚“Œüÿÿÿÿ8¾âö©æ.
+p
+java:S3008"SRename this field "VEHICLES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôı¯î8œÿ©æ.
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÁÉáÁÿÿÿÿÿ8ì×°ªæ.
+u
+java:S1104
+"SMake FRIENDS a static final constant or non-public and provide accessors if needed.(á¨‡ûşÿÿÿÿ8À»ì©æ.
+t
+java:S3008
+"RRename this field "FRIENDS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á¨‡ûşÿÿÿÿ8À»ì©æ.
+L
+java:S1444"*Make this "public static PETS" field final(àœœÍüÿÿÿÿ8†ªªæ.
+K
+java:S1444".Make this "public static VEHICLES" field final(ôı¯î8œÿ©æ.
+s
+java:S1104"VMake GUEST_TYPE a static final constant or non-public and provide accessors if needed.(ÉğÏ8»ğ©æ.
+r
+java:S1104"VMake SUGGESTION a static final constant or non-public and provide accessors if needed.(¢ñæ8‰ïû©æ.
+O
+java:S1444
+"-Make this "public static FRIENDS" field final(á¨‡ûşÿÿÿÿ8À»ì©æ.
+Z
+java:S1444"8Make this "public static RESIDENTS_RELATION" field final(‚“Œüÿÿÿÿ8¾âö©æ.
+M
+java:S1444"0Make this "public static GUEST_TYPE" field final(ÉğÏ8»ğ©æ.
+J
+java:S1444"-Make this "public static PROFILE" field final(“†ò§8ãùô©æ.
+T
+java:S1444"2Make this "public static GUEST_ACCESS" field final(ß‘°ùÿÿÿÿ8åËí©æ.
+|
+java:S1104"ZMake SPORTS_BOOKING a static final constant or non-public and provide accessors if needed.(„×á†üÿÿÿÿ8™Ä÷©æ.
+q
+java:S3008"ORename this field "PETS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àœœÍüÿÿÿÿ8†ªªæ.
+u
+java:S3008"XRename this field "GUEST_PROFILE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä…æË8Œ­ï©æ.
+q
+java:S3008"URename this field "SUGGESTION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ñæ8‰ïû©æ.
+L
+java:S1444"0Make this "public static SUGGESTION" field final(¢ñæ8‰ïû©æ.
+V
+java:S1444"9Make this "public static MEETING_ROOM_DETAIL" field final(¤êğÅ8’İò©æ.
+M
+java:S1444"+Make this "public static STAFF" field final(¬‰Îøÿÿÿÿ8Çû©æ.
+}
+java:S3008	"[Rename this field "CALENDAR_OPTIONS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½éØ´ÿÿÿÿÿ8øê©æ.
+V
+java:S1444"4Make this "public static SPORTS_BOOKING" field final(„×á†üÿÿÿÿ8™Ä÷©æ.
+q
+java:S1104"TMake VEHICLES a static final constant or non-public and provide accessors if needed.(ôı¯î8œÿ©æ.
+ƒ
+java:S3008"aRename this field "SPORTS_BOOKING_DETAILS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿·­ºùÿÿÿÿ8æ±ÿ©æ.
+€
+java:S1104"^Make RESIDENTS_RELATION a static final constant or non-public and provide accessors if needed.(‚“Œüÿÿÿÿ8¾âö©æ.
+Q
+java:S1444"/Make this "public static TODAY_TAB" field final(…€¼ñøÿÿÿÿ8ïÓü©æ.
+r
+java:S3008"PRename this field "STAFF" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬‰Îøÿÿÿÿ8Çû©æ.
+P
+java:S1444"3Make this "public static GUEST_PROFILE" field final(Ä…æË8Œ­ï©æ.
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÁÉáÁÿÿÿÿÿ8ì×°ªæ.
+P
+java:S1444".Make this "public static INTEREST" field final(Øµ¨Üøÿÿÿÿ8¦çğ©æ.
+{
+java:S3008"^Rename this field "MEETING_ROOM_DETAIL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤êğÅ8’İò©æ.
+v
+java:S1104"YMake GUEST_PROFILE a static final constant or non-public and provide accessors if needed.(Ä…æË8Œ­ï©æ.
+p
+java:S1104"SMake PROFILE a static final constant or non-public and provide accessors if needed.(“†ò§8ãùô©æ.
+o
+java:S3008"RRename this field "PROFILE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“†ò§8ãùô©æ.
+z
+java:S1104"XMake GUEST_ACCESS a static final constant or non-public and provide accessors if needed.(ß‘°ùÿÿÿÿ8åËí©æ.
+X
+java:S1444	"6Make this "public static CALENDAR_OPTIONS" field final(½éØ´ÿÿÿÿÿ8øê©æ.
+v
+java:S1104"TMake INTEREST a static final constant or non-public and provide accessors if needed.(Øµ¨Üøÿÿÿÿ8¦çğ©æ.
+v
+java:S1104"YMake GUEST_HISTORY a static final constant or non-public and provide accessors if needed.(¬Æ×Ô8¿Òî©æ.
+u
+java:S3008"SRename this field "INTEREST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øµ¨Üøÿÿÿÿ8¦çğ©æ.
+~
+java:S1104	"\Make CALENDAR_OPTIONS a static final constant or non-public and provide accessors if needed.(½éØ´ÿÿÿÿÿ8øê©æ.
+\
+java:S1444":Make this "public static MEETING_ROOM_BOOKING" field final(§äéêıÿÿÿÿ8„øñ©æ.
+„
+java:S1104"bMake SPORTS_BOOKING_DETAILS a static final constant or non-public and provide accessors if needed.(¿·­ºùÿÿÿÿ8æ±ÿ©æ.
+|
+java:S1104"_Make MEETING_ROOM_DETAIL a static final constant or non-public and provide accessors if needed.(¤êğÅ8’İò©æ.
+
+java:S3008"_Rename this field "MEETING_ROOM_BOOKING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§äéêıÿÿÿÿ8„øñ©æ.
+Q
+java:S1444"4Make this "public static PROFILE_DETAIL" field final(çÚ³¿8æ±ÿ©æ.
+s
+java:S1104"QMake STAFF a static final constant or non-public and provide accessors if needed.(¬‰Îøÿÿÿÿ8Çû©æ.
+P
+java:S1444"3Make this "public static GUEST_HISTORY" field final(¬Æ×Ô8¿Òî©æ.
+w
+java:S1104"ZMake PROFILE_DETAIL a static final constant or non-public and provide accessors if needed.(çÚ³¿8æ±ÿ©æ.
+w
+java:S1104"UMake TODAY_TAB a static final constant or non-public and provide accessors if needed.(…€¼ñøÿÿÿÿ8ïÓü©æ.
+v
+java:S3008"YRename this field "PROFILE_DETAIL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çÚ³¿8æ±ÿ©æ.
+v
+java:S3008"TRename this field "TODAY_TAB" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…€¼ñøÿÿÿÿ8ïÓü©æ.
+u
+java:S3008"XRename this field "GUEST_HISTORY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Æ×Ô8¿Òî©æ.
+r
+java:S1104"PMake PETS a static final constant or non-public and provide accessors if needed.(àœœÍüÿÿÿÿ8†ªªæ.
+^
+java:S1444"<Make this "public static SPORTS_BOOKING_DETAILS" field final(¿·­ºùÿÿÿÿ8æ±ÿ©æ.

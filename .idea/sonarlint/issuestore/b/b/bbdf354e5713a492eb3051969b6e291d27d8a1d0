@@ -1,0 +1,112 @@
+
+I
+java:S1199¨"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+I
+java:S1199ÿ"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+I
+java:S1199ù"-Extract this nested code block into a method.(µ˜ÇÃøÿÿÿÿ
+I
+java:S1199ş"-Extract this nested code block into a method.(ê¶ôĞùÿÿÿÿ
+I
+java:S1199‡"-Extract this nested code block into a method.(®‡ùèıÿÿÿÿ
+I
+java:S1199¬"-Extract this nested code block into a method.(Î—­Šşÿÿÿÿ
+X
+java:S2184¶"ACast one of the operands of this division operation to a "float".(ùŸÃ“
+[
+java:S2184¶"DCast one of the operands of this subtraction operation to a "float".(ùŸÃ“
+X
+java:S2184Î"ACast one of the operands of this division operation to a "float".(ùŸÃ“
+[
+java:S2184Î"DCast one of the operands of this subtraction operation to a "float".(ùŸÃ“
+Z
+java:S2184´"DCast one of the operands of this subtraction operation to a "float".(¼İ+
+Z
+java:S2184´"DCast one of the operands of this subtraction operation to a "float".(¼İ+
+Z
+java:S2184´"DCast one of the operands of this subtraction operation to a "float".(¼İ+
+W
+java:S2184·"ACast one of the operands of this addition operation to a "float".(‘ùŸX
+Z
+java:S2184·"DCast one of the operands of this subtraction operation to a "float".(‘ùŸX
+Z
+java:S2184»"DCast one of the operands of this subtraction operation to a "float".(¼İ+
+Z
+java:S2184»"DCast one of the operands of this subtraction operation to a "float".(¼İ+
+Z
+java:S2184»"DCast one of the operands of this subtraction operation to a "float".(¼İ+
+W
+java:S2184½"ACast one of the operands of this addition operation to a "float".(‘ùŸX
+Z
+java:S2184½"DCast one of the operands of this subtraction operation to a "float".(‘ùŸX
+`
+java:S2184Á"DCast one of the operands of this subtraction operation to a "float".(ÜıêÇÿÿÿÿÿ
+]
+java:S2184Ã"ACast one of the operands of this division operation to a "float".(­úø»ıÿÿÿÿ
+]
+java:S2184Ã"ACast one of the operands of this division operation to a "float".(­úø»ıÿÿÿÿ
+`
+java:S2184Ã"DCast one of the operands of this subtraction operation to a "float".(­úø»ıÿÿÿÿ
+`
+java:S2184Ã"DCast one of the operands of this subtraction operation to a "float".(­úø»ıÿÿÿÿ
+X
+java:S2184Ä"ACast one of the operands of this addition operation to a "float".(Ñ¾ëï
+X
+java:S2184Ä"ACast one of the operands of this division operation to a "float".(Ñ¾ëï
+[
+java:S2184Ä"DCast one of the operands of this subtraction operation to a "float".(Ñ¾ëï
+[
+java:S2184Ä"DCast one of the operands of this subtraction operation to a "float".(Ñ¾ëï
+Z
+java:S2184"DCast one of the operands of this subtraction operation to a "float".(¼İ+
+Z
+java:S2184"DCast one of the operands of this subtraction operation to a "float".(¼İ+
+Z
+java:S2184"DCast one of the operands of this subtraction operation to a "float".(¼İ+
+W
+java:S2184 "ACast one of the operands of this addition operation to a "float".(‘ùŸX
+Z
+java:S2184 "DCast one of the operands of this subtraction operation to a "float".(‘ùŸX
+f	java:S117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÌún
+K
+java:S1874i"0Remove this use of "getColor"; it is deprecated.(°Ú•§üÿÿÿÿ
+h
+java:S3776z"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Ê¢¥¬
+G
+java:S1874ˆ"0Remove this use of "getColor"; it is deprecated.(ËšéÂ
+G
+java:S1874"0Remove this use of "getColor"; it is deprecated.(ËšéÂ
+S
+java:S1854‚"<Remove this useless assignment to local variable "offColor".(–Ë÷ô
+R
+java:S1854‹";Remove this useless assignment to local variable "onColor".(õÁŒĞ
+W
+java:S1854";Remove this useless assignment to local variable "onColor".(´·öŒúÿÿÿÿ
+n
+java:S3776£"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(ÕÆ¾ùıÿÿÿÿ
+`
+java:S3358¹"DExtract this nested ternary operation into an independent statement.(“îÄşÿÿÿÿ
+`
+java:S3358È"DExtract this nested ternary operation into an independent statement.(“îÄşÿÿÿÿ
+`
+java:S3358Ö"DExtract this nested ternary operation into an independent statement.(“îÄşÿÿÿÿ
+`
+java:S3358Ş"DExtract this nested ternary operation into an independent statement.(“îÄşÿÿÿÿ
+`
+java:S3358è"DExtract this nested ternary operation into an independent statement.(“îÄşÿÿÿÿ
+`
+java:S3358ñ"DExtract this nested ternary operation into an independent statement.(“îÄşÿÿÿÿ
+`
+java:S3358"DExtract this nested ternary operation into an independent statement.(“îÄşÿÿÿÿ
+G
+java:S1874„"0Remove this use of "getColor"; it is deprecated.(Ñóİ
+`
+java:S3358ˆ"DExtract this nested ternary operation into an independent statement.(“îÄşÿÿÿÿ
+G
+java:S1874"0Remove this use of "getColor"; it is deprecated.(Ñóİ
+i
+java:S3776õ"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(à‡¼
+D
+java:S1481‚"-Remove this unused "offColor" local variable.(–Ë÷ô
+H
+java:S1481‰",Remove this unused "onColor" local variable.(ñşŞ¯şÿÿÿÿ

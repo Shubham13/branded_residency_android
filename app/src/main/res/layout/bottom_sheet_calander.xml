@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bottom_sheet_calender_root"
+        style="@style/systemWhiteRadius10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_minus10sdp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_bottom_sheet_pin"
+            android:backgroundTint="@color/gray_gray" />
+
+        <com.digivalet.brandresidential.ui.views.calender.Calender
+            android:id="@+id/bottom_sheet_calender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:off_month_day_color="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_done_btn"
+            style="@style/brandGradientRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="@string/label_done"
+            android:textAppearance="@style/bodyBaselineSemiBoldSystemWhite" />
+
+    </LinearLayout>
+</layout>

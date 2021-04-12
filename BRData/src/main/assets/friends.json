@@ -1,0 +1,35 @@
+{
+    "title": "Friends",
+    "data": [
+      {
+        "residentId": "1",
+        "name": "Somendra Yadav",
+        "type": "friend",
+        "image": "somendraYadav.png"
+      },
+      {
+        "residentId": "2",
+        "name": "Devendra Thakur",
+        "type": "friend",
+        "image": "devendraThakur.png"
+      },
+      {
+         "residentId": "3",
+         "name": "Shubham Joshi",
+         "type": "friend",
+         "image": "shubhamJoshi.png"
+      },
+      {
+         "residentId": "4",
+         "name": "Vinod Prajapat",
+         "type": "friend",
+         "image": "vinodPrajapat.png"
+      },
+      {
+        "residentId": "5",
+        "name": "Manoj Verma",
+        "type": "friend",
+        "image": "manojVerma.png"
+      }
+    ]
+  }

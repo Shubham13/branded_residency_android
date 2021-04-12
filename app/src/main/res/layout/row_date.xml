@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/row"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_82sdp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="0sp"
+                android:text="TUE"
+                android:textAllCaps="true"
+                android:translationY="-0.05sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/day"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="0sp"
+                android:text="18"
+                android:translationY="-0.05sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/row_more_dates"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_82sdp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/label_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/label_date"
+                android:textAllCaps="true"
+                android:translationY="-0.05sp" />
+
+            <ImageView
+                android:id="@+id/arrow_image"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_below="@+id/label_date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_minus5sdp"
+                android:adjustViewBounds="true"
+                android:rotation="90"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_disclosure" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

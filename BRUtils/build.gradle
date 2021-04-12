@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+    /*support libs*/
+    api "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    api 'androidx.appcompat:appcompat:1.2.0'
+    api 'com.google.android.material:material:1.2.1'
+    api 'androidx.core:core-ktx:1.3.2'
+    api 'androidx.appcompat:appcompat:1.2.0'
+    api 'com.google.android.material:material:1.2.1'
+    api 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    /*json converter*/
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    /*networking libs*/
+    api 'com.squareup.retrofit2:retrofit:2.5.0'
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+    api "com.squareup.okhttp3:logging-interceptor:3.12.1"
+
+
+
+    /*facebook anim support*/
+    implementation 'com.facebook.rebound:rebound:0.3.8'
+
+    /*glide image loading*/
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'androidx.recyclerview:recyclerview-selection:1.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    /*library for requesting permissions at runtime*/
+    api 'com.karumi:dexter:5.0.0'
+
+    /*lifecycle component*/
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    /*Rx java & Rx Android*/
+    api 'io.reactivex.rxjava2:rxjava:2.1.9'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    /*kt support*/
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10"
+
+    /*change style programmatically*/
+    api 'com.airbnb.android:paris:1.7.2'
+}

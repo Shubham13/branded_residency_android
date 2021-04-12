@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/row_radio_fields"
+            style="@style/grayBorderRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_46sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/label_gender"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/label_gender"
+                android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_minus5sdp"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/label_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:checked="true"
+                    android:text="@string/label_male"
+                    android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                    android:theme="@style/brandAccentRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/label_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:checked="false"
+                    android:text="@string/label_female"
+                    android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                    android:theme="@style/brandAccentRadioButton" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

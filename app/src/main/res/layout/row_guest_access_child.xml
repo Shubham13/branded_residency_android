@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start|center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label_privileges"
+        style="@style/subXSmallSemiSystemBlackAlpha70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/label_privileges"
+        android:textAllCaps="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/row_checkbox"
+        style="@style/grayBorderRadius10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="start|center"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox_access"
+            android:theme="@style/brandAccentDarkCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:button="@drawable/checkbox_selector"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/label_allow_to_guest"
+            android:textAppearance="@style/bodyBaselineRegSystemBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_notes"
+        style="@style/grayBorderRadius10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_108sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="start|center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edit_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@null"
+            android:hint="@string/label_notes"
+            android:inputType="text|textVisiblePassword|textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:text="@string/label_sample_text"
+            android:textColorHint="@color/system_black"
+            android:theme="@style/brandAccentEditText" />
+
+    </LinearLayout>
+
+</LinearLayout>

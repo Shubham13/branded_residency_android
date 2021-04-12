@@ -1,0 +1,21 @@
+
+T
+java:S1128">Remove this unused import 'com.digivalet.brdata.dto.PetsData'.(©½õ„
+
+java:S1186È"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œ€ÑÍüÿÿÿÿ
+˜
+java:S1186ı"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÄèİÕ
+
+java:S1450/"dRemove the "rowContactInfoBinding" field and declare it as a local variable in the relevant methods.(Äÿİ±úÿÿÿÿ
+O
+java:S1905_"9Remove this unnecessary cast to "OnScrollChangeListener".(­‘¥÷
+E
+java:S1066e"/Merge this if statement with the enclosing one.(ù÷Õ
+J
+java:S1066f"/Merge this if statement with the enclosing one.(­ ³ßûÿÿÿÿ
+h
+java:S3776W"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.( Üó
+O
+java:S1602¡",Remove useless curly braces around statement(‡åíµşÿÿÿÿ8êğÇàí.
+Ÿ
+java:S1186¸"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ŸÖµ¸8êğÇàí.

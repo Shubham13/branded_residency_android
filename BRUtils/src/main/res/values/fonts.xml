@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--base fonts styles as per ui guideline-->
+    <style name="HeadlineH1">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+    <style name="HeadlineH2">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:lineSpacingExtra">7sp</item>
+    </style>
+
+    <style name="HeadlineH3">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="HeadlineH4">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="BodyLargeMed">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="BodyBaselineSemiBold">
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="BodyBaselineReg">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="BodySmallSemiBold">
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="BodySmallReg">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="SubXSmallSemi">
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="SubXSmall">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="SubXxSmallSemi">
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="SubXxSmall">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="Tab10Pt">
+        <item name="android:fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <!--edit text theme-->
+    <style name="EditTextTheme" parent="BodyBaselineReg">
+        <item name="colorControlNormal">#e42a56</item>
+        <item name="colorControlActivated">#e42a56</item>
+        <item name="colorControlHighlight">#e42a56</item>
+    </style>
+
+    <!--check box theme-->
+    <style name="CheckBoxTheme" parent="BodyBaselineReg">
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="colorControlActivated">#DF5F48</item>
+    </style>
+
+</resources>

@@ -1,0 +1,6 @@
+include ':BRTheme'
+include ':app'
+include ':BRData'
+include ':BRUtils'
+
+rootProject.name = "BrandedResidences"

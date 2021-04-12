@@ -1,0 +1,142 @@
+{
+  "title": "Residents",
+  "data": [
+    {
+      "residentId": "1",
+      "name": "John Murphy",
+      "prefferedName": "John",
+      "relation": "Brother",
+      "birthday": "Every 20 october",
+      "gender": "Every 20 october",
+      "status": "Married",
+      "occupation": "Entrepreneur",
+      "email": "john@gmail.com",
+      "mobile": "6265834002",
+      "address": "CA Cupertino Apple",
+      "type": "OWNER",
+      "image": "Murphy.png",
+      "identification": [
+        {
+          "idType": "Pan Card",
+          "idNumber": "20103399201",
+          "idImage": "PanCard.png"
+        },
+        {
+          "idType": "Aadhar",
+          "idNumber": "1234567890",
+          "idImage": "PanCard.png"
+        }
+      ]
+    },
+    {
+      "residentId": "2",
+      "name": "Kathryn Murphy",
+      "prefferedName": "Kathryn",
+      "relation": "Sister",
+      "birthday": "Every 20 october",
+      "gender": "Every 20 october",
+      "status": "Married",
+      "occupation": "Entrepreneur",
+      "email": "kathryn@gmail.com",
+      "mobile": "6265834002",
+      "address": "CA Cupertino Apple",
+      "type": "SPOUSE",
+      "image": "EllisBig.png",
+      "identification": [
+        {
+          "idType": "Aadhar",
+          "idNumber": "20103399201",
+          "idImage": "PanCard.png"
+        }
+      ]
+    },
+    {
+      "residentId": "3",
+      "name": "Joe Murphy",
+      "prefferedName": "Joe",
+      "relation": "Mother",
+      "birthday": "Every 20 october",
+      "gender": "Every 20 october",
+      "status": "Married",
+      "occupation": "Entrepreneur",
+      "email": "joe@gmail.com",
+      "mobile": "6265834002",
+      "address": "CA Cupertino Apple",
+      "type": "OWNER",
+      "image": "EllisBig.png",
+      "identification": [
+        {
+          "idType": "Aadhar",
+          "idNumber": "20103399201",
+          "idImage": "PanCard.png"
+        }
+      ]
+    },
+    {
+      "residentId": "4",
+      "name": "Jackie Murphy",
+      "prefferedName": "Jackie",
+      "relation": "Brother",
+      "birthday": "Every 20 october",
+      "gender": "Every 20 october",
+      "status": "Married",
+      "occupation": "Entrepreneur",
+      "email": "jackie@gmail.com",
+      "mobile": "6265834002",
+      "address": "CA Cupertino Apple",
+      "type": "OWNER",
+      "image": "EllisBig.png",
+      "identification": [
+        {
+          "idType": "Aadhar",
+          "idNumber": "20103399201",
+          "idImage": "PanCard.png"
+        }
+      ]
+    },
+    {
+      "residentId": "5",
+      "name": "John Murphy",
+      "prefferedName": "John",
+      "relation": "Brother",
+      "birthday": "Every 20 october",
+      "gender": "Every 20 october",
+      "status": "Married",
+      "occupation": "Entrepreneur",
+      "email": "john@gmail.com",
+      "mobile": "6265834002",
+      "address": "CA Cupertino Apple",
+      "type": "CHILD",
+      "image": "EllisBig.png",
+      "identification": [
+        {
+          "idType": "Aadhar",
+          "idNumber": "20103399201",
+          "idImage": "PanCard.png"
+        }
+      ]
+    },
+    {
+      "residentId": "6",
+      "name": "Jackie Murphy",
+      "prefferedName": "Jackie",
+      "relation": "Brother",
+      "birthday": "Every 20 october",
+      "gender": "Every 20 october",
+      "status": "Married",
+      "occupation": "Entrepreneur",
+      "email": "jackie@gmail.com",
+      "mobile": "6265834002",
+      "address": "CA Cupertino Apple",
+      "type": "CHILD",
+      "image": "Murphy.png",
+      "identification": [
+        {
+          "idType": "Aadhar",
+          "idNumber": "20103399201",
+          "idImage": "PanCard.png"
+        }
+      ]
+    }
+  ]
+}

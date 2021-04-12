@@ -1,0 +1,164 @@
+{
+    "headerProfile": {
+        "name": {
+           "firstname": "Alisa",
+           "middlename": "Jates",
+           "lastname": "Dissouza",
+           "preferredname": "Alisa Dissouza",
+           "profileimage": "Fai"
+        },
+        "housedetails" : {
+            "blocknumber/apartment": "74824",
+            "number/wing": "114824"
+        },
+        "userType": "owner",
+        "gender": "male",
+        "date": {
+            "dateofpurchase": "13/32/1",
+            "dateofmove": "11/32/1",
+            "dateoflease": "13/32/1"
+        },
+        "mobilenumber": "9179547020",
+        "emailaddress": "swfwf@egj.com",
+        "otheraddress": "9 sanc clara, hudson roard, gorgia",
+        "occupation": "Engineer",
+        "maritalstatus": "married",
+        "iddetails": {
+            "idtype": "passport",
+            "idnumber": "13193"
+        },
+        "Profile Notes": "his is for the users of the dashboard"
+    },
+    "headerTitles": [
+       {
+         "title": "Profiles",
+         "subTitles": [
+             {
+                 "title": "Residents",
+                 "type": "residents",
+                 "id": "1"
+             },
+             {
+                 "title": "Interests",
+                 "type": "interests",
+                 "id": "2"
+             },
+             {
+                 "title": "Vehicles",
+                  "type": "vehicles",
+                 "id": "3"
+             },
+             {
+                 "title": "Pets",
+                 "type": "pets",
+                 "id": "4"
+             },
+             {
+                 "title": "Staff",
+                 "type": "staff",
+                 "id": "5"
+             },
+             {
+                 "title": "Guests",
+                 "type": "guests",
+                 "id": "6"
+             },
+             {
+                 "title": "Friends",
+                 "type": "friends",
+                 "id": "7"
+             }
+          ]
+       },
+       {
+         "title": "Subscription",
+         "subTitles": [
+            {
+                "title": "Services",
+                "type": "services",
+                "count": "2",
+                "id": "10"
+            },
+            {
+                 "title": "Dining",
+                 "type": "dining",
+                 "count": "5",
+                 "id": "11"
+            },
+            {
+                "title": "Fitness",
+                "type": "fitness",
+                "count": "10",
+                "id": "12"
+            }
+          ]
+       },
+       {
+         "title": "Health",
+         "subTitles": [
+             {
+                 "title": "Activity",
+                 "type": "activity",
+                 "stepCount": "7200 steps",
+                 "calCount": "317 cal",
+                 "id": "1"
+             },
+             {
+                 "title": "Heart",
+                 "type": "heart",
+                 "bpmCount": "140 bpm",
+                 "id": "2"
+             },
+             {
+                 "title": "Nutrition",
+                 "type": "nutrition",
+                 "id": "3"
+             }
+          ]
+       },
+       {
+         "title": "Account",
+         "subTitles": [
+            {
+                "title": "Folio",
+                "type": "folio",
+                "count": "$1200",
+                "id": "10"
+            },
+            {
+                 "title": "Booking History",
+                 "type": "bookinghistory",
+                 "count": "",
+                 "id": "11"
+            },
+            {
+                "title": "Guest History",
+                "type": "guesthistory",
+                "count": "",
+                "id": "12"
+            }
+          ]
+       },
+       {
+         "title": "My Property",
+         "subTitles": [
+             {
+                 "title": "Service Directory",
+                 "type": "servicedirectory",
+                 "id": "1"
+             },
+             {
+                 "title": "Property Map",
+                 "type": "propertymap",
+                 "id": "2"
+             },
+             {
+                 "title": "Contact Info",
+                 "type": "contactinfo",
+                 "id": "3"
+             }
+          ]
+       }
+    ]
+}
+

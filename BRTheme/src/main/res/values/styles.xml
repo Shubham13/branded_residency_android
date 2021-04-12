@@ -1,0 +1,69 @@
+<resources>
+
+    <style name="brandAccent10Radius10">
+        <item name="android:background">@drawable/brand_accent_10_radius_10</item>
+    </style>
+
+    <style name="brandAccent4Radius10">
+        <item name="android:background">@drawable/brand_accent_4_radius_10</item>
+    </style>
+
+    <style name="grayLighterRadius10">
+        <item name="android:background">@drawable/gray_lighter_radius_10</item>
+    </style>
+
+    <style name="systemBlackAlpha20">
+        <item name="android:background">@color/system_black</item>
+        <item name="android:alpha">0.2</item>
+    </style>
+
+    <style name="brandAccent10Pill">
+        <item name="android:background">@drawable/brand_accent_10_pill</item>
+    </style>
+
+    <style name="brandGradientPill">
+        <item name="android:background">@drawable/brand_gradient_pill</item>
+    </style>
+
+    <style name="brandGradientCircle">
+        <item name="android:background">@drawable/brand_gradient_circle</item>
+    </style>
+
+    <style name="brandGradientRadius10">
+        <item name="android:background">@drawable/brand_gradient_radius_10</item>
+    </style>
+
+    <style name="grayBorderRadius10">
+        <item name="android:background">@drawable/gray_border_radius_10</item>
+    </style>
+
+    <style name="systemWhiteBorderRadius10">
+        <item name="android:background">@drawable/system_white_border_radius_10</item>
+    </style>
+
+    <style name="systemWhiteRadius10">
+        <item name="android:background">@drawable/system_white_radius_10</item>
+    </style>
+
+    <style name="systemWhiteRadius10Alpha30">
+        <item name="android:background">@drawable/system_white_radius_10_alpha_30</item>
+    </style>
+
+
+    <style name="brandAccentRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/gray_gray</item>
+        <item name="colorControlActivated">@color/brand_accent</item>
+    </style>
+
+    <style name="brandAccentEditText">
+        <item name="colorControlNormal">@color/brand_accent</item>
+        <item name="colorControlActivated">@color/brand_accent</item>
+        <item name="colorControlHighlight">@color/brand_accent</item>
+    </style>
+
+    <style name="brandAccentDarkCheckBox">
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="colorControlActivated">@color/brand_gradient_dark</item>
+    </style>
+
+</resources>

@@ -1,0 +1,19 @@
+
+h
+java:S3776V"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.( Üó
+
+java:S1186À"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œ€ÑÍüÿÿÿÿ
+O
+java:S1602™",Remove useless curly braces around statement(‡åíµşÿÿÿÿ8¢·Ìàí.
+Ÿ
+java:S1186°"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ŸÖµ¸8¢·Ìàí.
+O
+java:S1905^"9Remove this unnecessary cast to "OnScrollChangeListener".(­‘¥÷
+
+java:S1450."dRemove the "rowContactInfoBinding" field and declare it as a local variable in the relevant methods.(Äÿİ±úÿÿÿÿ
+J
+java:S1066e"/Merge this if statement with the enclosing one.(­ ³ßûÿÿÿÿ
+E
+java:S1066d"/Merge this if statement with the enclosing one.(ù÷Õ
+˜
+java:S1186õ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÄèİÕ

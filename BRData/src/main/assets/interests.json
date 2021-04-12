@@ -1,0 +1,362 @@
+
+{
+  "title": "Interests",
+  "data": [
+    {
+      "title": "Culture",
+      "subTitles": [
+        {
+          "title": "Culture Architecture",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "1"
+        },
+        {
+          "title": "Art",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "2"
+        },
+        {
+          "title": "Culture Comics and Anime",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "3"
+        },
+        {
+          "title": "Entertainment",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "4"
+        },
+        {
+          "title": "Fashion",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "5"
+        },
+        {
+          "title": "Literature",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "6"
+        },
+        {
+          "title": "Music",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "7"
+        },
+        {
+          "title": "Performing Arts",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "8"
+        },
+        {
+          "title": "Sports",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "9"
+        },
+        {
+          "title": "TV and Film",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "10"
+        },
+        {
+          "title": "Video Games",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "11"
+        }
+      ]
+    },
+    {
+      "title": "Fitness",
+      "subTitles": [
+        {
+          "title": "Architecture",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "12"
+        },
+        {
+          "title": "Art",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "13"
+        },
+        {
+          "title": "Comics and Anime",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "14"
+        },
+        {
+          "title": "Entertainment",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "15"
+        },
+        {
+          "title": "Fashion",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "16"
+        },
+        {
+          "title": "Literature",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "17"
+        },
+        {
+          "title": "Music",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "18"
+        },
+        {
+          "title": "Performing Arts",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "19"
+        },
+        {
+          "title": "Sports",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "20"
+        },
+        {
+          "title": "TV and Film",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "21"
+        },
+        {
+          "title": "Video Games",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "22"
+        }
+      ]
+    },
+    {
+      "title": "FoodDining",
+      "subTitles": [
+        {
+          "title": "Culture Architecture",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "23"
+        },
+        {
+          "title": "Art",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "24"
+        },
+        {
+          "title": "Culture Comics and Anime",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "25"
+        },
+        {
+          "title": "Entertainment",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "26"
+        },
+        {
+          "title": "Fashion",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "27"
+        },
+        {
+          "title": "Literature",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "28"
+        },
+        {
+          "title": "Music",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "29"
+        },
+        {
+          "title": "Performing Arts",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "30"
+        },
+        {
+          "title": "Sports",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "31"
+        },
+        {
+          "title": "TV and Film",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "32"
+        },
+        {
+          "title": "Video Games",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "33"
+        }
+      ]
+    },
+    {
+      "title": "Sports",
+      "subTitles": [
+        {
+          "title": "Culture Architecture",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "34"
+        },
+        {
+          "title": "Art",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "35"
+        },
+        {
+          "title": "Culture Comics and Anime",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "36"
+        },
+        {
+          "title": "Entertainment",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "37"
+        },
+        {
+          "title": "Fashion",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "38"
+        },
+        {
+          "title": "Literature",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "39"
+        },
+        {
+          "title": "Music",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "40"
+        },
+        {
+          "title": "Performing Arts",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "41"
+        },
+        {
+          "title": "Sports",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "42"
+        },
+        {
+          "title": "TV and Film",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "43"
+        },
+        {
+          "title": "Video Games",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "44"
+        }
+      ]
+    },
+    {
+      "title": "Entertainment",
+      "subTitles": [
+        {
+          "title": "Culture Architecture",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "45"
+        },
+        {
+          "title": "Art",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "46"
+        },
+        {
+          "title": "Culture Comics and Anime",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "47"
+        },
+        {
+          "title": "Entertainment",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "48"
+        },
+        {
+          "title": "Fashion",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "49"
+        },
+        {
+          "title": "Literature",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "50"
+        },
+        {
+          "title": "Music",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "51"
+        },
+        {
+          "title": "Performing Arts",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "52"
+        },
+        {
+          "title": "Sports",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "53"
+        },
+        {
+          "title": "TV and Film",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "54"
+        },
+        {
+          "title": "Video Games",
+          "color": "1E3B58",
+          "tintColor": "1E3B58",
+          "subTitleId": "55"
+        }
+      ]
+    }
+  ]
+}
+

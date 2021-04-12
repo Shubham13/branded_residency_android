@@ -1,0 +1,10 @@
+
+Z
+java:S1128"=Remove this unused import 'com.digivalet.brandresidential.R'.(·úşë8Üßı‘ë.
+‰
+java:S1128"lRemove this unused import 'com.digivalet.brandresidential.ui.fragments.guestsprofile.GuestsProfileFragment'.(Œ¿„â8Üßı‘ë.
+
+java:S1128	"dRemove this unused import 'com.digivalet.brandresidential.ui.fragments.interests.InterestsFragment'.(¡õğä8Üßı‘ë.
+‡
+java:S1128"jRemove this unused import 'com.digivalet.brandresidential.ui.fragments.guesthistory.GuestHistoryFragment'.(Ô¤È‘8Üßı‘ë.
+>	java:S131""Add a default case to this switch.(ÜŸ•8Üßı‘ë.

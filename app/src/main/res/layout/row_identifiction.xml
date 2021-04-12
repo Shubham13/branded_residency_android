@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label_identification_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/label_identification"
+            android:theme="@style/headlineH4SystemBlack"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/row_identification"
+            style="@style/grayBorderRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/label_id_type"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/label_id_type"
+                android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+
+            <TextView
+                android:id="@+id/edit_id_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:theme="@style/bodyBaselineRegSystemBlack" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_id_number"
+            style="@style/grayBorderRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/label_id_number"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/label_id_number"
+                android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+
+            <EditText
+                android:id="@+id/edit_id_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@null"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                android:theme="@style/brandAccentEditText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_image"
+            style="@style/grayBorderRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_177sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/id_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            style="@style/systemBlackAlpha20"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,66 @@
+
+{
+  "venue" : {
+    "isAvailable": true,
+    "venueStatus": "Venue is unavailable on date selected.",
+    "venueDescription": "Our vibrant, thoughtfully-designed space is fully equipped and ready to book for your next public or private gathering."
+  },
+  "bookingImages": [
+    {
+      "image": "court3",
+      "imageId": "12"
+    },
+    {
+      "image": "court2",
+      "imageId": "13"
+    },
+    {
+      "image": "court1",
+      "imageId": "14"
+    },
+    {
+      "image": "court2",
+      "imageId": "15"
+    }
+  ],
+  "amenities": [
+    {
+      "title": "Player Capacity",
+      "type": "Singles and Doubles",
+      "amenitiesId": "111"
+    },
+    {
+      "title":"Coach Available",
+      "type": "Yes",
+      "amenitiesId": "121"
+    },
+    {
+      "title": "Court Type",
+      "type": "Hard Court",
+      "amenitiesId": "132"
+    },
+    {
+      "title": "Location",
+      "type": "Outdoor",
+      "amenitiesId": "143"
+    }
+  ],
+  "filterData": [
+    {
+      "title": "Any Date",
+      "image": "GuestSmallDateDark",
+      "filterId": "1"
+    },
+    {
+      "title": "Any Time",
+      "image": "clocktime",
+      "filterId": "2"
+    },
+    {
+      "title": "Capacity",
+      "image": "profileHeader",
+      "filterId": "3"
+    }
+  ]
+}
+

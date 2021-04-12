@@ -1,0 +1,15 @@
+
+q
+java:S1450"VRemove the "mLocked" field and declare it as a local variable in the relevant methods.(½äË‘øÿÿÿÿ
+œ
+java:S1186/"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÉŠÚşÿÿÿÿ
+œ
+java:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ó˜›´ùÿÿÿÿ
+e
+java:S1874*"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(™ùéÜüÿÿÿÿ
+e
+java:S1874/"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ÉŠÚşÿÿÿÿ
+e
+java:S18743"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ó˜›´ùÿÿÿÿ
+F
+java:S1068"+Remove this unused "mLocked" private field.(½äË‘øÿÿÿÿ

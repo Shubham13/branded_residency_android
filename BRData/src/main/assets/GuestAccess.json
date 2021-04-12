@@ -1,0 +1,41 @@
+{
+  "guestAccess": {
+    "commonAccess": [
+      {
+        "accessId": "1",
+        "title": "My Floor",
+        "oneTimeGuestAllowed": true
+      },
+      {
+        "accessId": "2",
+        "title": "All Common Floor",
+        "oneTimeGuestAllowed": true
+      },
+      {
+        "accessId": "3",
+        "title": "Spa",
+        "oneTimeGuestAllowed": true
+      },
+      {
+        "accessId": "4",
+        "title": "Swimming Pool",
+        "oneTimeGuestAllowed": true
+      },
+      {
+        "accessId": "5",
+        "title": "Fitness Center",
+        "oneTimeGuestAllowed": true
+      },
+      {
+        "accessId": "6",
+        "title": "Allow to bring guests",
+        "oneTimeGuestAllowed": false
+      },
+      {
+        "accessId": "7",
+        "title": "Allow packages",
+        "oneTimeGuestAllowed": true
+      }
+    ]
+  }
+}

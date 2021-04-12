@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/profile_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:theme="@style/systemBlackAlpha20" />
+
+        <TextView
+            android:id="@+id/profile_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_divider"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:theme="@style/headlineH4SystemBlack" />
+
+        <com.digivalet.utils.views.NonScrollListView
+            android:id="@+id/profile_item_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_header_text"
+            android:divider="@color/White"
+            android:dividerHeight="@dimen/_1sdp"
+            android:listSelector="@android:color/transparent"
+            android:theme="@style/grayLighterRadius10" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="registerGuestVM"
+            type="com.digivalet.brandresidential.ui.fragments.registerguest.RegisterGuestViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/tool_bar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/label_register_guest"
+                    style="@style/headlineH4SystemBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:text="@string/label_register_guest" />
+
+                <LinearLayout
+                    android:id="@+id/row_profile"
+                    style="@style/grayBorderRadius10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="start|center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                    <com.digivalet.utils.views.CircularImageView
+                        android:id="@+id/profile_image_view"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@mipmap/ic_circle_profile" />
+
+                    <TextView
+                        android:id="@+id/label_add_photo"
+                        style="@style/bodyBaselineRegSystemBlackAlpha50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="@string/label_add_photo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_name"
+                    style="@style/grayBorderRadius10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <EditText
+                        android:id="@+id/edit_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:hint="@string/label_name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textVisiblePassword"
+                        android:lines="1"
+                        android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                        android:textColorHint="@color/system_black"
+                        android:theme="@style/brandAccentEditText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_phone"
+                    style="@style/grayBorderRadius10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/edit_flag"
+                            style="@style/bodyBaselineRegSystemBlack"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp" />
+
+                        <TextView
+                            android:id="@+id/edit_country_code"
+                            style="@style/bodyBaselineRegSystemBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:drawableEnd="@mipmap/ic_drop_down"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edit_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@null"
+                        android:hint="@string/label_phone"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLength="10"
+                        android:padding="@dimen/_10sdp"
+                        android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                        android:textColorHint="@color/system_black"
+                        android:theme="@style/brandAccentEditText" />
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/row_include_gender"
+                    layout="@layout/row_radio_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/label_additional_info"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_additional_info"
+                        android:textAllCaps="true"
+                        android:theme="@style/subXSmallSemiSystemBlackAlpha70" />
+
+                    <TextView
+                        android:id="@+id/label_optional"
+                        style="@style/subXSmallSystemBlackAlpha30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_optional" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_email"
+                    style="@style/grayBorderRadius10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="start|center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <EditText
+                        android:id="@+id/edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@null"
+                        android:hint="@string/label_email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                        android:textColorHint="@color/system_black"
+                        android:theme="@style/brandAccentEditText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_address"
+                    style="@style/grayBorderRadius10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="start|center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <EditText
+                        android:id="@+id/edit_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@null"
+                        android:hint="@string/label_address"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textVisiblePassword"
+                        android:lines="1"
+                        android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                        android:textColorHint="@color/system_black"
+                        android:theme="@style/brandAccentEditText" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/label_notes_to_front_desk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/label_notes_to_front_desk"
+                    android:textAllCaps="true"
+                    android:theme="@style/subXSmallSemiSystemBlackAlpha70" />
+
+                <LinearLayout
+                    android:id="@+id/row_notes"
+                    style="@style/grayBorderRadius10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_108sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/_10sdp">
+
+                    <EditText
+                        android:id="@+id/edit_notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@null"
+                        android:hint="@string/label_notes"
+                        android:inputType="text|textVisiblePassword|textMultiLine"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:text="@string/label_sample_text"
+                        android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                        android:textColorHint="@color/system_black"
+                        android:theme="@style/brandAccentEditText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_car_plate"
+                    style="@style/grayBorderRadius10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="start|center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <EditText
+                        android:id="@+id/edit_car_plate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@null"
+                        android:hint="@string/label_car_plate"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                        android:textColorHint="@color/system_black"
+                        android:theme="@style/brandAccentEditText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_relation"
+                    style="@style/grayBorderRadius10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="start|center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <EditText
+                        android:id="@+id/edit_relation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@null"
+                        android:hint="@string/label_relation_to_resident"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                        android:textColorHint="@color/system_black"
+                        android:theme="@style/brandAccentEditText" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/row_accompany_guest"
+                    style="@style/grayBorderRadius10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/label_accompany_guest"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="@string/label_accompany_guest"
+                        android:textAppearance="@style/bodyBaselineRegSystemBlack" />
+
+                    <com.digivalet.brandresidential.ui.views.counterview.CounterView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/systemBlackAlpha20"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_20sdp" />
+
+                <include
+                    android:id="@+id/row_access"
+                    layout="@layout/row_guest_access_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/divider"
+                    style="@style/systemBlackAlpha20"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list_access"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:overScrollMode="never"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/register_btn"
+            style="@style/brandGradientRadius10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:onClick="@{(view) -> registerGuestVM.onRegisterClick()}"
+            android:text="@string/label_register_frequent_guest"
+            android:textAppearance="@style/bodyBaselineSemiBoldSystemWhite"
+            android:textColor="@color/White" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,93 @@
+
+{
+  "amenitiesBookingData": [
+    {
+      "title": "contact",
+      "contacts": [
+        {
+          "title": "Contact Concierge",
+          "areaType": "Special requirements? Let’s chat",
+          "image": "BookingContact",
+          "subTitleId": "1"
+        },
+        {
+          "title": "Contact Concierge",
+          "areaType": "Special requirements? Let’s chat",
+          "image": "BookingContact",
+          "subTitleId": "2"
+        }
+      ]
+    },
+    {
+      "title": "booking",
+      "bookings": [
+        {
+          "title": "Grass Court",
+          "price": "~$120",
+          "date": "Thursday, April 10, 2021 6:30 AM",
+          "capacity": "20",
+          "image": "court2",
+          "subTitleId": "12",
+          "members": "2 players 2 players",
+          "availStatus": "true",
+          "areaType": "Indoor",
+          "isAvailable": false
+        },
+        {
+          "title": "Hard Court",
+          "price": "~$120",
+          "date": "Monday, April 2, 2021 7:30 AM",
+          "capacity": "40",
+          "image": "court3",
+          "subTitleId": "13",
+          "members": "2-3",
+          "availStatus": "false",
+          "areaType": "Outdoor",
+          "isAvailable": false
+        },
+        {
+          "title": "Hard Court",
+          "price": "~$200",
+          "date": "Sunday, April 5, 2021 8:30 AM",
+          "capacity": "50",
+          "image": "court2",
+          "subTitleId": "13",
+          "members": "2",
+          "availStatus": "true",
+          "areaType": "Outdoor",
+          "isAvailable": true
+        },
+        {
+          "title": "Grass Court",
+          "price": "~$1,000",
+          "date": "Friday, April 9, 2021 8:30 AM",
+          "capacity": "100",
+          "image": "court3",
+          "subTitleId": "13",
+          "members": "1",
+          "availStatus": "false",
+          "areaType": "Outdoor",
+          "isAvailable": true
+        }
+      ]
+    }
+  ],
+  "filterData": [
+    {
+      "title": "Any Date",
+      "image": "GuestSmallDateDark",
+      "filterId": "1"
+    },
+    {
+      "title": "Any Time",
+      "image": "clocktime",
+      "filterId": "2"
+    },
+    {
+      "title": "Capacity",
+      "image": "profileHeader",
+      "filterId": "3"
+    }
+  ]
+}
+

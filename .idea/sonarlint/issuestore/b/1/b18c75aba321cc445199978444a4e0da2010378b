@@ -1,0 +1,7 @@
+
+d
+java:S2095Z"IUse try-with-resources or close this "InputStream" in a "finally" clause.(Š¯“§ÿÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(ÀÍŒÞøÿÿÿÿ
+e
+java:S2674]"JCheck the return value of the "read" call to see how many bytes were read.(ë¥áïøÿÿÿÿ

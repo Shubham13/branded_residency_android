@@ -1,0 +1,111 @@
+{
+  "title": "TableHeader",
+  "headerData": [
+    {
+      "title": "Today",
+      "filterId":"121",
+      "image": "GuestBigDateDark",
+      "type": "today"
+    },
+    {
+      "title": "Scheduled",
+      "filterId":"122",
+      "image": "GuestScheduleDark",
+      "type": "scheduled"
+    },
+    {
+      "title": "Frequent",
+      "filterId":"123",
+      "image": "GuestSmallDateDark",
+      "type": "frequent"
+    }
+  ],
+  "data": [
+    {
+      "title": "Today",
+      "guestId":"121",
+      "type": "today",
+      "subTitles": [
+        {
+          "title": "John Doe",
+          "image": "Ellis",
+          "phone":"6265834002",
+          "gender":"Male",
+          "email":"ellis@gmail.com",
+          "address": "CA Cupertino Apple",
+          "date": "Today, Anytime",
+          "subTitleId": "1"
+        },
+        {
+          "title": "Carol Jobs",
+          "phone":"6265834002",
+          "gender":"Male",
+          "email":"carol@gmail.com",
+          "address": "CA Cupertino Apple",
+          "image": "John",
+          "date": "1/2/20, Anytime",
+          "subTitleId": "2"
+        }
+      ]
+    },
+    {
+      "title": "Scheduled",
+      "guestId":"122",
+      "type": "scheduled",
+      "subTitles": [
+        {
+          "title": "Alice Mendor",
+          "image": "Ellis",
+          "phone":"6265834002",
+          "gender":"Female",
+          "email":"alice@gmail.com",
+          "address": "CA Cupertino Apple",
+          "date": "1/2/20, Anytime",
+          "count": "2",
+          "subTitleId": "23"
+        },
+        {
+          "title": "Jason Anderson",
+          "image": "John",
+          "phone":"6265834002",
+          "gender":"Male",
+          "email":"jason@gmail.com",
+          "address": "CA Cupertino Apple",
+          "date": "Today, Anytime",
+          "count": "5",
+          "subTitleId": "22"
+        }
+      ]
+    },
+    {
+      "title": "Frequent",
+      "guestId":"126",
+      "type": "frequent",
+      "subTitles": [
+        {
+          "title": "Alice Mendor",
+          "image": "Ellis",
+          "phone":"6265834002",
+          "gender":"Female",
+          "email":"alice@gmail.com",
+          "address": "CA Cupertino Apple",
+          "date": "1/2/20, Anytime",
+          "count": "2",
+          "subTitleId": "10"
+        },
+        {
+          "title": "Jason Anderson",
+          "phone":"6265834002",
+          "gender":"Male",
+          "email":"jason@gmail.com",
+          "address": "CA Cupertino Apple",
+          "image": "John",
+          "date": "Today, Anytime",
+          "count": "5",
+          "subTitleId": "11"
+        }
+      ]
+    }
+  ]
+}
+

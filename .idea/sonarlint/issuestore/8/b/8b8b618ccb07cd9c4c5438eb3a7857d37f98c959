@@ -1,0 +1,15 @@
+
+c
+java:S1192S"HDefine a constant instead of duplicating this literal "message" 7 times.(ş‡Ã¯üÿÿÿÿ
+P
+java:S1141o"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+P
+java:S1141y"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Z
+java:S2259E"DA "NullPointerException" could be thrown; "reader" is nullable here.(§€ÍĞ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(‚Êë‚üÿÿÿÿ
+l
+java:S2159"VRemove this call to "equals"; comparisons between unrelated types always return false.(¶ø¯
+g
+java:S3776["RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ëôŠ1

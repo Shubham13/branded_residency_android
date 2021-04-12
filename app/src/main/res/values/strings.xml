@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name" translatable="false">BrandedResidences</string>
+
+    <!--activity dashboard-->
+    <string name="menu_today">@string/label_today</string>
+    <string name="menu_book">Book</string>
+    <string name="menu_shopping">Shop</string>
+    <string name="menu_activity">Activity</string>
+    <string name="menu_profile">Profile</string>
+
+    <!--fragment profile-->
+    <string name="label_send_invite">Send me invites to activities</string>
+    <string name="label_call_msg">Call or message me</string>
+    <string name="label_access_floor">Access my floor</string>
+    <string name="label_share_code">Share My Code</string>
+    <string name="label_invite_friends">Invite Friends</string>
+    <string name="label_invite">Invite</string>
+    <string name="label_edit_profile">Edit Profile</string>
+    <string name="label_profile">Profiles</string>
+    <string name="label_subscription">Subscription</string>
+    <string name="label_health">Health</string>
+    <string name="label_account">Account</string>
+    <string name="label_my_property">My Property</string>
+    <string name="label_residents">Residents</string>
+    <string name="label_interests">Interests</string>
+    <string name="label_pets">Pets</string>
+    <string name="label_vehicles">Vehicles</string>
+    <string name="label_staff">Staff</string>
+    <string name="label_guests">Guests</string>
+    <string name="label_friends">Friends</string>
+    <string name="label_services">Services</string>
+    <string name="label_dining">Dining</string>
+    <string name="label_fitness">Fitness</string>
+    <string name="label_activity">Activity</string>
+    <string name="label_heart">Heart</string>
+    <string name="label_nutrition">Nutrition</string>
+    <string name="label_folio">Folio</string>
+    <string name="label_booking_history">Booking History</string>
+    <string name="label_guest_history">Guest History</string>
+    <string name="label_service_directory">Service Directory</string>
+    <string name="label_property_map">Property Map</string>
+    <string name="label_contact_info">Contact Info</string>
+
+
+    <!--fragment today-->
+    <string name="label_today">Today</string>
+    <string name="label_back">Back</string>
+
+    <!--fragment guests profile-->
+    <string name="label_guests_profile">Guests Profile</string>
+
+    <!--fragment guest profile details-->
+    <string name="label_save_changes">Save Changes</string>
+    <string name="label_visit">Visit</string>
+    <string name="label_delete">Delete</string>
+    <string name="label_date">Date</string>
+    <string name="label_additional_info">Additional Info</string>
+    <string name="label_optional">Optional</string>
+    <string name="label_notes_to_front_desk">Notes To Front Desk</string>
+    <string name="label_address">Address</string>
+    <string name="label_notes">Notes</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_guest_type">Guest Type</string>
+    <string name="label_one_time_guest">One-Time Guest</string>
+    <string name="label_allow_to_guest">Allow to bring guests</string>
+    <string name="label_privileges">Privileges</string>
+    <string name="label_access">Access</string>
+    <string name="label_sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae ornare sem. Fusce placerat nisi sit amet diam euismod, ut posuere nisl venenatis. Ut hendrerit fermentum ex a ornare. Duis porta tellus diam, ut laoreet tellus pretium non. Donec suscipit augue ut erat interdum, sed ornare libero consequat. Mauris accumsan turpis quis purus posuere mollis. Mauris at risus vitae nibh dapibus eleifend. Donec eu congue lorem, nec commodo ipsum. Fusce accumsan metus arcu, nec auctor orci convallis vitae. Integer quis lorem ac sapien porttitor bibendum. Duis mollis facilisis neque, eu consectetur sapien tempus in. Nunc gravida ullamcorper odio ut tempus. Nullam ac massa sed mauris lobortis sollicitudin ac pellentesque elit.</string>
+
+
+    <!--fragment residents details-->
+    <string name="label_resident_info">Resident Info</string>
+    <string name="label_name">Name</string>
+    <string name="label_preferred_name">Preferred Name</string>
+    <string name="label_relation_to_owner">Relation to Owner</string>
+    <string name="label_birthday">Birthday</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_status">Status</string>
+    <string name="label_occupation">Occupation</string>
+    <string name="label_contact">Contact</string>
+    <string name="label_mobile">Mobile</string>
+    <string name="label_email">Email</string>
+    <string name="label_alt_address">Alt.Addess</string>
+    <string name="label_identification">Identification</string>
+    <string name="label_id_type">ID Type</string>
+    <string name="label_id_number">ID Number</string>
+    <string name="label_male">Male</string>
+    <string name="label_female">Female</string>
+    <string name="label_alert">Alert</string>
+    <string name="label_ok">Ok</string>
+    <string name="label_denied_permission">Some permissions are denied, Please allow all permissions.</string>
+
+    <!--fragment interests-->
+    <string name="label_all">All</string>
+
+    <!--fragment guest history details-->
+    <string name="label_date_visited">Date Visited</string>
+    <string name="label_approved_by">Approved by</string>
+    <string name="label_re_register">Re-register</string>
+    <string name="label_time">Time</string>
+
+    <!--book visitor-->
+    <string name="label_guest">Guest</string>
+    <string name="label_guest_note">Registered guest expected today.</string>
+    <string name="label_guest_onetime">One-Time Guest</string>
+    <string name="label_guest_frequent">Frequent Guest</string>
+    <string name="label_guest_short">Short- Staying Guest</string>
+    <string name="label_schedule">Schedule</string>
+    <string name="label_continue">Continue</string>
+    <string name="label_start_date">Start Date</string>
+    <string name="label_allow_until">Allow Until</string>
+
+    <!--invite scan code-->
+    <string name="label_scan">Scan Code</string>
+    <string name="label_invite_message">Add friends to your contacts to allow them to access your floor,
+        call or message you, and invite your to activities in the property.</string>
+
+    <!--bottom sheet spinner-->
+    <string name="label_done">Done</string>
+    <string name="label_repeat">Repeat</string>
+
+    <!--bottom_dialog_repeat-->
+    <string name="label_none">None</string>
+    <string name="label_daily">Daily</string>
+    <string name="label_weekly">Weekly</string>
+    <string name="label_everyTwoWeek">Every 2 Weeks</string>
+    <string name="label_monthly">Monthly</string>
+    <string name="label_custom">Custom</string>
+
+    <!--bottom_dialog_custom-->
+    <string name="label_yearly">Yearly</string>
+    <string name="label_every">Every</string>
+    <string name="label_sunday">Sunday</string>
+    <string name="label_monday">Monday</string>
+    <string name="label_tuesday">Tuesday</string>
+    <string name="label_wednesday">Wednesday</string>
+    <string name="label_thursday">Thursday</string>
+    <string name="label_friday">Friday</string>
+    <string name="label_saturday">Saturday</string>
+
+    <!--fragment register fragment-->
+    <string name="label_add_photo">Add Photo</string>
+    <string name="label_register_guest">Register Guest</string>
+    <string name="label_car_plate">Car Plate</string>
+    <string name="label_relation_to_resident">Relation to Resident</string>
+    <string name="label_register_one_guest">Register One-Time Guest</string>
+    <string name="label_register_frequent_guest">Register Frequent Guest</string>
+    <string name="label_accompany_guest">Accompanying Guest</string>
+    <string name="label_issue_mobile_key">Issue Mobile Key</string>
+    <string name="label_allow_packages">Allow packages</string>
+
+    <!--bottom dialog guest registered-->
+    <string name="label_guest_register">Guest Registered</string>
+    <string name="label_send_message">Send as Message</string>
+    <string name="label_sample_text2">Quisque placerat facilisis egestas cillum dolore pellentesque habitant morbi</string>
+
+    <!--bottom sheet share invite-->
+    <string name="label_share_invite">Share Invite</string>
+    <string name="label_share_invite_text">Cras mattis iudicium purus sit amet fermentum. Idque Caesaris facere voluntate liceret: sese habere. Curabitur blandit tempus.</string>
+
+</resources>
