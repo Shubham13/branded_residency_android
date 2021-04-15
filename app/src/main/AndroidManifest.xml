@@ -27,7 +27,7 @@
         </provider>
 
         <activity
-            android:name=".ui.activities.dashboard.DashboardActivity"
+            android:name=".ui.fragments.profile.ProfileActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan">
             <intent-filter>
@@ -35,6 +35,62 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.fragments.residents.ResidentsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".ui.fragments.residentdetails.ResidentDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".ui.fragments.vehiclesdetails.VehiclesDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".ui.fragments.staffdetails.StaffDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".ui.fragments.frienddetails.FriendDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".ui.fragments.petdetails.PetDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".ui.fragments.guestsprofile.GuestsProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".ui.fragments.guestprofiledetails.GuestProfileDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".ui.fragments.interests.InterestsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"/>
+
+
+        <activity
+            android:name=".ui.fragments.guesthistory.GuestHistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"/>
+
+        <activity
+            android:name=".ui.fragments.guesthistorydetails.GuestHistoryDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"/>
 
     </application>
 
