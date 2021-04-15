@@ -46,9 +46,9 @@ public class DateSelectorAdapter extends RecyclerView.Adapter<DateSelectorAdapte
             if (rowPosition == position) {
                 holder.rowDateBinding.day.setText(DateFormat.format("EEE", dates.get(position)));
                 holder.rowDateBinding.date.setText(DateFormat.format("dd", dates.get(position)));
-                Paris.style(holder.rowDateBinding.day).apply(R.style.subXxSmallSemiSystemWhiteAlpha1);
-                Paris.style(holder.rowDateBinding.date).apply(R.style.bodyLargeMedSystemWhite);
-                holder.rowDateBinding.row.setBackgroundResource(R.drawable.brand_gradient_pill);
+                Paris.style(holder.rowDateBinding.day).apply(R.style.subXxSmallMedSystemWhiteAlpha1);
+                Paris.style(holder.rowDateBinding.date).apply(R.style.bodyLargeSystemWhite);
+                holder.rowDateBinding.row.setBackgroundResource(R.drawable.bar_top_banner_alpha_50_pill);
 
             } else {
                 holder.rowDateBinding.day.setText(DateFormat.format("EEE", dates.get(position)));
@@ -66,8 +66,8 @@ public class DateSelectorAdapter extends RecyclerView.Adapter<DateSelectorAdapte
             } else {
                 holder.rowDateBinding.row.setVisibility(View.GONE);
                 holder.rowDateBinding.rowMoreDates.setVisibility(View.VISIBLE);
-                Paris.style(holder.rowDateBinding.labelDate).apply(R.style.subXxSmallSemiSystemWhiteAlpha1);
-                holder.rowDateBinding.rowMoreDates.setBackgroundResource(R.drawable.brand_gradient_pill);
+                Paris.style(holder.rowDateBinding.labelDate).apply(R.style.subXxSmallMedSystemWhiteAlpha1);
+                holder.rowDateBinding.rowMoreDates.setBackgroundResource(R.drawable.bar_top_banner_alpha_50_pill);
 
             }
         }

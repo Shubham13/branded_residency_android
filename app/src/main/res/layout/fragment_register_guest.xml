@@ -42,7 +42,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_profile"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_5sdp"
@@ -69,7 +69,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_name"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start|center"
@@ -96,7 +96,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_phone"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -178,7 +178,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_email"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_3sdp"
@@ -205,7 +205,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_address"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -241,7 +241,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_notes"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_108sdp"
                     android:layout_marginTop="@dimen/_3sdp"
@@ -270,7 +270,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_car_plate"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -297,7 +297,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_relation"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -325,7 +325,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_accompany_guest"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -393,7 +393,7 @@
 
         <TextView
             android:id="@+id/register_btn"
-            style="@style/brandGradientRadius10"
+            style="@style/brandAccentGradientRadius100"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp"
             android:layout_alignParentBottom="true"
@@ -404,7 +404,7 @@
             android:gravity="center"
             android:onClick="@{(view) -> registerGuestVM.onRegisterClick()}"
             android:text="@string/label_register_frequent_guest"
-            android:textAppearance="@style/bodyBaselineSemiBoldSystemWhite"
+            android:textAppearance="@style/bodyBaselineSemiTitleSystemWhite"
             android:textColor="@color/White" />
 
     </RelativeLayout>

@@ -48,7 +48,7 @@ public class BookFragment extends BaseFragment<FragmentBookBinding, BookViewMode
     @Override
     public void init() {
         mViewDataBinding.toolbar.toolbarTitle.setText(getString(R.string.menu_book));
-        mViewDataBinding.toolbar.toolbarBackBtn.setVisibility(View.INVISIBLE);
+        mViewDataBinding.toolbar.toolbarLeftLayout.setVisibility(View.INVISIBLE);
         mViewDataBinding.toolbar.toolbarRightImage.setVisibility(View.VISIBLE);
         mViewDataBinding.toolbar.toolbarRightImage.setOnClickListener(e -> {
             getBaseActivity().loadFragment(new BookVisitorFragment(), R.id.container);
@@ -57,7 +57,7 @@ public class BookFragment extends BaseFragment<FragmentBookBinding, BookViewMode
 
     @Override
     public void loadTheme() {
-        StyleBuilder.setStyleOnView(Host.tool_bar, mViewDataBinding.toolbar.toolbarDivider);
+
         StyleBuilder.setStyleOnText(Host.tool_bar, mViewDataBinding.toolbar.toolbarTitle);
     }
 }

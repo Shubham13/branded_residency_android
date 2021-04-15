@@ -17,7 +17,7 @@
 
     <LinearLayout
         android:id="@+id/row_checkbox"
-        style="@style/grayBorderRadius10"
+        style="@style/darkLightFlatBorderRadius10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
@@ -40,7 +40,7 @@
 
     <LinearLayout
         android:id="@+id/row_notes"
-        style="@style/grayBorderRadius10"
+        style="@style/darkLightFlatBorderRadius10"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_108sdp"
         android:layout_marginTop="@dimen/_5sdp"

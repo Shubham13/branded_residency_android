@@ -1,7 +1,31 @@
 <resources>
 
-    <style name="brandAccent10Radius10">
-        <item name="android:background">@drawable/brand_accent_10_radius_10</item>
+    <style name="darkLightGradientRadius10">
+        <item name="android:background">@drawable/dark_light_gradient_radius_10</item>
+    </style>
+
+    <style name="brandAccentCircle">
+        <item name="android:background">@drawable/brand_accent_circle</item>
+    </style>
+
+    <style name="brandSecoundryCircle">
+        <item name="android:background">@drawable/brand_secoundry_circle</item>
+    </style>
+
+    <style name="barTopBannerCircle">
+        <item name="android:background">@drawable/bar_top_banner_circle</item>
+    </style>
+
+    <style name="barTabBarRectangle">
+        <item name="android:background">@drawable/bar_tabbar_rectangle</item>
+    </style>
+
+    <style name="brandAccentGradientRadius100">
+        <item name="android:background">@drawable/brand_accent_gradient_radius_100</item>
+    </style>
+
+    <style name="brandAccentRadius100">
+        <item name="android:background">@drawable/brand_accent_radius_100</item>
     </style>
 
     <style name="brandAccent4Radius10">
@@ -12,29 +36,42 @@
         <item name="android:background">@drawable/gray_lighter_radius_10</item>
     </style>
 
+    <style name="darkDarkGradientRadius10">
+        <item name="android:background">@drawable/dark_dark_gradient_radius_10</item>
+    </style>
+
     <style name="systemBlackAlpha20">
         <item name="android:background">@color/system_black</item>
         <item name="android:alpha">0.2</item>
+    </style>
+
+    <style name="systemWhiteAlpha5">
+        <item name="android:background">@color/system_white</item>
+        <item name="android:alpha">0.05</item>
     </style>
 
     <style name="brandAccent10Pill">
         <item name="android:background">@drawable/brand_accent_10_pill</item>
     </style>
 
-    <style name="brandGradientPill">
-        <item name="android:background">@drawable/brand_gradient_pill</item>
+    <style name="barTabBarTransparent">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="barTopBannerPill">
+        <item name="android:background">@drawable/bar_top_banner_alpha_50_pill</item>
     </style>
 
     <style name="brandGradientCircle">
         <item name="android:background">@drawable/brand_gradient_circle</item>
     </style>
 
-    <style name="brandGradientRadius10">
-        <item name="android:background">@drawable/brand_gradient_radius_10</item>
+    <style name="darkBackgroundRadius10">
+        <item name="android:background">@drawable/dark_background_radius_10</item>
     </style>
 
-    <style name="grayBorderRadius10">
-        <item name="android:background">@drawable/gray_border_radius_10</item>
+    <style name="darkLightFlatBorderRadius10">
+        <item name="android:background">@drawable/dark_light_flat_border_radius_10</item>
     </style>
 
     <style name="systemWhiteBorderRadius10">
@@ -65,5 +102,7 @@
         <item name="colorControlHighlight">@android:color/transparent</item>
         <item name="colorControlActivated">@color/brand_gradient_dark</item>
     </style>
+
+
 
 </resources>

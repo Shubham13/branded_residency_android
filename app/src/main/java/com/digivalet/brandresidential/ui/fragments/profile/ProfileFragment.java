@@ -1,5 +1,6 @@
 package com.digivalet.brandresidential.ui.fragments.profile;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -90,6 +91,7 @@ public class ProfileFragment extends BaseFragment<FragmentProfileBinding, Profil
 
     @Override
     public void init() {
+        getActivity().getWindow().setStatusBarColor(Color.parseColor("#061524"));
         list = new ArrayList<>();
         adapter = new ProfileContentAdapter(getContext(), list, new CustomItemClickListener() {
             @Override

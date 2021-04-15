@@ -9,14 +9,17 @@
         <TextView
             android:id="@+id/row_guest_profile_header"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:theme="@style/subXxSmallMedBrandAccent" />
 
         <com.digivalet.utils.views.NonScrollListView
             android:id="@+id/row_guest_profile_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/row_guest_profile_header"
-            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
             android:divider="@null"
             android:listSelector="@android:color/transparent"
             android:overScrollMode="never" />

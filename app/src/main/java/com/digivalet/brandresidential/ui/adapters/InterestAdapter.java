@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -30,8 +31,10 @@ public class InterestAdapter extends RecyclerView.Adapter<InterestAdapter.ViewHo
     private final ArrayList<Boolean> isAllSelectedList;
     private List<InterestData> interestData;
     private int rowPosition = -1;
+    private Context context;
 
     public InterestAdapter(Context context) {
+        this.context = context;
         this.interestStatus = new LinkedHashMap<>();
         this.isAllSelectedList = new ArrayList<>();
         isAllSelectedList.add(false);
@@ -59,6 +62,7 @@ public class InterestAdapter extends RecyclerView.Adapter<InterestAdapter.ViewHo
         return new ViewHolder(rowInterestBinding);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
@@ -74,13 +78,13 @@ public class InterestAdapter extends RecyclerView.Adapter<InterestAdapter.ViewHo
             chip.setClickable(true);
             chip.setFocusable(true);
             chip.setRippleColor(null);
-            chip.setChipCornerRadius(10);
+            chip.setChipCornerRadius(100);
             interestStatus.put(chip.getTag() + "_" + position, false);
 
             if (rowPosition == position && !isAllSelectedList.get(position)) {
                 interestStatus.put(chip.getTag() + "_" + position, true);
-                chip.setTextColor(Color.WHITE);
-                chip.setChipBackgroundColorResource(R.color.brand_gradient_dark);
+                chip.setTextColor(context.getColor(R.color.dark_background));
+                chip.setChipBackgroundColorResource(R.color.brand_accent);
                 if (i == interestModel.getSubTitles().size() - 1) {
                     isAllSelectedList.set(position, true);
                 }
@@ -89,20 +93,20 @@ public class InterestAdapter extends RecyclerView.Adapter<InterestAdapter.ViewHo
                     isAllSelectedList.set(position, false);
                 }
                 interestStatus.put(chip.getTag() + "_" + position, false);
-                chip.setTextColor(Color.BLACK);
-                chip.setChipBackgroundColorResource(R.color.brand_accent_10);
+                chip.setTextColor(Color.WHITE);
+                chip.setChipBackgroundColorResource(R.color.bar_top_banner);
             }
 
             chip.setOnClickListener(view -> {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (interestStatus.get(chip.getTag() + "_" + position)) {
                         interestStatus.put(chip.getTag() + "_" + position, false);
-                        chip.setTextColor(Color.BLACK);
-                        chip.setChipBackgroundColorResource(R.color.brand_accent_10);
+                        chip.setTextColor(Color.WHITE);
+                        chip.setChipBackgroundColorResource(R.color.bar_top_banner);
                     } else {
                         interestStatus.put(chip.getTag() + "_" + position, true);
-                        chip.setTextColor(Color.WHITE);
-                        chip.setChipBackgroundColorResource(R.color.brand_gradient_dark);
+                        chip.setTextColor(context.getColor(R.color.dark_background));
+                        chip.setChipBackgroundColorResource(R.color.brand_accent);
                     }
                 }
             });

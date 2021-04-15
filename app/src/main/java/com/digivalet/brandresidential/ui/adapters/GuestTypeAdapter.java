@@ -48,8 +48,8 @@ public class GuestTypeAdapter extends RecyclerView.Adapter<GuestTypeAdapter.View
         holder.rowGuestTypeBinding.labelGuestType.setText(typeData.getTitle());
 
         if (rowPosition == position) {
-            holder.rowGuestTypeBinding.rowGuestType.setBackgroundResource(R.drawable.brand_gradient_radius_10);
-            Paris.style(holder.rowGuestTypeBinding.labelGuestType).apply(R.style.bodyBaselineSemiBoldSystemWhiteAlpha1);
+            holder.rowGuestTypeBinding.rowGuestType.setBackgroundResource(R.drawable.brand_accent_gradient_radius_100);
+            Paris.style(holder.rowGuestTypeBinding.labelGuestType).apply(R.style.bodyBaselineSemiTilteSystemWhiteAlpha1);
             holder.rowGuestTypeBinding.checkImage.setVisibility(View.VISIBLE);
         } else {
             holder.rowGuestTypeBinding.rowGuestType.setBackgroundResource(R.drawable.gray_border_radius_10_stock_2);

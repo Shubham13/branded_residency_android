@@ -49,14 +49,14 @@ public class GuestsProfileFiltersAdapter extends RecyclerView.Adapter<GuestsProf
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.rowFilterBinding.rowToolbarFilterItemTitle.setText(filterList.get(position).getTitle());
         holder.rowFilterBinding.rowToolbarFilterItemIcon.setVisibility(View.VISIBLE);
-        Paris.style(holder.rowFilterBinding.rowToolbarFilterItemTitle).apply(filterList.get(position).isSelected() ? R.style.bodySmallRegSystemWhite : R.style.bodySmallRegSystemBlack);
-        Paris.style(holder.rowFilterBinding.rowToolbarFilterItemRoot).apply(filterList.get(position).isSelected() ? R.style.brandGradientPill : R.style.brandAccent10Pill);
+        Paris.style(holder.rowFilterBinding.rowToolbarFilterItemTitle).apply(filterList.get(position).isSelected() ? R.style.subXSmallDarkBackground : R.style.subXSmallMedSystemWhite);
+        Paris.style(holder.rowFilterBinding.rowToolbarFilterItemRoot).apply(filterList.get(position).isSelected() ? R.style.brandAccentRadius100 : R.style.barTopBannerPill);
         ImageViewCompat.setImageTintList(holder.rowFilterBinding.rowToolbarFilterItemIcon, filterList.get(position).isSelected() ? ColorStateList.valueOf(Color.WHITE) : ColorStateList.valueOf(Color.BLACK));
 
         holder.itemView.getRootView().setOnClickListener(e -> {
             filterList.get(position).setSelected(!filterList.get(position).isSelected());
-            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemTitle).apply(filterList.get(position).isSelected() ? R.style.bodySmallRegSystemWhite : R.style.bodySmallRegSystemBlack);
-            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemRoot).apply(filterList.get(position).isSelected() ? R.style.brandGradientPill : R.style.brandAccent10Pill);
+            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemTitle).apply(filterList.get(position).isSelected() ? R.style.subXSmallDarkBackground : R.style.subXSmallMedSystemWhite);
+            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemRoot).apply(filterList.get(position).isSelected() ? R.style.brandAccentRadius100 : R.style.barTopBannerPill);
             ImageViewCompat.setImageTintList(holder.rowFilterBinding.rowToolbarFilterItemIcon, filterList.get(position).isSelected() ? ColorStateList.valueOf(Color.WHITE) : ColorStateList.valueOf(Color.BLACK));
             customItemClickListener.onItemClickListener(position);
         });

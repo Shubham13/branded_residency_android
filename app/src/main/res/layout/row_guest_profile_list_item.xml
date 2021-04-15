@@ -29,40 +29,39 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:text="John Doe"
-                android:theme="@style/bodyBaselineSemiBoldSystemBlack" />
+                android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
             <TextView
-                style="@style/subXSmallSystemBlackAlpha50"
+                style="@style/subXSmallBrandSecoundry"
                 android:id="@+id/row_guest_profile_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toStartOf="@+id/row_guest_profile_back_btn"
                 android:alpha="0.5"
-                android:text="Today, Anytime" />
+                android:text="Anytime" />
 
             <ImageView
                 android:id="@+id/row_guest_profile_back_btn"
-                android:layout_width="@dimen/_32sdp"
-                android:layout_height="@dimen/_32sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/_minus8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
                 android:src="@mipmap/ic_disclosure" />
 
         </RelativeLayout>
 
         <TextView
             android:id="@+id/row_guest_profile_sub_title"
-            style="@style/brandGradientPill"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/_5sdp"
             android:text="one-time guest"
-            android:textAppearance="@style/subXxSmallSemiSystemWhite" />
+            android:textAppearance="@style/bodySmallRegBrandSecoundry" />
 
         <View
-            style="@style/systemBlackAlpha20"
+            style="@style/systemWhiteAlpha5"
             android:id="@+id/row_guest_profile_divider"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"

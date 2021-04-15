@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="brand_accent">#e42a56</color>
+    <color name="brand_accent">#F6D78F</color>
     <color name="system_white">#ffffff</color>
-    <color name="gray_gray">#cacace</color>
+    <color name="gray_gray">#7E92A9</color>
+    <color name="brand_light">#DDE8F4</color>
+    <color name="dark_background">#061524</color>
+    <color name="dark_darkflat">#201F33</color>
+    <color name="dark_mediumflat">#2A3548</color>
+    <color name="dark_lightflat">#40516B</color>
+    <color name="bar_tabbar">#2A3548</color>
+    <color name="bar_top_banner">#445365</color>
+
     <color name="bar_tab_bar">#f0f5f5f5</color>
     <color name="system_black">#000000</color>
     <color name="system_green">#35C759</color>
@@ -12,12 +20,27 @@
     <color name="bar_nav_bar">#ccffffff</color>
     <color name="brand_gray">#5b5557</color>
     <color name="brand_accent_10">#19ea3353</color>
-    <color name="system_red">#cc0a0a</color>
+    <color name="system_red">#CC0A0A</color>
     <color name="brand_accent_4">#0aea3353</color>
 
     <!--others-->
+    <color name="system_white_alpha_10">#1Affffff</color>
     <color name="system_white_alpha_30">#4Dffffff</color>
     <color name="system_black_alpha_20">#be776e</color>
     <color name="gray_lighter_alpha_50">#fafafa</color>
+    <color name="bar_tabbar_alpha_84">#D62A3548</color>
+    <color name="bar_top_banner_alpha_50">#80445365</color>
+    
+    <!--gradient-->
+    <color name="dark_light1">#50667F</color>
+    <color name="dark_light2">#34415A</color>
+    <color name="dark_light3">#39455B</color>
+    
+    <color name="dark_dark1">#22263B</color>
+    <color name="dark_dark2">#191B2E</color>
+    
+    <color name="brand_accent_glow1">#F5E4A5</color>
+    <color name="brand_accent_glow2">#D4C07B</color>
+    <color name="brand_accent_glow3">#EDD996</color>
 
 </resources>

@@ -4,7 +4,8 @@
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:theme="@style/barTabBarRectangle">
 
         <RelativeLayout
             android:id="@+id/toolbar_holder"
@@ -13,15 +14,22 @@
             android:paddingStart="@dimen/_16sdp"
             android:paddingEnd="@dimen/_16sdp">
 
-            <TextView
-                android:id="@+id/toolbar_back_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:drawableStart="@mipmap/ic_back"
-                android:drawablePadding="@dimen/_5sdp"
-                android:text="@string/label_back"
-                android:theme="@style/bodyBaselineRegBrandAccent" />
+            <LinearLayout
+                android:id="@+id/toolbar_left_layout"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:theme="@style/barTopBannerCircle">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@mipmap/ic_back"/>
+
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/textLL"
@@ -35,7 +43,7 @@
                     android:id="@+id/toolbar_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:theme="@style/bodyBaselineSemiBoldSystemBlack" />
+                    android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 <TextView
                     android:id="@+id/toolbar_sub_title"
@@ -80,13 +88,6 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/row_toolbar_filter_item" />
 
-        <View
-            android:id="@+id/toolbar_divider"
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_below="@+id/toolbar_item_list"
-            android:theme="@style/systemBlackAlpha20"
-            android:visibility="visible" />
 
     </RelativeLayout>
 

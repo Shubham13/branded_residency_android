@@ -13,11 +13,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/label_contact"
-            android:textAppearance="@style/headlineH4SystemBlack" />
+            android:textAppearance="@style/subXxSmallMedBrandAccent" />
 
         <LinearLayout
             android:id="@+id/row_mobile_no"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10sdp"
@@ -63,7 +63,7 @@
 
         <LinearLayout
             android:id="@+id/row_email"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
@@ -90,7 +90,7 @@
 
         <LinearLayout
             android:id="@+id/row_alt_address"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"

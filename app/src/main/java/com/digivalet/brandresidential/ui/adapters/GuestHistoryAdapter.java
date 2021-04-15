@@ -51,7 +51,7 @@ public class GuestHistoryAdapter extends RecyclerView.Adapter<GuestHistoryAdapte
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         animator.onSpringItemBind(holder.itemView, position);
-        Paris.style(holder.rowGuestProfileHeaderBinding.rowGuestProfileHeader).apply(R.style.subXSmallSemiSystemBlackAlpha70);
+        //Paris.style(holder.rowGuestProfileHeaderBinding.rowGuestProfileHeader).apply(R.style.subXSmallSemiSystemBlackAlpha70);
         holder.rowGuestProfileHeaderBinding.rowGuestProfileHeader.setText(list.get(position).getTitle());
         ListAdapter guestSubTitleAdapter = new ListAdapter(context, list.get(position).getSubTitles());
         guestSubTitleAdapter.setOnClickListener(customItemClickListener);

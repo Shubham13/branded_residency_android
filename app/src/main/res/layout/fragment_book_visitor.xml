@@ -73,7 +73,7 @@
                                 android:layout_toStartOf="@+id/back_image"
                                 android:gravity="center"
                                 android:text="1"
-                                android:textAppearance="@style/subXxSmallSemiSystemWhite" />
+                                android:textAppearance="@style/subXxSmallMedSystemWhite" />
 
                             <ImageView
                                 android:id="@+id/back_image"
@@ -272,7 +272,7 @@
 
                         <RelativeLayout
                             android:id="@+id/row_time_selection"
-                            style="@style/grayBorderRadius10"
+                            style="@style/darkLightFlatBorderRadius10"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
@@ -314,7 +314,7 @@
 
                         <RelativeLayout
                             android:id="@+id/row_repeat_selection"
-                            style="@style/grayBorderRadius10"
+                            style="@style/darkLightFlatBorderRadius10"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
@@ -364,7 +364,7 @@
 
             <TextView
                 android:id="@+id/continue_btn"
-                style="@style/brandGradientRadius10"
+                style="@style/brandAccentGradientRadius100"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_alignParentBottom="true"
@@ -374,7 +374,7 @@
                 android:gravity="center"
                 android:onClick="@{(view) -> bookVisitorVM.onContinueClick()}"
                 android:text="@string/label_continue"
-                android:textAppearance="@style/bodyBaselineSemiBoldSystemWhite" />
+                android:textAppearance="@style/bodyBaselineSemiTitleSystemWhite" />
 
         </RelativeLayout>
     </LinearLayout>

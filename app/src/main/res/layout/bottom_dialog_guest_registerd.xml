@@ -115,14 +115,14 @@
 
             <TextView
                 android:id="@+id/messageTV"
-                style="@style/brandGradientRadius10"
+                style="@style/brandAccentGradientRadius100"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginBottom="@dimen/_30sdp"
                 android:gravity="center"
                 android:onClick="@{(view) -> registeredBottomVM.onSendMessageClick()}"
                 android:text="@string/label_send_message"
-                android:textAppearance="@style/bodyBaselineSemiBoldSystemWhite" />
+                android:textAppearance="@style/bodyBaselineSemiTitleSystemWhite" />
 
         </LinearLayout>
     </LinearLayout>

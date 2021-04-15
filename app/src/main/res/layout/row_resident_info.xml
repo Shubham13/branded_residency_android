@@ -12,11 +12,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/label_resident_info"
-            android:theme="@style/headlineH4SystemBlack" />
+            android:textAllCaps="true"
+            android:theme="@style/subXxSmallMedBrandAccent" />
 
         <RelativeLayout
             android:id="@+id/row_profile_image"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_100sdp"
             android:layout_marginTop="@dimen/_10sdp">
@@ -43,7 +44,7 @@
 
         <LinearLayout
             android:id="@+id/row_name"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
@@ -57,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:text="@string/label_name"
-                android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                android:theme="@style/bodySmallSemiTitleBrandSecoundry" />
 
             <EditText
                 android:id="@+id/edit_name"
@@ -76,7 +77,7 @@
 
         <LinearLayout
             android:id="@+id/row_preferred_name"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
@@ -110,7 +111,7 @@
 
         <LinearLayout
             android:id="@+id/row_relation_to_owner"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
@@ -137,7 +138,7 @@
 
         <LinearLayout
             android:id="@+id/row_birthday"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
@@ -171,7 +172,7 @@
 
         <LinearLayout
             android:id="@+id/row_status"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
@@ -198,7 +199,7 @@
 
         <LinearLayout
             android:id="@+id/row_occupation"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"

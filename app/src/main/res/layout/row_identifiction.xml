@@ -18,7 +18,7 @@
 
         <LinearLayout
             android:id="@+id/row_identification"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -44,7 +44,7 @@
 
         <LinearLayout
             android:id="@+id/row_id_number"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
@@ -75,7 +75,7 @@
 
         <LinearLayout
             android:id="@+id/row_image"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_177sdp"
             android:layout_marginTop="@dimen/_5sdp"

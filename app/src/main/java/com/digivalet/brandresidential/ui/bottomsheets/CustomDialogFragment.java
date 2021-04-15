@@ -53,12 +53,11 @@ public class CustomDialogFragment extends BottomSheetDialogFragment {
     private void initView() {
         bottomDialogCustomBinding.toolbar.toolbarRightImage.setVisibility(View.INVISIBLE);
         bottomDialogCustomBinding.toolbar.toolbarTitle.setText(getString(R.string.label_custom));
-        bottomDialogCustomBinding.toolbar.toolbarBackBtn.setText(getString(R.string.label_repeat));
-        bottomDialogCustomBinding.toolbar.toolbarDivider.setVisibility(View.GONE);
+        //bottomDialogCustomBinding.toolbar.toolbarBackBtn.setText(getString(R.string.label_repeat));
         bottomDialogCustomBinding.calendarTabLayout.addTab(bottomDialogCustomBinding.calendarTabLayout.newTab().setText(getString(R.string.label_daily)));
         bottomDialogCustomBinding.calendarTabLayout.addTab(bottomDialogCustomBinding.calendarTabLayout.newTab().setText(getString(R.string.label_weekly)));
         bottomDialogCustomBinding.calendarTabLayout.addTab(bottomDialogCustomBinding.calendarTabLayout.newTab().setText(getString(R.string.label_monthly)));
-        bottomDialogCustomBinding.toolbar.toolbarBackBtn.setOnClickListener(view -> {
+        bottomDialogCustomBinding.toolbar.toolbarLeftLayout.setOnClickListener(view -> {
             dismiss();
         });
 

@@ -2,13 +2,14 @@
     <!-- Base application theme. -->
     <style name="BrandResidential" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/Tomato</item>
-        <item name="colorPrimaryDark">@color/brand_gradient_dark</item>
+        <item name="colorPrimaryDark">@color/dark_background</item>
         <item name="colorAccent">@color/White</item>
+        <item name="android:windowBackground">@color/dark_background</item>
     </style>
 
     <!--bottom navigation-->
     <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
-        <item name="android:textAppearance">@font/sf_pro_display_regular</item>
+        <item name="android:textAppearance">@font/galaxie_copernicus_book</item>
     </style>
 
     <style name="TransparentDialog" parent="android:Theme.Dialog">

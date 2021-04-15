@@ -9,7 +9,7 @@
 
         <TextView
             android:id="@+id/label_identification"
-            style="@style/headlineH4SystemBlack"
+            style="@style/subXxSmallMedBrandAccent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_10sdp"

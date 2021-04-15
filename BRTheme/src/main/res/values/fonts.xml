@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
 <resources>
-    <!--base fonts styles-->
+    &lt;!&ndash;base fonts styles&ndash;&gt;
     <style name="HeadlineH1">
         <item name="android:fontFamily">@font/sf_pro_display_bold</item>
         <item name="android:textStyle">bold</item>
@@ -111,7 +111,7 @@
         <item name="android:letterSpacing">0.02</item>
     </style>
 
-    <!--app level fonts theme -->
+    &lt;!&ndash;app level fonts theme &ndash;&gt;
     <style name="bodyBaselineSemiBoldSystemBlack" parent="BodyBaselineSemiBold">
         <item name="android:textColor">@color/system_black</item>
     </style>
@@ -246,6 +246,344 @@
 
     <style name="tab10PtSystemBlack" parent="Tab10Pt">
         <item name="android:textColor">@color/system_black</item>
+    </style>
+
+</resources>
+-->
+
+
+<resources>
+    <!--base fonts styles-->
+    <style name="HeadlineH1">
+        <item name="android:fontFamily">@font/galaxie_copernicus_book</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+    <style name="HeadlineH2">
+        <item name="android:fontFamily">@font/galaxie_copernicus_book</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:lineSpacingExtra">7sp</item>
+    </style>
+
+    <style name="HeadlineH3">
+        <item name="android:fontFamily">@font/galaxie_copernicus_book</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="HeadlineH4">
+        <item name="android:fontFamily">@font/galaxie_copernicus_book</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="BodyLarge">
+        <item name="android:fontFamily">@font/galaxie_copernicus_book</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="BodyBaselineSemiTitle">
+        <item name="android:fontFamily">@font/galaxie_copernicus_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="BodyBaseline">
+        <item name="android:fontFamily">@font/galaxie_copernicus_book</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="BodySmallSemiTitle">
+        <item name="android:fontFamily">@font/galaxie_copernicus_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="BodySmallReg">
+        <item name="android:fontFamily">@font/galaxie_copernicus_book</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="SubXSmallMed">
+        <item name="android:fontFamily">@font/galano_classic_alt_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="SubXSmall">
+        <item name="android:fontFamily">@font/galano_classic</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="SubXxSmallMed">
+        <item name="android:fontFamily">@font/galano_classic_alt_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.18</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="SubXxSmall">
+        <item name="android:fontFamily">@font/galano_classic</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="TabTabTiny">
+        <item name="android:fontFamily">@font/galano_classic</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="ButtonLarge">
+        <item name="android:fontFamily">@font/galano_classic</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="ButtonNavTitle">
+        <item name="android:fontFamily">@font/galano_classic</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+
+    <!--app level fonts theme -->
+
+    <style name="subXxSmallSemiBrandAccent" parent="SubXxSmallMed">
+        <item name="android:textColor">@color/brand_accent</item>
+    </style>
+
+    <style name="subXxSmallMedBrandAccent" parent="SubXxSmallMed">
+        <item name="android:textColor">@color/brand_accent</item>
+    </style>
+
+    <style name="subXxSmallMedBrandSecoundry" parent="SubXxSmallMed">
+        <item name="android:textColor">@color/gray_gray</item>
+    </style>
+
+    <style name="bodyBaselineRegBrandAccent" parent="BodyBaseline">
+        <item name="android:textColor">@color/brand_accent</item>
+    </style>
+
+    <style name="subXSmallSemiBrandAccent" parent="SubXSmallMed">
+        <item name="android:textColor">@color/brand_accent</item>
+    </style>
+
+    <style name="subXSmallDarkBackground" parent="SubXSmallMed">
+        <item name="android:textColor">@color/dark_background</item>
+    </style>
+
+    <style name="bodySmallRegBrandSecoundry" parent="BodySmallReg">
+        <item name="android:textColor">@color/gray_gray</item>
+    </style>
+
+    <style name="subXSmallMedBrandSecoundry" parent="SubXSmallMed">
+        <item name="android:textColor">@color/gray_gray</item>
+    </style>
+
+    <style name="subXSmallMedBrandAccent" parent="SubXSmallMed">
+        <item name="android:textColor">@color/brand_accent</item>
+    </style>
+
+    <style name="subXSmallBrandSecoundry" parent="SubXSmall">
+        <item name="android:textColor">@color/gray_gray</item>
+    </style>
+
+    <style name="buttonLargeDarkDarkFlat" parent="ButtonLarge">
+        <item name="android:textColor">@color/dark_darkflat</item>
+    </style>
+
+    <style name="bodySmallSemiTitleBrandSecoundry" parent="BodySmallSemiTitle">
+        <item name="android:textColor">@color/gray_gray</item>
+    </style>
+
+    <!--Black-->
+
+    <style name="bodyBaselineSemiBoldSystemBlack" parent="BodyBaselineSemiTitle">
+        <item name="android:textColor">@color/system_black</item>
+    </style>
+
+    <style name="bodySmallRegSystemBlackAlpha50" parent="BodySmallReg">
+        <item name="android:textColor">@color/system_black</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="bodySmallSemiBoldSystemBlack" parent="BodySmallSemiTitle">
+        <item name="android:textColor">@color/system_black</item>
+    </style>
+
+    <style name="headlineH4SystemBlack" parent="HeadlineH4">
+        <item name="android:textColor">@color/system_black</item>
+    </style>
+
+    <style name="headlineH1SystemBlack" parent="HeadlineH1">
+        <item name="android:textColor">@color/system_black</item>
+    </style>
+
+    <style name="bodyBaselineRegSystemBlack" parent="BodyBaseline">
+        <item name="android:textColor">@color/system_black</item>
+    </style>
+
+    <style name="bodySmallRegSystemBlack" parent="BodySmallReg">
+        <item name="android:textColor">@color/system_black</item>
+    </style>
+
+    <style name="bodyBaselineRegSystemBlackAlpha50" parent="BodyBaseline">
+        <item name="android:textColor">@color/system_black</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="bodyBaselineRegSystemBlackAlpha70" parent="BodyBaseline">
+        <item name="android:textColor">@color/system_black</item>
+        <item name="android:alpha">0.7</item>
+    </style>
+
+    <style name="bodyBaselineSemiBoldSystemBlackAlpha50" parent="BodyBaselineSemiTitle">
+        <item name="android:textColor">@color/system_black</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="subXSmallSemiSystemBlackAlpha70" parent="SubXSmallMed">
+        <item name="android:textColor">@color/system_black</item>
+        <item name="android:alpha">0.7</item>
+    </style>
+
+    <style name="subXSmallSemiSystemBlack" parent="SubXSmallMed">
+        <item name="android:textColor">@color/system_black</item>
+    </style>
+
+    <style name="subXSmallSemiSystemBlackAlpha50" parent="SubXSmallMed">
+        <item name="android:textColor">@color/system_black</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="subXxSmallSemiSystemBlack" parent="SubXxSmallMed">
+        <item name="android:textColor">@color/system_black</item>
+    </style>
+
+    <style name="subXxSmallSemiSystemBlackAlpha50" parent="SubXxSmallMed">
+        <item name="android:textColor">@color/system_black</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="subXSmallSystemBlackAlpha50" parent="SubXSmall">
+        <item name="android:textColor">@color/system_black</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="subXSmallSystemBlackAlpha30" parent="SubXSmall">
+        <item name="android:textColor">@color/system_black</item>
+        <item name="android:alpha">0.3</item>
+    </style>
+
+    <style name="bodyLargeMedSystemBlack" parent="BodyLarge">
+        <item name="android:textColor">@color/system_black</item>
+    </style>
+
+    <style name="tab10PtSystemBlackAlpha60" parent="TabTabTiny">
+        <item name="android:textColor">@color/system_black</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+
+    <style name="tab10PtSystemBlack" parent="TabTabTiny">
+        <item name="android:textColor">@color/system_black</item>
+    </style>
+
+    <!--White-->
+
+    <style name="subXSmallMedSystemWhite" parent="SubXSmallMed">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="buttonNavTitleSystemWhite" parent="ButtonNavTitle">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="tabTabTinySystemWhite" parent="TabTabTiny">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="bodyLargeSystemWhite" parent="BodyLarge">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="subXxSmallMedSystemWhite" parent="SubXxSmallMed">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="bodySmallSemiTitleSystemWhite" parent="BodySmallSemiTitle">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="headlineH4SystemWhite" parent="HeadlineH4">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="headlineH3SystemWhite" parent="HeadlineH3">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="headlineH1SystemWhite" parent="HeadlineH1">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="bodyBaselineSystemWhite" parent="BodyBaseline">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="bodySmallRegSystemWhiteAlpha50" parent="BodySmallReg">
+        <item name="android:textColor">@color/system_white</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="bodySmallRegSystemWhite" parent="BodySmallReg">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="bodyBaselineSemiTitleSystemWhite" parent="BodyBaselineSemiTitle">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="bodyBaselineSemiTilteSystemWhiteAlpha1" parent="BodyBaselineSemiTitle">
+        <item name="android:textColor">@color/system_white</item>
+        <item name="android:alpha">1.0</item>
+    </style>
+
+    <style name="subXxSmallMedSystemWhiteAlpha1" parent="SubXxSmallMed">
+        <item name="android:textColor">@color/system_white</item>
+        <item name="android:alpha">1.0</item>
     </style>
 
 </resources>

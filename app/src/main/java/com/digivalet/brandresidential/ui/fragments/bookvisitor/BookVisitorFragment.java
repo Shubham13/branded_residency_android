@@ -66,9 +66,9 @@ public class BookVisitorFragment extends BaseFragment<FragmentBookVisitorBinding
     @Override
     public void init() {
         mViewDataBinding.toolbar.toolbarTitle.setText(getString(R.string.label_guest));
-        mViewDataBinding.toolbar.toolbarBackBtn.setVisibility(View.VISIBLE);
+        mViewDataBinding.toolbar.toolbarLeftLayout.setVisibility(View.VISIBLE);
         mViewDataBinding.toolbar.toolbarRightImage.setVisibility(View.VISIBLE);
-        mViewDataBinding.toolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(getActivity()).onBackPressed());
+        mViewDataBinding.toolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(getActivity()).onBackPressed());
         bookVisitorViewModel.setGuestTypeData(getContext());
 
         //init bottom dialogs

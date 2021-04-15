@@ -86,7 +86,7 @@ public class VehiclesDetailsFragment extends BaseFragment<FragmentResidentDetail
     @Override
     public void init() {
         mViewDataBinding.toolbar.toolbarRightImage.setVisibility(View.GONE);
-        mViewDataBinding.toolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(getActivity()).onBackPressed());
+        mViewDataBinding.toolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(getActivity()).onBackPressed());
 
         /*add scroll listener on nested scroll*/
         final Rect scrollBounds = new Rect();

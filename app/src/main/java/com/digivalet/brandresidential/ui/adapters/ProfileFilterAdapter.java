@@ -40,11 +40,11 @@ public class ProfileFilterAdapter extends RecyclerView.Adapter<ProfileFilterAdap
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         if (rowPosition == position) {
-            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemRoot).apply(R.style.brandGradientPill);
-            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemTitle).apply(R.style.bodySmallRegSystemWhite);
+            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemRoot).apply(R.style.barTopBannerPill);
+            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemTitle).apply(R.style.subXSmallMedSystemWhite);
         } else {
-            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemRoot).apply(R.style.brandAccent10Pill);
-            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemTitle).apply(R.style.bodySmallRegSystemBlack);
+            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemRoot).apply(R.style.barTabBarTransparent);
+            Paris.style(holder.rowFilterBinding.rowToolbarFilterItemTitle).apply(R.style.subXSmallMedBrandSecoundry);
         }
 
         holder.rowFilterBinding.rowToolbarFilterItemTitle.setText(list.get(position));

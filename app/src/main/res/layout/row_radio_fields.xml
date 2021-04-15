@@ -8,7 +8,7 @@
 
         <LinearLayout
             android:id="@+id/row_radio_fields"
-            style="@style/grayBorderRadius10"
+            style="@style/darkLightFlatBorderRadius10"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_46sdp"
             android:gravity="center_vertical"

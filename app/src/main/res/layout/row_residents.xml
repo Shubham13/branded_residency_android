@@ -26,7 +26,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:theme="@style/bodyBaselineSemiBoldSystemBlack"
+            android:theme="@style/bodyBaselineSystemWhite"
             android:id="@+id/row_residents_item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:layout_marginTop="@dimen/_10sdp" />
 
         <TextView
-            android:theme="@style/subXSmallSemiBrandAccent"
+            android:theme="@style/subXxSmallSemiBrandAccent"
             android:id="@+id/row_residents_item_designation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

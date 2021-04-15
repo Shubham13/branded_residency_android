@@ -70,9 +70,9 @@ public class RegisterGuestFragment extends BaseFragment<FragmentRegisterGuestBin
     @Override
     public void init() {
         mViewDataBinding.toolbar.toolbarTitle.setText(getString(R.string.label_guest));
-        mViewDataBinding.toolbar.toolbarBackBtn.setVisibility(View.VISIBLE);
+        mViewDataBinding.toolbar.toolbarLeftLayout.setVisibility(View.VISIBLE);
         mViewDataBinding.toolbar.toolbarRightImage.setVisibility(View.VISIBLE);
-        mViewDataBinding.toolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(getActivity()).onBackPressed());
+        mViewDataBinding.toolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(getActivity()).onBackPressed());
 
         if (!type.getValue().matches(GuestType.ONE_TIME_GUEST.getValue())) {
             mViewDataBinding.rowProfile.setVisibility(View.VISIBLE);

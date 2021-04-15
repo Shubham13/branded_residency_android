@@ -11,7 +11,7 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/qrCodeRL"
-        style="@style/brandGradientRadius10"
+        style="@style/darkBackgroundRadius10"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="@dimen/_minus10sdp"
@@ -60,7 +60,7 @@
                     android:layout_weight="0.7" />
 
                 <TextView
-                    style="@style/bodyLargeMedSystemWhite"
+                    style="@style/bodyLargeSystemWhite"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -68,7 +68,7 @@
                     android:text="@string/label_share_invite" />
 
                 <TextView
-                    style="@style/bodyBaselineRegSystemWhite"
+                    style="@style/bodyBaselineSystemWhite"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -115,7 +115,7 @@
                     android:lineSpacingExtra="@dimen/_2ssp"
                     android:padding="@dimen/_15sdp"
                     android:text="@string/label_share_invite"
-                    android:textAppearance="@style/bodyBaselineSemiBoldSystemWhite" />
+                    android:textAppearance="@style/bodyBaselineSemiTitleSystemWhite" />
 
             </LinearLayout>
 

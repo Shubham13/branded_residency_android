@@ -28,12 +28,22 @@
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:orientation="horizontal">
 
-                <com.digivalet.utils.views.CircularImageView
-                    android:id="@+id/profile_image_view"
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
+                <LinearLayout
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:orientation="vertical"
+                    android:gravity="center"
                     android:onClick="@{(view) -> profileVM.onProfileImageBrowsClick()}"
-                    android:src="@mipmap/ic_circle_profile" />
+                    android:theme="@style/brandAccentCircle">
+
+                    <ImageView
+                        android:id="@+id/profile_image_view"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:src="@mipmap/ic_profile"/>
+
+                </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -45,14 +55,15 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:theme="@style/bodyBaselineSemiBoldSystemBlack"
+                        android:theme="@style/bodyBaselineSystemWhite"
                         android:id="@+id/profile_user_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Emma Freeman"
                         android:lineHeight="@dimen/_22ssp" />
 
                     <TextView
-                        android:theme="@style/bodySmallRegSystemBlackAlpha50"
+                        android:theme="@style/bodySmallRegSystemWhiteAlpha50"
                         android:id="@+id/profile_edit_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -62,28 +73,19 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
                     android:gravity="center"
+                    android:theme="@style/brandSecoundryCircle"
                     android:onClick="@{(view) -> profileVM.onInviteQrClick()}"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="top"
-                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
                         android:scaleType="fitXY"
                         android:src="@mipmap/ic_qrcode" />
 
-                    <TextView
-                        android:theme="@style/subXxSmallSemiBrandAccent"
-                        android:id="@+id/profile_invite_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:lineHeight="@dimen/_13ssp"
-                        android:text="@string/label_invite" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -91,25 +93,27 @@
             <LinearLayout
                 android:id="@+id/row_profile_root"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_marginStart="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:gravity="start|center"
                 android:orientation="horizontal"
                 android:padding="@dimen/_10sdp"
-                android:theme="@style/brandAccent10Radius10">
+                android:theme="@style/darkLightGradientRadius10">
 
                 <ImageView
                     android:id="@+id/row_profile_icon"
-                    android:layout_width="@dimen/_40sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:src="@mipmap/ic_black_home" />
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@mipmap/ic_home_chimney" />
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_20sdp"
                     android:background="@android:color/transparent"
                     android:orientation="vertical">
 
@@ -117,29 +121,21 @@
                         android:id="@+id/row_profile_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_15sdp"
                         android:background="@android:color/transparent"
                         android:lineHeight="@dimen/_20ssp"
                         android:lineSpacingExtra="@dimen/_2ssp"
-                        android:text="@string/label_today"
-                        android:theme="@style/bodySmallSemiBoldSystemBlack" />
+                        android:text="@string/label_my_property"
+                        android:theme="@style/bodySmallSemiTitleSystemWhite" />
 
-                    <TextView
-                        android:id="@+id/row_profile_sub_title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_15sdp"
-                        android:text="@string/app_name"
-                        android:visibility="gone" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="@dimen/_30sdp"
-                    android:layout_height="@dimen/_34sdp"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:background="@android:color/transparent"
-                    android:src="@mipmap/ic_arrow" />
+                    android:src="@mipmap/ic_disclosure" />
 
             </LinearLayout>
 

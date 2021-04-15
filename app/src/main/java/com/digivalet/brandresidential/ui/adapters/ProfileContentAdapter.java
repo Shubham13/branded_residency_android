@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,6 +18,13 @@ import com.digivalet.brandresidential.helpers.CustomItemClickListener;
 import com.digivalet.brdata.dto.Profile;
 
 import java.util.List;
+
+import static com.digivalet.brandresidential.R.string.label_booking_history;
+import static com.digivalet.brandresidential.R.string.label_contact_info;
+import static com.digivalet.brandresidential.R.string.label_guest_history;
+import static com.digivalet.brandresidential.R.string.label_property_map;
+import static com.digivalet.brandresidential.R.string.label_residents;
+import static com.digivalet.brandresidential.R.string.label_service_directory;
 
 public class ProfileContentAdapter extends RecyclerView.Adapter<ProfileContentAdapter.ViewHolder> {
 
@@ -105,38 +113,99 @@ public class ProfileContentAdapter extends RecyclerView.Adapter<ProfileContentAd
             Profile.HeaderTitle.SubTitle item = list.get(position);
             TextView title = convertView.findViewById(R.id.profile_list_item_title);
             TextView rightTitle = convertView.findViewById(R.id.profile_list_item_title_right);
+            ImageView profile_list_item_image = convertView.findViewById(R.id.profile_list_item_image);
             title.setText(item.getTitle());
 
             rightTitle.setText(item.getTitle());
 
+            if(item.getType().equalsIgnoreCase(context.getString(label_residents))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_family_home);
+            }
+
+            if(item.getType().equalsIgnoreCase(context.getString(R.string.label_interests))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_interest);
+            }
+
+            if(item.getType().equalsIgnoreCase(context.getString(R.string.label_vehicles))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_vehicles);
+            }
+
+            if(item.getType().equalsIgnoreCase(context.getString(R.string.label_pets))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_pets);
+            }
+
+            if(item.getType().equalsIgnoreCase(context.getString(R.string.label_staff))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_staff);
+            }
+
+            if(item.getType().equalsIgnoreCase(context.getString(R.string.label_guests))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_guests);
+            }
+
+            if(item.getType().equalsIgnoreCase(context.getString(R.string.label_friends))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_friends);
+            }
+
             if (item.getType().equalsIgnoreCase(context.getString(R.string.label_services))) {
                 rightTitle.setVisibility(View.VISIBLE);
                 rightTitle.setText(item.getCount());
+                profile_list_item_image.setImageResource(R.mipmap.ic_services);
             }
 
             if (item.getType().equalsIgnoreCase(context.getString(R.string.label_dining))) {
                 rightTitle.setVisibility(View.VISIBLE);
                 rightTitle.setText(item.getCount());
+                profile_list_item_image.setImageResource(R.mipmap.ic_dining);
             }
 
             if (item.getType().equalsIgnoreCase(context.getString(R.string.label_fitness))) {
                 rightTitle.setVisibility(View.VISIBLE);
                 rightTitle.setText(item.getCount());
+                profile_list_item_image.setImageResource(R.mipmap.ic_fitness);
             }
 
             if (item.getType().equalsIgnoreCase(context.getString(R.string.label_activity))) {
                 rightTitle.setVisibility(View.VISIBLE);
                 rightTitle.setText(item.getCalCount());
+                profile_list_item_image.setImageResource(R.mipmap.ic_fitness);
             }
 
             if (item.getType().equalsIgnoreCase(context.getString(R.string.label_heart))) {
                 rightTitle.setVisibility(View.VISIBLE);
                 rightTitle.setText(item.getBpmCount());
+                profile_list_item_image.setImageResource(R.mipmap.ic_fitness);
+            }
+
+            if (item.getType().equalsIgnoreCase(context.getString(R.string.label_nutrition))) {
+                rightTitle.setVisibility(View.VISIBLE);
+                rightTitle.setText(item.getBpmCount());
+                profile_list_item_image.setImageResource(R.mipmap.ic_fitness);
             }
 
             if (item.getType().equalsIgnoreCase(context.getString(R.string.label_folio))) {
                 rightTitle.setVisibility(View.VISIBLE);
                 rightTitle.setText(item.getCount());
+                profile_list_item_image.setImageResource(R.mipmap.ic_folio);
+            }
+
+            if(item.getTitle().equalsIgnoreCase(context.getString(R.string.label_booking_history))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_book_history);
+            }
+
+            if(item.getTitle().equalsIgnoreCase(context.getString(R.string.label_guest_history))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_guest_history);
+            }
+
+            if(item.getTitle().equalsIgnoreCase(context.getString(R.string.label_service_directory))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_family_home);
+            }
+
+            if(item.getTitle().equalsIgnoreCase(context.getString(R.string.label_property_map))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_family_home);
+            }
+
+            if(item.getTitle().equalsIgnoreCase(context.getString(R.string.label_contact_info))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_family_home);
             }
 
             /*item click*/

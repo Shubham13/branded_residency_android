@@ -127,7 +127,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_guest_type"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -165,7 +165,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_date"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -228,7 +228,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_email"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -253,7 +253,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_address"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -289,7 +289,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_notes"
-                    style="@style/grayBorderRadius10"
+                    style="@style/darkLightFlatBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_108sdp"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -348,7 +348,7 @@
 
         <TextView
             android:id="@+id/save_btn"
-            style="@style/brandGradientRadius10"
+            style="@style/brandAccentGradientRadius100"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp"
             android:layout_alignParentBottom="true"
@@ -358,7 +358,7 @@
             android:layout_marginBottom="@dimen/_10sdp"
             android:gravity="center"
             android:text="@string/label_save_changes"
-            android:textAppearance="@style/bodyBaselineSemiBoldSystemWhite" />
+            android:textAppearance="@style/bodyBaselineSemiTitleSystemWhite" />
 
     </RelativeLayout>
 </layout>

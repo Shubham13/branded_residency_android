@@ -1,10 +1,13 @@
 package com.digivalet.brandresidential.ui.fragments.residents;
 
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 
 import com.digivalet.brandresidential.BR;
 import com.digivalet.brandresidential.R;
@@ -69,10 +72,13 @@ public class ResidentsFragment extends BaseFragment<FragmentResidentsBinding, Re
         residentViewModel.init();
     }
 
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void init() {
+        getActivity().getWindow().setStatusBarColor(getActivity().getColor(R.color.bar_tabbar_alpha_84));
         mViewDataBinding.residentsToolbar.toolbarRightImage.setImageResource(R.mipmap.ic_circle_add);
-        mViewDataBinding.residentsToolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(getActivity()).onBackPressed());
+        mViewDataBinding.residentsToolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(getActivity()).onBackPressed());
         residentViewModel.setResidentsData(getContext(), profileType);
     }
 

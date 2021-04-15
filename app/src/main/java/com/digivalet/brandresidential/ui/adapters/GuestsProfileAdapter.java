@@ -57,7 +57,7 @@ public class GuestsProfileAdapter extends RecyclerView.Adapter<GuestsProfileAdap
         ListAdapter guestSubTitleAdapter = new ListAdapter(context, list.get(position).getSubTitles());
         guestSubTitleAdapter.setOnClickListener(customItemClickListener);
         holder.rowGuestProfileHeaderBinding.rowGuestProfileList.setAdapter(guestSubTitleAdapter);
-        Paris.style(holder.rowGuestProfileHeaderBinding.rowGuestProfileHeader).apply(R.style.headlineH4SystemBlack);
+
     }
 
     @Override

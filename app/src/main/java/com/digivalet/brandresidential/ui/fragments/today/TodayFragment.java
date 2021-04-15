@@ -49,12 +49,11 @@ public class TodayFragment extends BaseFragment<FragmentTodayBinding, TodayViewM
     public void init() {
         mViewDataBinding.toolbar.toolbarTitle.setText(getString(R.string.menu_today));
         mViewDataBinding.toolbar.toolbarRightImage.setVisibility(View.INVISIBLE);
-        mViewDataBinding.toolbar.toolbarBackBtn.setVisibility(View.INVISIBLE);
+        mViewDataBinding.toolbar.toolbarLeftLayout.setVisibility(View.INVISIBLE);
     }
 
     @Override
     public void loadTheme() {
-        StyleBuilder.setStyleOnView(Host.tool_bar, mViewDataBinding.toolbar.toolbarDivider);
         StyleBuilder.setStyleOnText(Host.tool_bar, mViewDataBinding.toolbar.toolbarTitle);
     }
 }

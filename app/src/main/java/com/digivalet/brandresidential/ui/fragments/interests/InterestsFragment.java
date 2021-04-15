@@ -1,12 +1,15 @@
 package com.digivalet.brandresidential.ui.fragments.interests;
 
+import android.graphics.Color;
 import android.graphics.Rect;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSmoothScroller;
 import androidx.recyclerview.widget.RecyclerView;
@@ -58,12 +61,14 @@ public class InterestsFragment extends BaseFragment<FragmentInterestsBinding, In
         interestsViewModel.init();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void init() {
+        getActivity().getWindow().setStatusBarColor(getActivity().getColor(R.color.bar_tabbar_alpha_84));
         linearLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false);
         mViewDataBinding.interestToolbar.toolbarRightImage.setVisibility(View.GONE);
         mViewDataBinding.interestToolbar.toolbarTitle.setText(getString(R.string.label_interests));
-        mViewDataBinding.interestToolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(getActivity()).onBackPressed());
+        mViewDataBinding.interestToolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(getActivity()).onBackPressed());
         interestsViewModel.getInterestsData(getContext());
     }
 

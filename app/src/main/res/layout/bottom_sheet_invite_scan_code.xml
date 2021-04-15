@@ -19,7 +19,7 @@
 
         <LinearLayout
             android:id="@+id/bs_scan_code_root"
-            style="@style/brandGradientRadius10"
+            style="@style/darkBackgroundRadius10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="@drawable/ic_bottom_sheet_pin"
-                android:backgroundTint="@color/system_white_alpha_30" />
+                android:backgroundTint="@color/system_white_alpha_10" />
 
             <RelativeLayout
                 android:id="@+id/bs_scan_code_header_holder"
@@ -45,7 +45,7 @@
 
                 <TextView
                     android:id="@+id/label_scan"
-                    style="@style/bodyBaselineRegSystemWhite"
+                    style="@style/subXSmallMedBrandAccent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -73,7 +73,7 @@
 
                 <TextView
                     android:id="@+id/label_invite_friends"
-                    style="@style/bodyLargeMedSystemWhite"
+                    style="@style/headlineH3SystemWhite"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -82,7 +82,7 @@
 
                 <TextView
                     android:id="@+id/label_invite_message"
-                    style="@style/bodyBaselineRegSystemWhite"
+                    style="@style/bodySmallRegBrandSecoundry"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -100,6 +100,7 @@
                     android:layout_height="@dimen/_199sdp"
                     android:layout_gravity="center"
                     android:src="@mipmap/qrcode"
+                    app:tint="@color/brand_accent"
                     android:visibility="visible" />
 
                 <View
@@ -109,7 +110,6 @@
 
                 <RelativeLayout
                     android:id="@+id/row_send_invite"
-                    style="@style/systemWhiteRadius10Alpha30"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/_10sdp">
@@ -121,7 +121,7 @@
                         android:layout_centerVertical="true"
                         android:lineSpacingExtra="@dimen/_2ssp"
                         android:text="@string/label_send_invite"
-                        android:textAppearance="@style/bodyBaselineRegSystemWhite" />
+                        android:textAppearance="@style/bodySmallSemiTitleSystemWhite" />
 
                     <com.digivalet.utils.views.toggle.LabeledSwitch
                         android:layout_width="wrap_content"
@@ -131,15 +131,20 @@
                         android:layout_centerVertical="true"
                         android:textSize="0sp"
                         app:colorBorder="@android:color/transparent"
-                        app:colorOff="@color/system_black_alpha_20"
-                        app:colorOn="@color/system_green"
+                        app:colorOff="@color/dark_mediumflat"
+                        app:colorOn="@color/brand_accent"
                         app:on="true" />
 
                 </RelativeLayout>
 
+                <View
+                    style="@style/systemWhiteAlpha5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_10sdp" />
+
                 <RelativeLayout
                     android:id="@+id/row_call_message"
-                    style="@style/systemWhiteRadius10Alpha30"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -147,7 +152,7 @@
 
                     <TextView
                         android:id="@+id/label_call_msg"
-                        style="@style/bodyBaselineRegSystemWhite"
+                        android:textAppearance="@style/bodySmallSemiTitleSystemWhite"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -162,15 +167,20 @@
                         android:layout_centerVertical="true"
                         android:textSize="0sp"
                         app:colorBorder="@android:color/transparent"
-                        app:colorOff="@color/system_black_alpha_20"
-                        app:colorOn="@color/system_green"
+                        app:colorOff="@color/dark_mediumflat"
+                        app:colorOn="@color/brand_accent"
                         app:on="true" />
 
                 </RelativeLayout>
 
+                <View
+                    style="@style/systemWhiteAlpha5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_10sdp" />
+
                 <RelativeLayout
                     android:id="@+id/row_access"
-                    style="@style/systemWhiteRadius10Alpha30"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -178,7 +188,7 @@
 
                     <TextView
                         android:id="@+id/label_access_floor"
-                        style="@style/bodyBaselineRegSystemWhite"
+                        android:textAppearance="@style/bodySmallSemiTitleSystemWhite"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -194,8 +204,8 @@
                         android:layout_centerVertical="true"
                         android:textSize="0sp"
                         app:colorBorder="@android:color/transparent"
-                        app:colorOff="@color/system_black_alpha_20"
-                        app:colorOn="@color/system_green"
+                        app:colorOff="@color/dark_mediumflat"
+                        app:colorOn="@color/brand_accent"
                         app:on="false" />
 
                 </RelativeLayout>
@@ -207,7 +217,7 @@
 
                 <TextView
                     android:id="@+id/bs_scan_code_share_btn"
-                    style="@style/systemWhiteBorderRadius10"
+                    style="@style/brandAccentGradientRadius100"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_10sdp"
@@ -216,7 +226,7 @@
                     android:onClick="@{(view) -> inviteQRDialog.onShareCodeClick()}"
                     android:padding="@dimen/_15sdp"
                     android:text="@string/label_share_code"
-                    android:textAppearance="@style/bodyBaselineSemiBoldSystemWhite" />
+                    android:textAppearance="@style/buttonLargeDarkDarkFlat" />
 
             </LinearLayout>
 
