@@ -44,7 +44,6 @@
 
                 </LinearLayout>
 
-
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -76,6 +75,7 @@
                     android:layout_width="@dimen/_32sdp"
                     android:layout_height="@dimen/_32sdp"
                     android:gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
                     android:theme="@style/brandSecoundryCircle"
                     android:onClick="@{(view) -> profileVM.onInviteQrClick()}"
                     android:orientation="vertical">

@@ -366,7 +366,7 @@
 
     <style name="ButtonLarge">
         <item name="android:fontFamily">@font/galano_classic</item>
-        <item name="android:textStyle">normal</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textSize">20sp</item>
         <item name="android:letterSpacing">0.02</item>
     </style>
@@ -427,6 +427,11 @@
 
     <style name="bodySmallSemiTitleBrandSecoundry" parent="BodySmallSemiTitle">
         <item name="android:textColor">@color/gray_gray</item>
+    </style>
+
+    <style name="bodySmallSemiTitleHintBrandSecoundry" parent="BodySmallSemiTitle">
+        <item name="android:textColor">@color/system_white</item>
+        <item name="android:textColorHint">@color/gray_gray</item>
     </style>
 
     <!--Black-->

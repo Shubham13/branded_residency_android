@@ -219,12 +219,11 @@
                     android:id="@+id/bs_scan_code_share_btn"
                     style="@style/brandAccentGradientRadius100"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/_48sdp"
                     android:layout_marginBottom="@dimen/_10sdp"
                     android:gravity="center"
                     android:lineSpacingExtra="@dimen/_2ssp"
                     android:onClick="@{(view) -> inviteQRDialog.onShareCodeClick()}"
-                    android:padding="@dimen/_15sdp"
                     android:text="@string/label_share_code"
                     android:textAppearance="@style/buttonLargeDarkDarkFlat" />
 

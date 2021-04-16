@@ -2,22 +2,14 @@ package com.digivalet.brandresidential.ui.fragments.residentdetails;
 
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.os.Handler;
-import android.text.Editable;
 import android.text.TextUtils;
-import android.text.TextWatcher;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NavUtils;
 import androidx.core.widget.NestedScrollView;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.DialogFragment;
@@ -43,12 +35,8 @@ import com.digivalet.utils.MultiplePermissionsCallBack;
 import com.digivalet.utils.RecyclerItemClickListener;
 import com.digivalet.utils.base.BaseFragment;
 import com.digivalet.utils.dialogs.DVDialog;
-import com.digivalet.utils.imagepicker.bean.PickResult;
 import com.digivalet.utils.imagepicker.bundle.PickSetup;
 import com.digivalet.utils.imagepicker.dialog.PickImageDialog;
-import com.digivalet.utils.imagepicker.listeners.IPickResult;
-import com.digivalet.utils.styler.Host;
-import com.digivalet.utils.styler.StyleBuilder;
 import com.digivalet.brandresidential.databinding.RowIdentifictionBinding;
 import com.karumi.dexter.PermissionToken;
 

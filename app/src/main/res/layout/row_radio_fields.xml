@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:text="@string/label_gender"
-                android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                android:theme="@style/bodySmallSemiTitleBrandSecoundry" />
 
 
             <RadioGroup
@@ -38,7 +38,7 @@
                     android:layout_weight="0.5"
                     android:checked="true"
                     android:text="@string/label_male"
-                    android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                    android:textAppearance="@style/bodySmallSemiTitleBrandSecoundry"
                     android:theme="@style/brandAccentRadioButton" />
 
                 <RadioButton
@@ -48,7 +48,7 @@
                     android:layout_weight="0.5"
                     android:checked="false"
                     android:text="@string/label_female"
-                    android:textAppearance="@style/bodyBaselineRegSystemBlack"
+                    android:textAppearance="@style/bodySmallSemiTitleBrandSecoundry"
                     android:theme="@style/brandAccentRadioButton" />
 
             </RadioGroup>

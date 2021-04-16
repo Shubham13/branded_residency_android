@@ -70,8 +70,23 @@
         <item name="android:background">@drawable/dark_background_radius_10</item>
     </style>
 
+    <style name="darkMediumFlatRadius10">
+        <item name="android:background">@drawable/dark_medium_flat_radius_10</item>
+    </style>
+
     <style name="darkLightFlatBorderRadius10">
         <item name="android:background">@drawable/dark_light_flat_border_radius_10</item>
+    </style>
+
+    <style name="darkLightFlatOutlinedBorderRadius10" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="hintTextColor">@color/gray_gray</item>
+        <item name="boxStrokeColor">@color/dark_lightflat</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="android:enabled">true</item>
+        <item name="android:textColorHint">@color/gray_gray</item>
     </style>
 
     <style name="systemWhiteBorderRadius10">
