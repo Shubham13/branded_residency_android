@@ -62,7 +62,7 @@ public class GuestsProfileActivity extends BaseActivity<FragmentGuestsProfileBin
     public void init() {
         mViewDataBinding.guestsProfileToolbar.toolbarRightImage.setVisibility(View.GONE);
         mViewDataBinding.guestsProfileToolbar.toolbarTitle.setText(getString(R.string.label_guests_profile));
-        mViewDataBinding.guestsProfileToolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
+        mViewDataBinding.guestsProfileToolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
         guestsProfileViewModel.getGuestsData(this);
     }
 

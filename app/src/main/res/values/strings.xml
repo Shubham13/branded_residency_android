@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name" translatable="false">BrandedResidences</string>
 
+    <!--activity Login-->
+    <string name="label_login">Login</string>
+    <string name="label_mobile_number">Mobile Number</string>
+    <string name="label_verify">Verify</string>
+    <string name="label_enter_code">Enter 6-digit Verification Code</string>
+    <string name="label_code_sent">Code sent to mobile number ending in 1234</string>
+    <string name="label_code_invalid">Code Invalid. Try again</string>
+    <string name="label_resend_code">Resend Code</string>
+
     <!--activity dashboard-->
     <string name="menu_today">@string/label_today</string>
     <string name="menu_book">Book</string>
@@ -109,6 +118,9 @@
     <string name="label_continue">Continue</string>
     <string name="label_start_date">Start Date</string>
     <string name="label_allow_until">Allow Until</string>
+    <string name="label_fav">Favorites</string>
+    <string name="label_see_all">See All</string>
+    <string name="label_recent">Recent</string>
 
     <!--invite scan code-->
     <string name="label_scan">Scan Code</string>

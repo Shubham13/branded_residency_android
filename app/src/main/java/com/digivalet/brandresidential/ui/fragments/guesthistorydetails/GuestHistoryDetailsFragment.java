@@ -56,6 +56,7 @@ public class GuestHistoryDetailsFragment extends BaseFragment<FragmentGuestHisto
 
     @Override
     public void init() {
+        mViewDataBinding.toolbar.toolbarRightLayout.setVisibility(View.GONE);
         mViewDataBinding.toolbar.toolbarRightImage.setVisibility(View.GONE);
         mViewDataBinding.toolbar.toolbarRightTitle.setVisibility(View.VISIBLE);
         mViewDataBinding.toolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(getActivity()).onBackPressed());

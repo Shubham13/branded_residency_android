@@ -51,7 +51,7 @@ public class GuestHistoryActivity extends BaseActivity<FragmentGuestHistoryBindi
     public void init() {
         mViewDataBinding.guestHistoryToolbar.toolbarRightImage.setVisibility(View.GONE);
         mViewDataBinding.guestHistoryToolbar.toolbarTitle.setText(getString(R.string.label_guest_history));
-        mViewDataBinding.guestHistoryToolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
+        mViewDataBinding.guestHistoryToolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
         guestHistoryViewModel.getGuestHistoryData(this);
     }
 

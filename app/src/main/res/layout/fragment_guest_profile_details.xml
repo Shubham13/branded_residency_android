@@ -32,7 +32,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_name"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -46,7 +46,7 @@
                         android:layout_marginStart="@dimen/_10sdp"
                         android:lineSpacingExtra="@dimen/_2ssp"
                         android:text="@string/label_name"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_name"
@@ -54,13 +54,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/row_phone"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -75,7 +75,7 @@
                         android:layout_marginStart="@dimen/_10sdp"
                         android:lineSpacingExtra="@dimen/_2ssp"
                         android:text="@string/label_phone"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_phone"
@@ -83,13 +83,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/row_gender"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -104,7 +104,7 @@
                         android:layout_marginStart="@dimen/_10sdp"
                         android:lineSpacingExtra="@dimen/_2ssp"
                         android:text="@string/label_gender"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_gender"
@@ -112,7 +112,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 
@@ -123,11 +123,11 @@
                     android:layout_marginTop="@dimen/_24sdp"
                     android:text="@string/label_visit"
                     android:textAllCaps="true"
-                    android:theme="@style/subXSmallSemiSystemBlackAlpha70" />
+                    android:theme="@style/subXxSmallMedBrandAccent" />
 
                 <LinearLayout
                     android:id="@+id/row_guest_type"
-                    style="@style/darkLightFlatBorderRadius10"
+                    android:theme="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -138,7 +138,7 @@
 
                     <TextView
                         android:id="@+id/label_guest_type"
-                        style="@style/bodyBaselineRegSystemBlack"
+                        style="@style/bodySmallSemiTitleSystemWhite"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -148,7 +148,7 @@
 
                     <TextView
                         android:id="@+id/edit_guest_type"
-                        style="@style/bodyBaselineRegBrandAccent"
+                        style="@style/bodySmallRegBrandSecoundry"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/_10sdp"
@@ -156,8 +156,8 @@
                         android:visibility="visible" />
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
                         android:src="@mipmap/ic_disclosure" />
 
@@ -165,7 +165,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_date"
-                    style="@style/darkLightFlatBorderRadius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -176,7 +176,7 @@
 
                     <TextView
                         android:id="@+id/label_date"
-                        style="@style/bodyBaselineRegSystemBlack"
+                        style="@style/bodySmallSemiTitleSystemWhite"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -186,7 +186,7 @@
 
                     <TextView
                         android:id="@+id/edit_date"
-                        style="@style/bodyBaselineRegBrandAccent"
+                        style="@style/bodySmallRegBrandSecoundry"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/_10sdp"
@@ -194,8 +194,8 @@
                         android:visibility="visible" />
 
                     <ImageView
-                        android:layout_width="@dimen/_30sdp"
-                        android:layout_height="@dimen/_30sdp"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
                         android:src="@mipmap/ic_disclosure" />
 
@@ -215,28 +215,26 @@
                         android:layout_weight="1"
                         android:text="@string/label_additional_info"
                         android:textAllCaps="true"
-                        android:theme="@style/subXSmallSemiSystemBlackAlpha70" />
+                        android:theme="@style/subXxSmallMedBrandAccent" />
 
                     <TextView
                         android:id="@+id/label_optional"
-                        style="@style/subXSmallSystemBlackAlpha30"
+                        style="@style/subXSmallMedSystemWhite"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/label_optional" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/row_email"
-                    style="@style/darkLightFlatBorderRadius10"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_text_input"
+                    style="@style/darkLightFlatOutlinedBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_10sdp">
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:hint="@string/label_email">
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edit_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -245,37 +243,32 @@
                         android:hint="@string/label_email"
                         android:inputType="textEmailAddress|textVisiblePassword"
                         android:singleLine="true"
-                        android:textAppearance="@style/bodyBaselineRegSystemBlack"
-                        android:textColorHint="@color/system_black"
+                        android:textAppearance="@style/bodySmallSemiTitleSystemWhite"
+                        android:textColor="@color/White"
                         android:theme="@style/brandAccentEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/row_address"
-                    style="@style/darkLightFlatBorderRadius10"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/address_text_input"
+                    style="@style/darkLightFlatOutlinedBorderRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_10sdp">
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:hint="@string/label_address">
 
-
-                    <EditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edit_address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@null"
                         android:cursorVisible="true"
-                        android:hint="@string/label_address"
                         android:inputType="text|textVisiblePassword"
                         android:singleLine="true"
-                        android:textAppearance="@style/bodyBaselineRegSystemBlack"
-                        android:textColorHint="@color/system_black"
+                        android:textAppearance="@style/bodySmallSemiTitleSystemWhite"
+                        android:textColor="@color/White"
                         android:theme="@style/brandAccentEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                </LinearLayout>
 
                 <TextView
                     android:id="@+id/label_notes_to_front_desk"
@@ -285,7 +278,7 @@
                     android:alpha="0.7"
                     android:text="@string/label_notes_to_front_desk"
                     android:textAllCaps="true"
-                    android:theme="@style/subXSmallSemiSystemBlackAlpha70" />
+                    android:theme="@style/subXxSmallMedBrandAccent" />
 
                 <LinearLayout
                     android:id="@+id/row_notes"
@@ -358,7 +351,7 @@
             android:layout_marginBottom="@dimen/_10sdp"
             android:gravity="center"
             android:text="@string/label_save_changes"
-            android:textAppearance="@style/bodyBaselineSemiTitleSystemWhite" />
+            android:textAppearance="@style/buttonLargeDarkDarkFlat" />
 
     </RelativeLayout>
 </layout>

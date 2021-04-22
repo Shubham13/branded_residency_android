@@ -31,7 +31,7 @@
 
                 <LinearLayout
                     android:id="@+id/row_name"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -44,7 +44,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/label_name"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_name"
@@ -52,13 +52,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/row_phone"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -72,7 +72,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/label_phone"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_phone"
@@ -80,13 +80,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/row_gender"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -100,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/label_gender"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_gender"
@@ -108,7 +108,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 
@@ -120,11 +120,11 @@
                     android:layout_marginTop="@dimen/_24sdp"
                     android:text="@string/label_visit"
                     android:textAllCaps="true"
-                    android:theme="@style/subXSmallSemiSystemBlackAlpha70" />
+                    android:theme="@style/subXxSmallMedBrandAccent" />
 
                 <LinearLayout
                     android:id="@+id/row_guest_type"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -138,7 +138,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/label_guest_type"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_guest_type"
@@ -146,13 +146,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/row_date_visited"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -166,7 +166,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/label_date_visited"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_date_visited"
@@ -174,13 +174,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/row_time"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -194,7 +194,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/label_time"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_time"
@@ -202,13 +202,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/row_approved"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -222,7 +222,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/label_approved_by"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_approved_by"
@@ -230,7 +230,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 
@@ -241,11 +241,11 @@
                     android:layout_marginTop="@dimen/_24sdp"
                     android:text="@string/label_additional_info"
                     android:textAllCaps="true"
-                    android:theme="@style/subXSmallSemiSystemBlackAlpha70" />
+                    android:theme="@style/subXxSmallMedBrandAccent" />
 
                 <LinearLayout
                     android:id="@+id/row_email"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -259,7 +259,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/label_email"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_email"
@@ -267,13 +267,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/row_address"
-                    style="@style/brandAccent4Radius10"
+                    style="@style/darkDarkGradientRadius10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -288,7 +288,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/label_address"
-                        android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                        android:theme="@style/bodyBaselineSemiTitleBrandSecoundry" />
 
                     <TextView
                         android:id="@+id/edit_address"
@@ -296,7 +296,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:theme="@style/bodyBaselineRegSystemBlack" />
+                        android:theme="@style/bodyBaselineSemiTitleSystemWhite" />
 
                 </LinearLayout>
 

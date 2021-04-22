@@ -3,7 +3,7 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/row_spinner_root"
-        style="@style/brandAccent4Radius10"
+        style="@style/darkDarkGradientRadius10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
@@ -13,7 +13,7 @@
 
         <TextView
             android:id="@+id/row_spinner_title"
-            style="@style/bodyBaselineRegSystemBlack"
+            style="@style/bodyBaselineSemiTitleSystemWhite"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
@@ -22,7 +22,7 @@
 
         <LinearLayout
             android:id="@+id/row_time"
-            style="@style/grayLighterRadius10"
+            style="@style/darkDarkGradientRadius10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_5sdp"
@@ -34,7 +34,7 @@
 
             <TextView
                 android:id="@+id/edit_time"
-                style="@style/bodySmallSemiBoldSystemBlack"
+                style="@style/bodySmallSemiTitleSystemWhite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 

@@ -16,24 +16,28 @@
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_above="@+id/navigation"
             app:layout_constraintBottom_toTopOf="@id/navigation"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/navigation"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:theme="@style/Widget.BottomNavigationView"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@drawable/drawable_rectangle"
+            app:itemHorizontalTranslationEnabled="false"
             app:itemIconTint="@drawable/nav_icon_color"
-            app:itemTextAppearanceActive="@style/tab10PtSystemBlack"
+            app:itemTextAppearanceActive="@style/TabTabTiny"
+            app:itemTextAppearanceInactive="@style/TabTabTiny"
             app:itemTextColor="@drawable/nav_text_color"
-            app:itemTextAppearanceInactive="@style/tab10PtSystemBlackAlpha60"
             app:labelVisibilityMode="labeled"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/container"
             app:menu="@menu/bottom_navigation" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

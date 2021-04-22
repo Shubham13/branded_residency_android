@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/label_privileges"
-        style="@style/subXSmallSemiSystemBlackAlpha70"
+        style="@style/subXxSmallMedBrandAccent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_20sdp"
@@ -17,7 +17,7 @@
 
     <LinearLayout
         android:id="@+id/row_checkbox"
-        style="@style/darkLightFlatBorderRadius10"
+        style="@style/darkDarkGradientRadius10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
@@ -34,7 +34,7 @@
             android:button="@drawable/checkbox_selector"
             android:paddingStart="@dimen/_10sdp"
             android:text="@string/label_allow_to_guest"
-            android:textAppearance="@style/bodyBaselineRegSystemBlack" />
+            style="@style/bodyBaselineSemiTitleSystemWhite" />
 
     </LinearLayout>
 

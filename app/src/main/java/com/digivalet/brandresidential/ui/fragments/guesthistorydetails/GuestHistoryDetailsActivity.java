@@ -53,7 +53,7 @@ public class GuestHistoryDetailsActivity extends BaseActivity<FragmentGuestHisto
         data= (GuestHistorySubTitle) getIntent().getSerializableExtra("data");
         mViewDataBinding.toolbar.toolbarRightImage.setVisibility(View.GONE);
         mViewDataBinding.toolbar.toolbarRightTitle.setVisibility(View.VISIBLE);
-        mViewDataBinding.toolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
+        mViewDataBinding.toolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
         mViewDataBinding.toolbar.toolbarRightTitle.setText(getString(R.string.label_re_register));
         mViewDataBinding.toolbar.toolbarTitle.setText(data.getTitle());
         mViewDataBinding.editName.setText(data.getTitle());

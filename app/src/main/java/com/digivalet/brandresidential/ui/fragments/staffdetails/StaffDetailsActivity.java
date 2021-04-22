@@ -82,7 +82,7 @@ public class StaffDetailsActivity extends BaseActivity<FragmentResidentDetailsBi
         data = (StaffData) getIntent().getSerializableExtra("data");
         mode = (ProfileMode) getIntent().getSerializableExtra("mode");
         mViewDataBinding.toolbar.toolbarRightImage.setVisibility(View.GONE);
-        mViewDataBinding.toolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
+        mViewDataBinding.toolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
 
         /*add scroll listener on nested scroll*/
         final Rect scrollBounds = new Rect();

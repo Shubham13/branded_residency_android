@@ -59,7 +59,7 @@ public class InterestsActivity extends BaseActivity<FragmentInterestsBinding, In
         linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         mViewDataBinding.interestToolbar.toolbarRightImage.setVisibility(View.GONE);
         mViewDataBinding.interestToolbar.toolbarTitle.setText(getString(R.string.label_interests));
-        mViewDataBinding.interestToolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
+        mViewDataBinding.interestToolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
         interestsViewModel.getInterestsData(this);
     }
 

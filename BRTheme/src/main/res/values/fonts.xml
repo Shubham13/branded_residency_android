@@ -421,6 +421,10 @@
         <item name="android:textColor">@color/gray_gray</item>
     </style>
 
+    <style name="subXSmallSystemRed" parent="SubXSmall">
+        <item name="android:textColor">@color/system_red</item>
+    </style>
+
     <style name="buttonLargeDarkDarkFlat" parent="ButtonLarge">
         <item name="android:textColor">@color/dark_darkflat</item>
     </style>
@@ -429,9 +433,21 @@
         <item name="android:textColor">@color/gray_gray</item>
     </style>
 
+    <style name="bodyBaselineSemiTitleBrandSecoundry" parent="BodyBaselineSemiTitle">
+        <item name="android:textColor">@color/gray_gray</item>
+    </style>
+
     <style name="bodySmallSemiTitleHintBrandSecoundry" parent="BodySmallSemiTitle">
         <item name="android:textColor">@color/system_white</item>
         <item name="android:textColorHint">@color/gray_gray</item>
+    </style>
+
+    <style name="buttonNavTitleBrandSecoundry" parent="ButtonNavTitle">
+        <item name="android:textColor">@color/gray_gray</item>
+    </style>
+
+    <style name="bodyBaselineRegBrandSecoundry" parent="BodyBaseline">
+        <item name="android:textColor">@color/gray_gray</item>
     </style>
 
     <!--Black-->
@@ -553,6 +569,10 @@
     </style>
 
     <style name="headlineH4SystemWhite" parent="HeadlineH4">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="headlineH2SystemWhite" parent="HeadlineH2">
         <item name="android:textColor">@color/system_white</item>
     </style>
 

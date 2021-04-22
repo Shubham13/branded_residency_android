@@ -63,9 +63,10 @@ public class GuestProfileDetailsActivity extends BaseActivity<FragmentGuestProfi
     @Override
     public void init() {
         data = (GuestProfileSubTitle) getIntent().getSerializableExtra("data");
+        mViewDataBinding.toolbar.toolbarRightLayout.setVisibility(View.GONE);
         mViewDataBinding.toolbar.toolbarRightImage.setVisibility(View.GONE);
         mViewDataBinding.toolbar.toolbarRightTitle.setVisibility(View.VISIBLE);
-        mViewDataBinding.toolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
+        mViewDataBinding.toolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
         mViewDataBinding.toolbar.toolbarRightTitle.setText(getString(R.string.label_delete));
         mViewDataBinding.toolbar.toolbarTitle.setText(data.getTitle());
         mViewDataBinding.editName.setText(data.getTitle());

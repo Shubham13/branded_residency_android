@@ -69,7 +69,7 @@ public class ResidentsActivity extends BaseActivity<FragmentResidentsBinding, Re
     @Override
     public void init() {
         mViewDataBinding.residentsToolbar.toolbarRightImage.setImageResource(R.mipmap.ic_circle_add);
-        mViewDataBinding.residentsToolbar.toolbarBackBtn.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
+        mViewDataBinding.residentsToolbar.toolbarLeftLayout.setOnClickListener(e -> Objects.requireNonNull(this).onBackPressed());
         profileType = (ProfileType) getIntent().getSerializableExtra("type");
         residentViewModel.setResidentsData(this, profileType);
     }

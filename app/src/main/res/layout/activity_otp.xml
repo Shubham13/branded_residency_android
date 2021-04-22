@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_enter_code"
+            style="@style/headlineH2SystemWhite"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/label_code_sent"
+            style="@style/bodyBaselineRegBrandSecoundry"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_code_invalid"
+            style="@style/subXSmallSystemRed"
+            android:layout_marginTop="@dimen/_16sdp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_26sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_26sdp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="1"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:textColor="@color/gray_gray"
+                android:singleLine="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                style="@style/darkLightFlatBorderRadius10"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_26sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_26sdp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="1"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColor="@color/gray_gray"
+                android:layout_marginEnd="@dimen/_10sdp"
+                style="@style/darkLightFlatBorderRadius10"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_26sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_26sdp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="1"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColor="@color/gray_gray"
+                android:layout_marginEnd="@dimen/_10sdp"
+                style="@style/darkLightFlatBorderRadius10"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_26sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_26sdp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="1"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColor="@color/gray_gray"
+                android:layout_marginEnd="@dimen/_10sdp"
+                style="@style/darkLightFlatBorderRadius10"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_26sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_26sdp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="1"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColor="@color/gray_gray"
+                android:layout_marginEnd="@dimen/_10sdp"
+                style="@style/darkLightFlatBorderRadius10"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_26sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_26sdp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="1"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColor="@color/gray_gray"
+                android:layout_marginEnd="@dimen/_10sdp"
+                style="@style/darkLightFlatBorderRadius10"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/verify_btn"
+            style="@style/brandAccentGradientRadius100"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/label_verify"
+            android:textAppearance="@style/buttonLargeDarkDarkFlat" />
+
+        <TextView
+            android:id="@+id/resend_code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_resend_code"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_20sdp"
+            style="@style/buttonNavTitleBrandSecoundry"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>
