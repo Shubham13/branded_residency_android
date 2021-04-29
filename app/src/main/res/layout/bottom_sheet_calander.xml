@@ -18,7 +18,7 @@
             android:background="@drawable/ic_bottom_sheet_pin"
             android:backgroundTint="@color/gray_gray" />
 
-        <com.digivalet.brandresidential.ui.views.calender.Calender
+        <com.paragon.sensonic.ui.views.calender.Calender
             android:id="@+id/bottom_sheet_calender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

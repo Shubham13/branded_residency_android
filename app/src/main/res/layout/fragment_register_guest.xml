@@ -5,7 +5,7 @@
 
         <variable
             name="registerGuestVM"
-            type="com.digivalet.brandresidential.ui.fragments.registerguest.RegisterGuestViewModel" />
+            type="com.paragon.sensonic.ui.fragments.registerguest.RegisterGuestViewModel" />
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -51,7 +51,7 @@
                     android:padding="@dimen/_10sdp"
                     android:visibility="gone">
 
-                    <com.digivalet.utils.views.CircularImageView
+                    <com.paragon.utils.views.CircularImageView
                         android:id="@+id/profile_image_view"
                         android:layout_width="@dimen/_40sdp"
                         android:layout_height="@dimen/_40sdp"
@@ -342,7 +342,7 @@
                         android:text="@string/label_accompany_guest"
                         android:textAppearance="@style/bodyBaselineRegSystemBlack" />
 
-                    <com.digivalet.brandresidential.ui.views.counterview.CounterView
+                    <com.paragon.sensonic.ui.views.counterview.CounterView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical" />

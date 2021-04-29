@@ -21,7 +21,7 @@
             android:layout_marginBottom="@dimen/_14sdp"
             android:theme="@style/headlineH4SystemWhite" />
 
-        <com.digivalet.utils.views.NonScrollListView
+        <com.paragon.utils.views.NonScrollListView
             android:id="@+id/profile_item_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

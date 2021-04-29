@@ -5,7 +5,7 @@
 
         <variable
             name="activityVM"
-            type="com.digivalet.brandresidential.ui.fragments.activity.ActivityViewModel" />
+            type="com.paragon.sensonic.ui.fragments.activity.ActivityViewModel" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

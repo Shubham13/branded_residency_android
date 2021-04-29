@@ -6,7 +6,7 @@
 
         <variable
             name="guestHistoryVM"
-            type="com.digivalet.brandresidential.ui.fragments.guesthistory.GuestHistoryViewModel" />
+            type="com.paragon.sensonic.ui.fragments.guesthistory.GuestHistoryViewModel" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

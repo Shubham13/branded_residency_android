@@ -5,7 +5,7 @@
 
         <variable
             name="inviteQRDialog"
-            type="com.digivalet.brandresidential.ui.bottomsheets.InviteQRBottomDialog" />
+            type="com.paragon.sensonic.ui.bottomsheets.InviteQRBottomDialog" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -123,7 +123,7 @@
                         android:text="@string/label_send_invite"
                         android:textAppearance="@style/bodySmallSemiTitleSystemWhite" />
 
-                    <com.digivalet.utils.views.toggle.LabeledSwitch
+                    <com.paragon.utils.views.toggle.LabeledSwitch
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -159,7 +159,7 @@
                         android:lineSpacingExtra="@dimen/_2ssp"
                         android:text="@string/label_call_msg" />
 
-                    <com.digivalet.utils.views.toggle.LabeledSwitch
+                    <com.paragon.utils.views.toggle.LabeledSwitch
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -195,7 +195,7 @@
                         android:lineSpacingExtra="@dimen/_2ssp"
                         android:text="@string/label_access_floor" />
 
-                    <com.digivalet.utils.views.toggle.LabeledSwitch
+                    <com.paragon.utils.views.toggle.LabeledSwitch
                         android:id="@+id/toggleSwitch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

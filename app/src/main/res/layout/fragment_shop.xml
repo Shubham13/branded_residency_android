@@ -5,7 +5,7 @@
 
         <variable
             name="shopVM"
-            type="com.digivalet.brandresidential.ui.fragments.shop.ShopViewModel" />
+            type="com.paragon.sensonic.ui.fragments.shop.ShopViewModel" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

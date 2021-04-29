@@ -5,7 +5,7 @@
 
         <variable
             name="interestsVM"
-            type="com.digivalet.brandresidential.ui.fragments.interests.InterestsViewModel" />
+            type="com.paragon.sensonic.ui.fragments.interests.InterestsViewModel" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

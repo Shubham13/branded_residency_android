@@ -25,7 +25,7 @@
             android:gravity="start|center"
             android:layout_marginTop="@dimen/_16sdp">
 
-            <com.digivalet.utils.views.CircularImageView
+            <com.paragon.utils.views.CircularImageView
                 android:id="@+id/profile_image_view"
                 android:layout_width="@dimen/_40sdp"
                 android:layout_height="@dimen/_40sdp"

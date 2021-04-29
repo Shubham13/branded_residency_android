@@ -74,7 +74,7 @@
                     android:layout_weight="1"
                     android:text="@string/label_every" />
 
-                <com.digivalet.brandresidential.ui.views.counterview.CounterView
+                <com.paragon.sensonic.ui.views.counterview.CounterView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical" />

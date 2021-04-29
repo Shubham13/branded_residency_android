@@ -5,23 +5,23 @@
 
         <variable
             name="residentDetailsVM"
-            type="com.digivalet.brandresidential.ui.fragments.residentdetails.ResidentDetailsViewModel" />
+            type="com.paragon.sensonic.ui.fragments.residentdetails.ResidentDetailsViewModel" />
 
         <variable
             name="friendDetailsVM"
-            type="com.digivalet.brandresidential.ui.fragments.frienddetails.FriendDetailsViewModel" />
+            type="com.paragon.sensonic.ui.fragments.frienddetails.FriendDetailsViewModel" />
 
         <variable
             name="staffDetailsVM"
-            type="com.digivalet.brandresidential.ui.fragments.staffdetails.StaffDetailsViewModel" />
+            type="com.paragon.sensonic.ui.fragments.staffdetails.StaffDetailsViewModel" />
 
         <variable
             name="petDetailsVM"
-            type="com.digivalet.brandresidential.ui.fragments.petdetails.PetDetailsViewModel" />
+            type="com.paragon.sensonic.ui.fragments.petdetails.PetDetailsViewModel" />
 
         <variable
             name="vehiclesDetailsVM"
-            type="com.digivalet.brandresidential.ui.fragments.vehiclesdetails.VehiclesDetailsViewModel" />
+            type="com.paragon.sensonic.ui.fragments.vehiclesdetails.VehiclesDetailsViewModel" />
 
     </data>
 

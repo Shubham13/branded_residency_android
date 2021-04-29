@@ -6,7 +6,7 @@
 
         <variable
             name="bookVisitorVM"
-            type="com.digivalet.brandresidential.ui.fragments.bookvisitor.BookVisitorViewModel" />
+            type="com.paragon.sensonic.ui.fragments.bookvisitor.BookVisitorViewModel" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

@@ -5,7 +5,7 @@
 
         <variable
             name="weeklyVM"
-            type="com.digivalet.brandresidential.ui.fragments.sheetfragments.WeeklyFragment" />
+            type="com.paragon.sensonic.ui.fragments.sheetfragments.WeeklyFragment" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

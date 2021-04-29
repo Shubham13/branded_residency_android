@@ -6,7 +6,7 @@
 
         <variable
             name="profileVM"
-            type="com.digivalet.brandresidential.ui.fragments.profile.ProfileViewModel" />
+            type="com.paragon.sensonic.ui.fragments.profile.ProfileViewModel" />
     </data>
 
     <androidx.core.widget.NestedScrollView

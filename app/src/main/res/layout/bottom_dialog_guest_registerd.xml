@@ -5,7 +5,7 @@
 
         <variable
             name="registeredBottomVM"
-            type="com.digivalet.brandresidential.ui.bottomsheets.GuestRegisteredBottomDialogFragment" />
+            type="com.paragon.sensonic.ui.bottomsheets.GuestRegisteredBottomDialogFragment" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -59,7 +59,7 @@
                     android:layout_height="@dimen/_180sdp"
                     android:src="@mipmap/ic_circle_black_guest" />
 
-                <com.digivalet.utils.views.CircularImageView
+                <com.paragon.utils.views.CircularImageView
                     android:layout_width="@dimen/_48sdp"
                     android:layout_height="@dimen/_48sdp"
                     android:layout_alignParentEnd="true"

@@ -6,7 +6,7 @@
 
         <variable
             name="dashboardVM"
-            type="com.digivalet.brandresidential.ui.activities.dashboard.DashboardViewModel" />
+            type="com.paragon.sensonic.ui.activities.dashboard.DashboardViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -5,7 +5,7 @@
 
         <variable
             name="profileDetailVM"
-            type="com.digivalet.brandresidential.ui.fragments.guestprofiledetails.GuestProfileDetailsViewModel" />
+            type="com.paragon.sensonic.ui.fragments.guestprofiledetails.GuestProfileDetailsViewModel" />
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

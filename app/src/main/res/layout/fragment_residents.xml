@@ -6,7 +6,7 @@
 
         <variable
             name="residentsVM"
-            type="com.digivalet.brandresidential.ui.fragments.residents.ResidentsViewModel" />
+            type="com.paragon.sensonic.ui.fragments.residents.ResidentsViewModel" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
