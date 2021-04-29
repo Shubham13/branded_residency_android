@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "192765194145",
+    "project_id": "sensonic-ab038",
+    "storage_bucket": "sensonic-ab038.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192765194145:android:f6b6893d13ae3096be25e0",
+        "android_client_info": {
+          "package_name": "com.paragon.sensonic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192765194145-2fmphd546knc6g8av020m9l92fsisss2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUDZzEtEdiVVjv58HMD0VYFFLuCdxFEM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192765194145-2fmphd546knc6g8av020m9l92fsisss2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
