@@ -46,6 +46,9 @@ public class TodayFragment extends BaseFragment<FragmentTodayBinding, TodayViewM
 
     @Override
     public void init() {
+        getBaseActivity().setTitle(getString(R.string.label_upcoming));
+        getBaseActivity().getSupportActionBar().setDisplayShowTitleEnabled(false);
+
         mViewDataBinding.toolbar.toolbarTitle.setText(getString(R.string.menu_today));
         mViewDataBinding.toolbar.toolbarRightImage.setVisibility(View.INVISIBLE);
         mViewDataBinding.toolbar.toolbarLeftLayout.setVisibility(View.INVISIBLE);

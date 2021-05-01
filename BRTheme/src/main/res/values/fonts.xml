@@ -446,6 +446,11 @@
         <item name="android:textColor">@color/gray_gray</item>
     </style>
 
+    <style name="buttonNavTitleBrandSecoundryEditText" parent="ButtonNavTitle">
+        <item name="android:editTextColor">@color/gray_gray</item>
+        <item name="android:textColorHint">@color/gray_gray</item>
+    </style>
+
     <style name="bodyBaselineRegBrandSecoundry" parent="BodyBaseline">
         <item name="android:textColor">@color/gray_gray</item>
     </style>
@@ -540,6 +545,10 @@
 
     <style name="tab10PtSystemBlack" parent="TabTabTiny">
         <item name="android:textColor">@color/system_black</item>
+    </style>
+
+    <style name="subXSmallMedBrandLight" parent="SubXSmallMed">
+        <item name="android:textColor">@color/brand_light</item>
     </style>
 
     <!--White-->

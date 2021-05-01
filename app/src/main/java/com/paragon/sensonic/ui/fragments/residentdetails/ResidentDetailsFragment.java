@@ -14,6 +14,7 @@ import androidx.core.widget.NestedScrollView;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.DialogFragment;
 
+
 import com.paragon.sensonic.BR;
 import com.paragon.sensonic.R;
 import com.paragon.sensonic.databinding.FragmentResidentDetailsBinding;

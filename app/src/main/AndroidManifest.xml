@@ -38,7 +38,7 @@
         </activity>
 
         <activity
-            android:name="com.paragon.sensonic.ui.activities.login.OtpActivity"
+            android:name="com.paragon.sensonic.ui.activities.otp.OtpActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
         </activity>

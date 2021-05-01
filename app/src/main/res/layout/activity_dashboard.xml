@@ -9,17 +9,101 @@
             type="com.paragon.sensonic.ui.activities.dashboard.DashboardViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bar_tabbar"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:toolbarId="@+id/toolbar">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:expandedTitleGravity="bottom|center_horizontal"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_email"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        style="@style/headlineH2SystemWhite"/>
+
+                    <LinearLayout
+                        android:id="@+id/toolbar_right_image"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:theme="@style/brandAccentCircle">
+
+                        <ImageView
+                            android:id="@+id/profile_image_view"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:src="@mipmap/ic_profile"/>
+
+                    </LinearLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <TextView
+                    android:id="@+id/toolbar_center_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_email"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    style="@style/buttonNavTitleSystemWhite"/>
+
+                <LinearLayout
+                    android:id="@+id/toolbar_center_right_image"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center|end"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:theme="@style/brandAccentCircle">
+
+                    <ImageView
+                        android:id="@+id/toolbar_right_image_view"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:src="@mipmap/ic_profile"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
 
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@+id/navigation"
-            app:layout_constraintBottom_toTopOf="@id/navigation"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_180sdp"/>
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -37,8 +121,7 @@
             app:itemTextAppearanceInactive="@style/TabTabTiny"
             app:itemTextColor="@drawable/nav_text_color"
             app:labelVisibilityMode="labeled"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:menu="@menu/bottom_navigation" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </layout>

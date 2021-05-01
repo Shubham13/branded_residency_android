@@ -52,6 +52,7 @@
 
 
     <!--fragment today-->
+    <string name="label_upcoming">Upcoming</string>
     <string name="label_today">Today</string>
     <string name="label_back">Back</string>
 

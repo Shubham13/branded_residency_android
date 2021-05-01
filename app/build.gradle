@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: "kotlin-kapt"
+
 /*apply plugin: "com.apollographql.apollo"*/
 
 android {
@@ -40,6 +42,5 @@ dependencies {
     /*utils and data import*/
     implementation project(path: ':BRData')
     implementation 'com.amplifyframework:aws-auth-cognito:1.17.1'
-    implementation 'com.amplifyframework:core:1.17.1'
     /*implementation("com.apollographql.apollo:apollo-runtime:2.5.2")*/
 }

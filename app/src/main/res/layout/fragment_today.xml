@@ -15,7 +15,8 @@
 
         <include
             android:id="@+id/toolbar"
-            layout="@layout/tool_bar" />
+            layout="@layout/tool_bar"
+            android:visibility="gone"/>
 
     </LinearLayout>
 </layout>
