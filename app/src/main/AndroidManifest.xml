@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.paragon.sensonic.helpers.MyApplication"
+        android:name="com.paragon.sensonic.utils.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -51,58 +51,58 @@
         </activity>
 
         <activity
-            android:name="com.paragon.sensonic.ui.fragments.residents.ResidentsActivity"
+            android:name=".ui.activities.residents.ResidentsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan"/>
 
         <activity
-            android:name="com.paragon.sensonic.ui.fragments.residentdetails.ResidentDetailsActivity"
+            android:name=".ui.activities.residentdetails.ResidentDetailsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan"/>
 
         <activity
-            android:name="com.paragon.sensonic.ui.fragments.vehiclesdetails.VehiclesDetailsActivity"
+            android:name=".ui.activities.vehiclesdetails.VehiclesDetailsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan"/>
 
         <activity
-            android:name="com.paragon.sensonic.ui.fragments.staffdetails.StaffDetailsActivity"
+            android:name=".ui.activities.staffdetails.StaffDetailsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan"/>
 
         <activity
-            android:name="com.paragon.sensonic.ui.fragments.frienddetails.FriendDetailsActivity"
+            android:name=".ui.activities.frienddetails.FriendDetailsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan"/>
 
         <activity
-            android:name="com.paragon.sensonic.ui.fragments.petdetails.PetDetailsActivity"
+            android:name=".ui.activities.petdetails.PetDetailsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan"/>
 
         <activity
-            android:name="com.paragon.sensonic.ui.fragments.guestsprofile.GuestsProfileActivity"
+            android:name=".ui.activities.guestsprofile.GuestsProfileActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan"/>
 
         <activity
-            android:name="com.paragon.sensonic.ui.fragments.guestprofiledetails.GuestProfileDetailsActivity"
+            android:name=".ui.activities.guestprofiledetails.GuestProfileDetailsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan"/>
 
         <activity
-            android:name="com.paragon.sensonic.ui.fragments.interests.InterestsActivity"
+            android:name=".ui.activities.interests.InterestsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan"/>
 
 
         <activity
-            android:name="com.paragon.sensonic.ui.fragments.guesthistory.GuestHistoryActivity"
+            android:name=".ui.activities.guesthistory.GuestHistoryActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan"/>
 
         <activity
-            android:name="com.paragon.sensonic.ui.fragments.guesthistorydetails.GuestHistoryDetailsActivity"
+            android:name=".ui.activities.guesthistorydetails.GuestHistoryDetailsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan"/>
 

@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.paragon.sensonic.R;
 import com.paragon.sensonic.databinding.RowSpinnerItemBinding;
-import com.paragon.sensonic.helpers.CustomItemClickListener;
+import com.paragon.sensonic.utils.CustomItemClickListener;
 
 import java.util.Calendar;
 import java.util.List;

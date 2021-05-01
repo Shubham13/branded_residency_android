@@ -5,7 +5,7 @@
 
         <variable
             name="registeredBottomVM"
-            type="com.paragon.sensonic.ui.bottomsheets.GuestRegisteredBottomDialogFragment" />
+            type="com.paragon.sensonic.ui.fragments.sheets.GuestRegisteredBottomDialogFragment" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

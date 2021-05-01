@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.paragon.sensonic.R;
 import com.paragon.sensonic.databinding.RowInterestsBinding;
-import com.paragon.sensonic.helpers.CustomItemClickListener;
+import com.paragon.sensonic.utils.CustomItemClickListener;
 import com.paragon.brdata.dto.InterestData;
 import com.paragon.brdata.dto.InterestSubTitle;
 import com.google.android.material.chip.Chip;

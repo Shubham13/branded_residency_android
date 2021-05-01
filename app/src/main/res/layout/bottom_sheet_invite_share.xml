@@ -5,7 +5,7 @@
 
         <variable
             name="inviteShareDialog"
-            type="com.paragon.sensonic.ui.bottomsheets.InviteShareBottomDialog" />
+            type="com.paragon.sensonic.ui.fragments.sheets.InviteShareBottomDialog" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
