@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.paragon.sensonic.R;
-import com.paragon.sensonic.helpers.GuestType;
+import com.paragon.sensonic.utils.GuestType;
 import com.paragon.brdata.dto.CommonAccess;
 import com.paragon.utils.expandable.ChildViewHolder;
 import com.paragon.utils.expandable.ParentListItem;

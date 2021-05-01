@@ -1,161 +1,0 @@
-
-t	java:S115Q"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(„Ø€Èüÿÿÿÿ
-t	java:S115W"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÁÚğ£üÿÿÿÿ
-‚
-java:S1845d"gRename field "hh_mm_ss" to prevent any misunderstanding/clash with field "HH_mm_ss" defined on line 97.(”úŞ¬ıÿÿÿÿ
-o	java:S115V"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¦Õ
-O
-java:S1874×"3Remove this use of "getDrawable"; it is deprecated.(¾ÑÊóıÿÿÿÿ
-P
-java:S1118I":Add a private constructor to hide the implicit public one.(ŠèÔ¤
-S
-java:S1874É"7Remove this use of "FLAG_FULLSCREEN"; it is deprecated.(Ä¿Ïİüÿÿÿÿ
-J
-java:S1874™"3Remove this use of "isConnected"; it is deprecated.(ÍãÄ
-3
-java:S1643Ç	"Use a StringBuilder instead.(ğÄ±
-o	java:S115R"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(şğ¹ 
-o	java:S115Y"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÊÕ’
-n	java:S115Z"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ı¾©h
-E
-java:S2140î	")Use "java.util.Random.nextInt()" instead.(Éã¦íşÿÿÿÿ
-J
-java:S1874Ú
-"3Remove this use of "NetworkInfo"; it is deprecated.(â¡Àù
-d
-java:S1126•"AReplace this if-then-else statement by a single return statement.(µëî·şÿÿÿÿ8­¶¾Šî.
-t	java:S115X"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ŠàÈÇúÿÿÿÿ
-T
-java:S1874„"=Remove this use of "getSystemUiVisibility"; it is deprecated.(ğ©µâ
-‡
-java:S1319×"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(‡ìö
-t	java:S115T"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¿ÏÕ¸úÿÿÿÿ
-t	java:S115U"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(½­³ûÿÿÿÿ
-b
-java:S1874…"FRemove this use of "SYSTEM_UI_FLAG_HIDE_NAVIGATION"; it is deprecated.(Ñ™™¡ûÿÿÿÿ
-•
-java:S1845V"Rename field "DD_MMM_yyyy_HH_mm_ss" to prevent any misunderstanding/clash with field "DD_MMM_yyyy_hh_mm_ss" defined on line 84.(¦Õ
-Z
-java:S1874ì"DRemove this use of "SYSTEM_UI_FLAG_LAYOUT_STABLE"; it is deprecated.(ßëî]
-f
-java:S2674¸
-"JCheck the return value of the "read" call to see how many bytes were read.(ë¥áïøÿÿÿÿ
-F
-java:S1874"/Remove this use of "getType"; it is deprecated.(”­‰±
-^
-java:S1874ô"GRemove this use of "SYSTEM_UI_FLAG_LIGHT_STATUS_BAR"; it is deprecated.(ı¯Ë‰
-p
-java:S2293Ø"YReplace the type specification in this constructor call with the diamond operator ("<>").(°ÉÕÀ
-g	java:S117à"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úó»ã
-c
-java:S1874î"GRemove this use of "SYSTEM_UI_FLAG_LIGHT_STATUS_BAR"; it is deprecated.(˜¾¼˜ÿÿÿÿÿ
-J
-java:S1874"3Remove this use of "NetworkInfo"; it is deprecated.(ĞÏÃ
-T	java:S106ß
-"9Replace this use of System.out or System.err by a logger.(î÷Šïùÿÿÿÿ
-o	java:S115N"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(öÙçÖ
-o	java:S115O"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÑúŸ
-N
-java:S1874Å"7Remove this use of "FLAG_FULLSCREEN"; it is deprecated.(ƒ¦‰
-K
-java:S3740Ç
-"/Provide the parametrized type for this generic.(¢”ÿ©ÿÿÿÿÿ
-S
-java:S2589"7Remove this expression which always evaluates to "true"(Á¾ÂÍşÿÿÿÿ
-T
-java:S1874ñ"=Remove this use of "setSystemUiVisibility"; it is deprecated.(øÇº
-S
-java:S1874Ú"=Remove this use of "getSystemUiVisibility"; it is deprecated.(¢µØ
-G
-java:S1874¤"1Remove this use of "TYPE_WIFI"; it is deprecated.(‘ßÆf
-p
-java:S2293Û"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ë¿®û
-S
-java:S1874İ
-"<Remove this use of "getActiveNetworkInfo"; it is deprecated.(ŸÓ³×
-S
-java:S1874ğ"=Remove this use of "getSystemUiVisibility"; it is deprecated.(ÁÎ]
-J
-java:S1874˜"3Remove this use of "NetworkInfo"; it is deprecated.(ĞÏÃ
-S
-java:S1874Ü"=Remove this use of "getSystemUiVisibility"; it is deprecated.(¶”^
-J
-java:S1874™"3Remove this use of "TYPE_MOBILE"; it is deprecated.(ÍãÄ
-^
-java:S1874ì"HRemove this use of "SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN"; it is deprecated.(ßëî]
-L
-java:S1133‚"5Do not forget to remove this deprecated code someday.(òÙÛ¿
-J
-java:S1874"3Remove this use of "isConnected"; it is deprecated.(”­‰±
-^
-java:S1874ò"GRemove this use of "SYSTEM_UI_FLAG_LIGHT_STATUS_BAR"; it is deprecated.(“äš•
-J
-java:S1874ì
-"3Remove this use of "NetworkInfo"; it is deprecated.(ĞÏÃ
-S
-java:S1874Ú"=Remove this use of "setSystemUiVisibility"; it is deprecated.(¢µØ
-O
-java:S1874ô
-"3Remove this use of "TYPE_MOBILE"; it is deprecated.(©Ì€üÿÿÿÿ
-t	java:S115S"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(“¿¿ûÿÿÿÿÿ
-]
-java:S1874Ö"FRemove this use of "SYSTEM_UI_FLAG_HIDE_NAVIGATION"; it is deprecated.(¢±•ˆ
-S
-java:S1874Ü"=Remove this use of "setSystemUiVisibility"; it is deprecated.(¶”^
-Y
-java:S1874î"=Remove this use of "getSystemUiVisibility"; it is deprecated.(˜¾¼˜ÿÿÿÿÿ
-t	java:S115P"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¨ôÓüÿÿÿÿÿ
-3
-java:S1643Ø	"Use a StringBuilder instead.(âì¼‡
-t	java:S115c"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(™¸Ø´ıÿÿÿÿ
-K
-java:S1874Â"/Remove this use of "getSize"; it is deprecated.(¯ÊÃÙøÿÿÿÿ
-t	java:S115e"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±€±êüÿÿÿÿ
-@
-java:S2140í	")Use "java.util.Random.nextInt()" instead.(îï‰ó
-H
-java:S1874"1Remove this use of "TYPE_WIFI"; it is deprecated.(”­‰±
-3
-java:S1643Õ	"Use a StringBuilder instead.(ğÄ±
-†
-java:S1319×"oThe type of the "list" object should be an interface such as "List" rather than the implementation "ArrayList".(‡ìö
-t	java:S115b"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ê×ö•şÿÿÿÿ
-U
-java:S1874¿"9Remove this use of "getDefaultDisplay"; it is deprecated.(ÿïÎÿúÿÿÿÿ
-S
-java:S1874"=Remove this use of "getSystemUiVisibility"; it is deprecated.(ÁÎ]
-?
-java:S1123‚"(Add the missing @deprecated Javadoc tag.(òÙÛ¿
-F
-java:S1874™"/Remove this use of "getType"; it is deprecated.(ÍãÄ
-O
-java:S1874¦"3Remove this use of "TYPE_MOBILE"; it is deprecated.(†»åÚùÿÿÿÿ
-M
-java:S1874ò
-"1Remove this use of "TYPE_WIFI"; it is deprecated.(îÃØÄûÿÿÿÿ
-N
-java:S1874×"7Remove this use of "FLAG_FULLSCREEN"; it is deprecated.(ª¹À 
-o	java:S115a"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ã“Ğœ
-i
-java:S1874×"MRemove this use of "SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION"; it is deprecated.(®Ü¢Òøÿÿÿÿ
-Y
-java:S1874ï"=Remove this use of "setSystemUiVisibility"; it is deprecated.(¢÷ıøÿÿÿÿ
-^
-java:S1874Ø"GRemove this use of "SYSTEM_UI_FLAG_IMMERSIVE_STICKY"; it is deprecated.(ÈÉÀ
-T
-java:S1874ö"=Remove this use of "setSystemUiVisibility"; it is deprecated.(Õ‚ı
-V
-java:S1874õ"?Remove this use of "FLAG_TRANSLUCENT_STATUS"; it is deprecated.(Î·ğ÷
-`
-java:S2095µ
-"IUse try-with-resources or close this "InputStream" in a "finally" clause.(°’Ğ
-c
-java:S1874"GRemove this use of "SYSTEM_UI_FLAG_LIGHT_STATUS_BAR"; it is deprecated.(ĞÎÍøÿÿÿÿ
-S
-java:S2589ï"7Remove this expression which always evaluates to "true"(Á¾ÂÍşÿÿÿÿ
-t	java:S115d"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(”úŞ¬ıÿÿÿÿ
-[
-java:S1874í
-"?Remove this use of "isConnectedOrConnecting"; it is deprecated.(ÜÀ¡Çıÿÿÿÿ
-|
-java:S1845e"aRename field "hh_mm" to prevent any misunderstanding/clash with field "HH_mm" defined on line 98.(±€±êüÿÿÿÿ

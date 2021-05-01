@@ -5,7 +5,7 @@
 
         <variable
             name="monthlyVM"
-            type="com.paragon.sensonic.ui.fragments.sheetfragments.MonthlyFragment" />
+            type="com.paragon.sensonic.ui.fragments.sheets.MonthlyFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"

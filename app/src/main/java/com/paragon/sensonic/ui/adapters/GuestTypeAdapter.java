@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.airbnb.paris.Paris;
 import com.paragon.sensonic.R;
 import com.paragon.sensonic.databinding.RowGuestTypeBinding;
-import com.paragon.sensonic.helpers.CustomItemClickListener;
+import com.paragon.sensonic.utils.CustomItemClickListener;
 import com.paragon.brdata.dto.TypeData;
 
 import java.util.List;

@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.paragon.sensonic.R;
 import com.paragon.sensonic.databinding.RowGuestProfileItemBinding;
-import com.paragon.sensonic.helpers.CustomItemClickListener;
+import com.paragon.sensonic.utils.CustomItemClickListener;
 import com.paragon.brdata.dto.GuestHistorySubTitle;
 import com.paragon.brdata.dto.HistoryData;
 import com.paragon.utils.anim.list.SpringAdapterAnimationType;

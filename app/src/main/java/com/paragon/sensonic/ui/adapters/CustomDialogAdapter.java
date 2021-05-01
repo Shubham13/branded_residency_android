@@ -5,10 +5,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.paragon.sensonic.helpers.CustomItemClickListener;
-import com.paragon.sensonic.ui.fragments.sheetfragments.DailyFragment;
-import com.paragon.sensonic.ui.fragments.sheetfragments.MonthlyFragment;
-import com.paragon.sensonic.ui.fragments.sheetfragments.WeeklyFragment;
+import com.paragon.sensonic.utils.CustomItemClickListener;
+import com.paragon.sensonic.ui.fragments.sheets.DailyFragment;
+import com.paragon.sensonic.ui.fragments.sheets.MonthlyFragment;
+import com.paragon.sensonic.ui.fragments.sheets.WeeklyFragment;
 
 public class CustomDialogAdapter extends FragmentStatePagerAdapter {
 

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.paragon.sensonic.R
+import com.paragon.sensonic.ui.activities.otp.OtpActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 
@@ -13,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         login_btn.setOnClickListener {
-            var intent = Intent(this,OtpActivity::class.java)
+            var intent = Intent(this, OtpActivity::class.java)
             startActivity(intent)
         }
     }
