@@ -1,3 +1,4 @@
+/*
 package com.paragon.sensonic.auth;
 
 import com.amazonaws.auth.CognitoCredentialsProvider;
@@ -16,4 +17,4 @@ public class AWSCredentialsProvider extends AsyncCommand<Credentials> {
                 credentialsProvider.getCredentials().getAWSSecretKey(),
                 credentialsProvider.getCredentials().getSessionToken());
     }
-}
+}*/

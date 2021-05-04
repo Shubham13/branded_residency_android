@@ -1,18 +1,4 @@
-package com.paragon.sensonic.utils;/*
- * Copyright 2013-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License").
- * You may not use this file except in compliance with the License.
- * A copy of the License is located at
- *
- *  http://aws.amazon.com/apache2.0
- *
- * or in the "license" file accompanying this file. This file is distributed
- * on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
- * express or implied. See the License for the specific language governing
- * permissions and limitations under the License.
- */
-
+package com.paragon.sensonic.auth;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.Request;
@@ -43,7 +29,7 @@ import java.util.List;
 /**
  * Signer implementation that signs requests with the AWS4 signing protocol.
  */
-public class AwsUtill extends AbstractAWSSigner
+class AwsSigner extends AbstractAWSSigner
         implements ServiceAwareSigner, RegionAwareSigner, Presigner {
 
     protected static final String ALGORITHM = "AWS4-HMAC-SHA256";
@@ -81,7 +67,7 @@ public class AwsUtill extends AbstractAWSSigner
      * Construct a new AWS4 signer instance. By default, enable double
      * url-encoding.
      */
-    public AwsUtill() {
+    public AwsSigner() {
         this(true);
     }
 
@@ -91,11 +77,11 @@ public class AwsUtill extends AbstractAWSSigner
      * @param doubleUrlEncoding Whether double url-encode the resource path when
      *            constructing the canonical request.
      */
-    public AwsUtill(boolean doubleUrlEncoding) {
+    public AwsSigner(boolean doubleUrlEncoding) {
         this.doubleUrlEncode = doubleUrlEncoding;
     }
 
-    protected static final Log log = LogFactory.getLog(AwsUtill.class);
+    protected static final Log log = LogFactory.getLog(AwsSigner.class);
 
     @Override
     public void sign(Request<?> request, AWSCredentials credentials) {

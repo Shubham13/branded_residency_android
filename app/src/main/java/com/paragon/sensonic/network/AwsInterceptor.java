@@ -25,17 +25,15 @@ import com.amazonaws.DefaultRequest;
 import com.amazonaws.auth.CognitoCredentialsProvider;
 import com.amazonaws.http.HttpMethodName;
 import com.amazonaws.regions.Regions;
-import com.paragon.sensonic.utils.AwsUtill;
+import com.paragon.sensonic.auth.AwsSigner;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.net.URI;
-import java.util.ArrayList;
 import java.util.Map;
 
 import okhttp3.Interceptor;
 import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
@@ -49,8 +47,8 @@ import static com.paragon.sensonic.network.Constant.SERVICE_NAME;
 public class AwsInterceptor implements Interceptor {
 
     private final CognitoCredentialsProvider credentialsProvider;
-    
-    private final AwsUtill signer;
+
+    private final AwsSigner signer;
 
     private final RequestBody requestBody;
 
@@ -68,7 +66,7 @@ public class AwsInterceptor implements Interceptor {
         this.httpMethodName = methodType;
         this.requestBody = RequestBody.create(mediaType,body);
         this.method = method;
-        signer = new AwsUtill();
+        signer = new AwsSigner();
         signer.setServiceName(SERVICE_NAME);
         signer.setRegionName(REGION);
     }

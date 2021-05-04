@@ -17,6 +17,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
+import android.os.StrictMode;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
@@ -51,6 +52,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Method;
+import java.net.InetAddress;
 import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -1562,6 +1564,19 @@ public class GeneralFunctions {
             return false;
         } else {
             return android.util.Patterns.PHONE.matcher(mobile).matches();
+        }
+    }
+
+    /*internet check*/
+    public static boolean isInternetAvailable() {
+        try {
+            final String TEST_URL = "www.google.com";
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            InetAddress ip = InetAddress.getByName(TEST_URL);
+            return !ip.equals("");
+        } catch (Exception e) {
+            return false;
         }
     }
 }

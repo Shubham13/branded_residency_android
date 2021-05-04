@@ -21,5 +21,10 @@ public class AppConstant {
 
     /*AWS Cognito Credentials Provider*/
     public static final String  IDENTITY_POOL_ID = "ap-south-1:7ba2a60a-ea6f-41df-b18c-927a620e1c5b";
+    public static final String SERVICE_NAME = "execute-api";
+    public static final String REGION = "ap-south-1";
+    public static final String BRAND_ID = "606dcab8a12ad6ce63a92c90";
+    public static final String PROPERTY_ID = "606dcafaa12ad6ce63a92c91";
+    public static final String SCOPE = "MOBILE_ANDROID";
 
 }

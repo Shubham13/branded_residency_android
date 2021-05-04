@@ -1,4 +1,4 @@
-package com.paragon.sensonic.auth;
+/*package com.paragon.sensonic.auth;
 
 public class Credentials {
 
@@ -35,4 +35,4 @@ public class Credentials {
     public void setSessionToken(String sessionToken) {
         this.sessionToken = sessionToken;
     }
-}
+}*/
