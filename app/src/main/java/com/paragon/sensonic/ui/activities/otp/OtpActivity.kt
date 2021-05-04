@@ -5,17 +5,17 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import com.paragon.sensonic.R
-import com.paragon.sensonic.data.OtpResponse
+import com.paragon.sensonic.data.OtpVerify
 import com.paragon.sensonic.databinding.ActivityOtpBinding
 import com.paragon.sensonic.ui.activities.dashboard.DashboardActivity
 import com.paragon.utils.base.BaseActivity
 import com.paragon.utils.local.AppPreference
 import com.paragon.utils.local.PreferenceKeys
 
-class OtpActivity : BaseActivity<ActivityOtpBinding,OtpViewModel>(), OtpNavigator, TextWatcher {
+class OtpActivity : BaseActivity<ActivityOtpBinding, OtpViewModel>(), OtpNavigator, TextWatcher {
 
-    private val otpViewModel : OtpViewModel = getVM(OtpViewModel::class.java)
-    private lateinit var appPreference : AppPreference
+    private val otpViewModel: OtpViewModel = getVM(OtpViewModel::class.java)
+    private lateinit var appPreference: AppPreference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,11 +46,22 @@ class OtpActivity : BaseActivity<ActivityOtpBinding,OtpViewModel>(), OtpNavigato
     }
 
     override fun onClickVerify() {
-        if(appPreference.getBoolean(PreferenceKeys.ISMOBILE)) {
-            viewModel.callMobileOtpApi(mViewDataBinding, appPreference)
-        }else{
-            viewModel.callEmailOtpApi(mViewDataBinding, appPreference)
-        }
+
+        if (appPreference.getValue(PreferenceKeys.EMAIL).isNullOrEmpty())
+            viewModel.callOtpVerify(
+                mViewDataBinding,
+                appPreference,
+                "phone",
+                appPreference.getValue(PreferenceKeys.MOBILE)
+            )
+        else
+            viewModel.callOtpVerify(
+                mViewDataBinding,
+                appPreference,
+                "email",
+                appPreference.getValue(PreferenceKeys.EMAIL)
+            )
+
     }
 
     override fun onClickResend() {
@@ -60,16 +71,16 @@ class OtpActivity : BaseActivity<ActivityOtpBinding,OtpViewModel>(), OtpNavigato
         viewModel.resendCodeTimer(mViewDataBinding)
     }
 
-    override fun onSuccess(response: OtpResponse?) {
-        Log.e("response",response?.data?.credentials.toString())
-        appPreference.addValue(PreferenceKeys.CREDENTIALS,response?.data?.credentials.toString())
-        appPreference.addValue(PreferenceKeys.USER,response?.data?.user.toString())
+    override fun onSuccess(verify: OtpVerify?) {
+        Log.e("response", verify?.data?.credentials.toString())
+        appPreference.addValue(PreferenceKeys.CREDENTIALS, verify?.data?.credentials.toString())
+        appPreference.addValue(PreferenceKeys.USER, verify?.data?.user.toString())
         getActivityNavigator(this).startActClearTask(DashboardActivity::class.java)
     }
 
     override fun onError(error: String) {
         mViewDataBinding.labelError.text = error
-        Log.e("error",error)
+        Log.e("error", error)
     }
 
     override fun onShowProgress() {

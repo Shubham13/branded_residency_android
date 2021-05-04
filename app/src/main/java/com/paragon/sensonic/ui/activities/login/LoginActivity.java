@@ -1,17 +1,14 @@
 package com.paragon.sensonic.ui.activities.login;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 
 import com.airbnb.paris.Paris;
-
-
 import com.paragon.sensonic.BR;
 import com.paragon.sensonic.R;
-import com.paragon.sensonic.data.LoginResponse;
+import com.paragon.sensonic.auth.dto.PasswordLessLogin;
 import com.paragon.sensonic.databinding.ActivityLoginBinding;
 import com.paragon.sensonic.ui.activities.otp.OtpActivity;
 import com.paragon.sensonic.ui.views.countrypicker.CountryPicker;
@@ -23,7 +20,7 @@ import com.paragon.utils.local.PreferenceKeys;
 public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewModel> implements LoginNavigator {
 
     private final LoginViewModel loginViewModel = getVM(LoginViewModel.class);
-    private boolean isMobile = true;
+    private String type = "phone";
     private AppPreference appPreference;
 
     @Override
@@ -59,12 +56,14 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
 
     @Override
     public void onLoginClick() {
-        if(isMobile){
-            getViewModel().callLoginMobileApi(mViewDataBinding, isMobile);
-        }else {
-            getViewModel().callLoginEmailApi(mViewDataBinding, isMobile);
+        if (!type.matches("phone")) {
+            loginViewModel.callLoginApi(mViewDataBinding.mobileEdit.getText().toString(), type);
+        } else {
+            loginViewModel.callLoginApi(mViewDataBinding.countryCodeText.getText().toString() + "-" +
+                    mViewDataBinding.mobileEdit.getText().toString(), type);
         }
     }
+
 
     @Override
     public void onMobileClick() {
@@ -81,7 +80,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
         mViewDataBinding.countryCodeText.setVisibility(View.VISIBLE);
         mViewDataBinding.mobileEdit.setHint(getString(R.string.label_mobile_number));
         mViewDataBinding.mobileEdit.setInputType(InputType.TYPE_CLASS_NUMBER);
-        isMobile = true;
+        type = "phone";
         mViewDataBinding.mobileEdit.getText().clear();
     }
 
@@ -100,7 +99,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
         mViewDataBinding.countryCodeText.setVisibility(View.GONE);
         mViewDataBinding.mobileEdit.setHint(getString(R.string.label_email));
         mViewDataBinding.mobileEdit.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
-        isMobile = false;
+        type = "email";
         mViewDataBinding.mobileEdit.getText().clear();
     }
 
@@ -115,22 +114,21 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
     }
 
     @Override
-    public void onSuccess(LoginResponse response) {
-        Log.e("response",response.getData().getChallengeName());
-        appPreference.addValue(PreferenceKeys.SESSION,response.getData().getSession());
-        if(isMobile){
+    public void onSuccess(PasswordLessLogin response) {
+        appPreference.addValue(PreferenceKeys.SESSION, response.getData().getSession());
+        if (type.matches("phone")) {
             appPreference.addValue(PreferenceKeys.MOBILE,
-                    mViewDataBinding.countryCodeText.getText().toString()+"-"+
+                    mViewDataBinding.countryCodeText.getText().toString() + "-" +
                             mViewDataBinding.mobileEdit.getText().toString());
-        }else {
+        } else {
             appPreference.addValue(PreferenceKeys.EMAIL, mViewDataBinding.mobileEdit.getText().toString());
         }
-        appPreference.addBoolean(PreferenceKeys.ISMOBILE,isMobile);
+
         getActivityNavigator(this).startAct(OtpActivity.class);
     }
 
     @Override
     public void onError(String error) {
-        Log.e("failure",error);
+        Log.e("failure", error);
     }
 }

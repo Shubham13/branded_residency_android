@@ -1,8 +1,7 @@
 package com.paragon.sensonic.auth;
 
-import android.util.Log;
-
 import com.amazonaws.http.HttpMethodName;
+import com.paragon.sensonic.auth.dto.PasswordLessLogin;
 import com.paragon.sensonic.utils.AppConstant;
 import com.paragon.utils.GeneralFunctions;
 import com.paragon.utils.base.BaseModel;
@@ -40,7 +39,6 @@ public class PasswordLessLoginResponse extends BaseModel<String, String> {
                 @Override
                 public void onFailure(Call call, IOException e) {
                     if(e instanceof NoConnectivityException){
-                        Log.e("Internet failure","Not Connected");
                         networkResponseCallback.onInternetDisable();
                     }
 
@@ -56,6 +54,7 @@ public class PasswordLessLoginResponse extends BaseModel<String, String> {
                             break;
 
                         case 200:
+                            networkResponseCallback.onResponse(GeneralFunctions.deserialize(response.body().string(), PasswordLessLogin.class));
                             break;
                     }
                 }

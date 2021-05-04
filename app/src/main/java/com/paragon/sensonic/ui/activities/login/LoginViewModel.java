@@ -4,6 +4,7 @@ import android.text.TextUtils;
 import android.util.Patterns;
 
 import com.paragon.sensonic.auth.PasswordLessLoginResponse;
+import com.paragon.sensonic.auth.dto.PasswordLessLogin;
 import com.paragon.sensonic.databinding.ActivityLoginBinding;
 import com.paragon.utils.base.BaseViewModel;
 import com.paragon.utils.networking.NetworkResponseCallback;
@@ -28,19 +29,19 @@ public class LoginViewModel extends BaseViewModel<LoginNavigator> {
         getNavigator().onEmailClick();
     }
 
-    private boolean isValid(ActivityLoginBinding mViewDataBinding, boolean isMobile) {
-        if (isMobile) {
-            if (TextUtils.isEmpty(mViewDataBinding.mobileEdit.toString())) {
+    private boolean isValid(String value, String isMobile) {
+        if (isMobile.matches("phone")) {
+            if (TextUtils.isEmpty(value)) {
                 return false;
-            } else if (mViewDataBinding.mobileEdit.length() < 10) {
+            } else if (value.length() < 10) {
                 return false;
             } else {
                 return true;
             }
         } else {
-            if (TextUtils.isEmpty(mViewDataBinding.mobileEdit.toString())) {
+            if (TextUtils.isEmpty(value.toString())) {
                 return false;
-            } else if (!Patterns.EMAIL_ADDRESS.matcher(mViewDataBinding.mobileEdit.getText().toString()).matches()) {
+            } else if (!Patterns.EMAIL_ADDRESS.matcher(value).matches()) {
                 return false;
             } else {
                 return true;
@@ -48,23 +49,25 @@ public class LoginViewModel extends BaseViewModel<LoginNavigator> {
         }
     }
 
-    public void callLoginApi(ActivityLoginBinding mViewDataBinding, boolean isMobile) {
-        if (isValid(mViewDataBinding, isMobile)) {
+    public void callLoginApi(String value, String type) {
+        if (isValid(value, type)) {
             getNavigator().onShowProgress();
             HashMap<String, String> data = new HashMap<>();
-            data.put("type","email");
-            data.put("email","rupeshsaxena2015@gmail.com");
+            data.put("type",type);
+            data.put(type,value);
 
 
-            new PasswordLessLoginResponse().doNetworkRequest(data, new NetworkResponseCallback() {
+            new PasswordLessLoginResponse().doNetworkRequest(data, new NetworkResponseCallback<PasswordLessLogin>() {
                 @Override
-                public void onResponse(Object object) {
+                public void onResponse(PasswordLessLogin object) {
                     getNavigator().onHideProgress();
+                    getNavigator().onSuccess(object);
                 }
 
                 @Override
                 public void onFailure(String error) {
                     getNavigator().onHideProgress();
+                    getNavigator().onError(error);
                 }
 
                 @Override

@@ -1,6 +1,6 @@
 package com.paragon.sensonic.ui.activities.login;
 
-import com.paragon.sensonic.data.LoginResponse;
+import com.paragon.sensonic.auth.dto.PasswordLessLogin;
 
 public interface LoginNavigator {
     void init();
@@ -9,6 +9,6 @@ public interface LoginNavigator {
     void onEmailClick();
     void onShowProgress();
     void onHideProgress();
-    void onSuccess(LoginResponse response);
+    void onSuccess(PasswordLessLogin response);
     void onError(String error);
 }
