@@ -38,7 +38,7 @@
                     android:layout_weight="0.5"
                     android:checked="true"
                     android:text="@string/label_male"
-                    android:textAppearance="@style/bodySmallSemiTitleBrandSecoundry"
+                    style="@style/bodySmallSemiTitleBrandSecoundry"
                     android:theme="@style/brandAccentRadioButton" />
 
                 <RadioButton
@@ -48,7 +48,7 @@
                     android:layout_weight="0.5"
                     android:checked="false"
                     android:text="@string/label_female"
-                    android:textAppearance="@style/bodySmallSemiTitleBrandSecoundry"
+                    style="@style/bodySmallSemiTitleBrandSecoundry"
                     android:theme="@style/brandAccentRadioButton" />
 
             </RadioGroup>

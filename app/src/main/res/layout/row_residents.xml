@@ -14,13 +14,14 @@
             android:id="@+id/row_residents_item_card"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_160sdp"
-            app:cardCornerRadius="@dimen/_10sdp">
+            app:cardCornerRadius="@dimen/_16sdp">
 
             <ImageView
                 android:id="@+id/row_residents_item_image"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/_160sdp"
                 android:adjustViewBounds="true"
+                android:src="@mipmap/dummy_resident"
                 android:scaleType="fitCenter" />
 
         </androidx.cardview.widget.CardView>

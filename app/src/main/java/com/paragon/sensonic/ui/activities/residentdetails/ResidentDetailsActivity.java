@@ -3,9 +3,11 @@ package com.paragon.sensonic.ui.activities.residentdetails;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -202,6 +204,8 @@ public class ResidentDetailsActivity extends BaseActivity<ActivityResidentDetail
                 }
             }, AppConstant.READ_WRITE_EXTERNAL_STORAGE_AND_CAMERA);
         });
+
+
 
         mViewDataBinding.container.addView(rowResidentInfoBinding.getRoot());
     }
