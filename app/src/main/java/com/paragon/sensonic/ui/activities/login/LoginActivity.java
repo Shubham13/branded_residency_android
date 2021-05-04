@@ -59,7 +59,11 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
 
     @Override
     public void onLoginClick() {
-        getViewModel().callLoginApi(mViewDataBinding,isMobile);
+        if(isMobile){
+            getViewModel().callLoginMobileApi(mViewDataBinding, isMobile);
+        }else {
+            getViewModel().callLoginEmailApi(mViewDataBinding, isMobile);
+        }
     }
 
     @Override
@@ -114,7 +118,14 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
     public void onSuccess(LoginResponse response) {
         Log.e("response",response.getData().getChallengeName());
         appPreference.addValue(PreferenceKeys.SESSION,response.getData().getSession());
-        appPreference.addValue(PreferenceKeys.EMAIL,mViewDataBinding.mobileEdit.getText().toString());
+        if(isMobile){
+            appPreference.addValue(PreferenceKeys.MOBILE,
+                    mViewDataBinding.countryCodeText.getText().toString()+"-"+
+                            mViewDataBinding.mobileEdit.getText().toString());
+        }else {
+            appPreference.addValue(PreferenceKeys.EMAIL, mViewDataBinding.mobileEdit.getText().toString());
+        }
+        appPreference.addBoolean(PreferenceKeys.ISMOBILE,isMobile);
         getActivityNavigator(this).startAct(OtpActivity.class);
     }
 

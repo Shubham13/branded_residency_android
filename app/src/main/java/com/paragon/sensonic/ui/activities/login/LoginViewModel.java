@@ -5,6 +5,7 @@ import android.util.Patterns;
 
 import com.amazonaws.http.HttpMethodName;
 import com.paragon.sensonic.data.Login;
+import com.paragon.sensonic.data.LoginMobile;
 import com.paragon.sensonic.data.LoginResponse;
 import com.paragon.sensonic.databinding.ActivityLoginBinding;
 import com.paragon.sensonic.network.NetworkResponseCallback;
@@ -58,17 +59,42 @@ public class LoginViewModel extends BaseViewModel<LoginNavigator> {
         }
     }
 
-    public void callLoginApi(ActivityLoginBinding mViewDataBinding, boolean isMobile) {
+    public void callLoginEmailApi(ActivityLoginBinding mViewDataBinding, boolean isMobile) {
         if (isValid(mViewDataBinding, isMobile)) {
             getNavigator().onShowProgress();
-            Login loginData = new Login(SCOPE, BRAND_ID, PROPERTY_ID, mViewDataBinding.mobileEdit.getText().toString());
+            Login loginData = new Login(SCOPE, BRAND_ID, PROPERTY_ID,
+                    mViewDataBinding.mobileEdit.getText().toString());
             AwsInterceptor awsInterceptor = new AwsInterceptor(HttpMethodName.POST, LOGIN_METHOD,
                     GeneralFunctions.serialize(loginData, Login.class));
             OkhttpInstance.getOkhttpClient(awsInterceptor, new NetworkResponseCallback() {
                 @Override
                 public void onSuccess(String response) {
                     getNavigator().onHideProgress();
-                    getNavigator().onSuccess(GeneralFunctions.deserialize(response,LoginResponse.class));
+                    getNavigator().onSuccess(GeneralFunctions.deserialize(response, LoginResponse.class));
+                }
+
+                @Override
+                public void onFailure(String error) {
+                    getNavigator().onHideProgress();
+                    getNavigator().onError(error);
+                }
+            });
+        }
+    }
+
+    public void callLoginMobileApi(ActivityLoginBinding mViewDataBinding, boolean isMobile) {
+        if (isValid(mViewDataBinding, isMobile)) {
+            getNavigator().onShowProgress();
+            LoginMobile loginMobile = new LoginMobile(SCOPE, BRAND_ID, PROPERTY_ID,
+                    mViewDataBinding.countryCodeText.getText().toString()+"-"
+                            +mViewDataBinding.mobileEdit.getText().toString());
+            AwsInterceptor awsInterceptor = new AwsInterceptor(HttpMethodName.POST, LOGIN_METHOD,
+                    GeneralFunctions.serialize(loginMobile, LoginMobile.class));
+            OkhttpInstance.getOkhttpClient(awsInterceptor, new NetworkResponseCallback() {
+                @Override
+                public void onSuccess(String response) {
+                    getNavigator().onHideProgress();
+                    getNavigator().onSuccess(GeneralFunctions.deserialize(response, LoginResponse.class));
                 }
 
                 @Override
