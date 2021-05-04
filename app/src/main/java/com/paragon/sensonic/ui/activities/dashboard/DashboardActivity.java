@@ -15,6 +15,7 @@ import com.paragon.sensonic.R;
 
 import com.paragon.sensonic.databinding.ActivityDashboardBinding;
 
+import com.paragon.sensonic.ui.fragments.upcoming.UpcomingFragment;
 import com.paragon.utils.base.BaseActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -22,7 +23,7 @@ public class DashboardActivity extends BaseActivity<ActivityDashboardBinding, Da
 
     private final DashboardViewModel dashboardViewModel = getVM(DashboardViewModel.class);
     private String selectedFragment;
-
+    private UpcomingFragment upcomingFragment;
 
     @Override
     public int getBindingVariable() {
@@ -48,7 +49,6 @@ public class DashboardActivity extends BaseActivity<ActivityDashboardBinding, Da
 
     @Override
     public void init() {
-        setSupportActionBar(mViewDataBinding.toolbar);
         mViewDataBinding.navigation.setOnNavigationItemSelectedListener(this);
 
         mViewDataBinding.appBar.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
@@ -78,19 +78,23 @@ public class DashboardActivity extends BaseActivity<ActivityDashboardBinding, Da
 
     @Override
     public void loadDefaultFragment() {
-
+        selectedFragment = upcomingFragment.getClass().getName();
+        loadDefaultFragment(upcomingFragment,R.id.container);
     }
 
     @Override
     public void initBottomNavFragment() {
-
+        upcomingFragment = new UpcomingFragment();
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.navigation_today:
-
+            case R.id.navigation_home:
+                if (!upcomingFragment.getClass().getName().matches(selectedFragment)) {
+                    selectedFragment = upcomingFragment.getClass().getName();
+                    loadDefaultFragment(upcomingFragment, mViewDataBinding.container.getId());
+                }
                 break;
             case R.id.navigation_book:
 
@@ -100,9 +104,6 @@ public class DashboardActivity extends BaseActivity<ActivityDashboardBinding, Da
 
                 break;
             case R.id.navigation_activity:
-
-                break;
-            case R.id.navigation_profile:
 
                 break;
         }

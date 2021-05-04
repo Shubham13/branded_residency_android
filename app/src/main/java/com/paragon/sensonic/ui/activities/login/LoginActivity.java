@@ -3,6 +3,7 @@ package com.paragon.sensonic.ui.activities.login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
+import android.util.Log;
 import android.view.View;
 
 import com.airbnb.paris.Paris;
@@ -10,16 +11,20 @@ import com.airbnb.paris.Paris;
 
 import com.paragon.sensonic.BR;
 import com.paragon.sensonic.R;
+import com.paragon.sensonic.data.LoginResponse;
 import com.paragon.sensonic.databinding.ActivityLoginBinding;
 import com.paragon.sensonic.ui.activities.otp.OtpActivity;
 import com.paragon.sensonic.ui.views.countrypicker.CountryPicker;
 import com.paragon.utils.GeneralFunctions;
 import com.paragon.utils.base.BaseActivity;
+import com.paragon.utils.local.AppPreference;
+import com.paragon.utils.local.PreferenceKeys;
 
 public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewModel> implements LoginNavigator {
 
     private final LoginViewModel loginViewModel = getVM(LoginViewModel.class);
     private boolean isMobile = true;
+    private AppPreference appPreference;
 
     @Override
     public int getBindingVariable() {
@@ -49,14 +54,12 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
         CountryPicker countryPicker = new CountryPicker();
         String countryDialCode = countryPicker.getCountryCodeFromSim(GeneralFunctions.getCountryMobileCode(this));
         mViewDataBinding.countryCodeText.setText(countryDialCode);
+        appPreference = AppPreference.getInstance(this);
     }
 
     @Override
     public void onLoginClick() {
-        //if(getViewModel().isValid(mViewDataBinding,isMobile)) {
-            Intent intent = new Intent(this, OtpActivity.class);
-            startActivity(intent);
-        //}
+        getViewModel().callLoginApi(mViewDataBinding,isMobile);
     }
 
     @Override
@@ -95,5 +98,28 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
         mViewDataBinding.mobileEdit.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
         isMobile = false;
         mViewDataBinding.mobileEdit.getText().clear();
+    }
+
+    @Override
+    public void onShowProgress() {
+        showProgressDialog();
+    }
+
+    @Override
+    public void onHideProgress() {
+        hideProgressDialog();
+    }
+
+    @Override
+    public void onSuccess(LoginResponse response) {
+        Log.e("response",response.getData().getChallengeName());
+        appPreference.addValue(PreferenceKeys.SESSION,response.getData().getSession());
+        appPreference.addValue(PreferenceKeys.EMAIL,mViewDataBinding.mobileEdit.getText().toString());
+        getActivityNavigator(this).startAct(OtpActivity.class);
+    }
+
+    @Override
+    public void onError(String error) {
+        Log.e("failure",error);
     }
 }

@@ -52,8 +52,6 @@ public class DVProgressDialog extends Dialog {
         pDialog.setContentView(R.layout.dialog_custom_progress);
         pDialog.setCancelable(false);
         pDialog.setCanceledOnTouchOutside(false);
-        TextView textOfLoader = (TextView) pDialog.findViewById(R.id.messageTV);
-        textOfLoader.setText(message);
         pDialog.getWindow().getAttributes().gravity = Gravity.CENTER;
         WindowManager.LayoutParams lp = pDialog.getWindow().getAttributes();
         lp.dimAmount = 0.4f;

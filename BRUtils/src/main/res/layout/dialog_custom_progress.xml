@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:background="@android:color/white"
     android:gravity="center"
     android:orientation="horizontal"
-    android:padding="@dimen/_30sdp">
+    app:cardBackgroundColor="#D3AB46"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:contentPadding="@dimen/_20sdp">
 
-    <TextView
-        android:id="@+id/messageTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:padding="@dimen/_5sdp"
-        android:textColor="@color/Gray"
-        android:textSize="@dimen/_20ssp" />
+    <com.paragon.utils.views.iosprogress.SpinView
+        android:tint="@color/White"
+        android:id="@+id/spinView"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp" />
 
-    <com.paragon.utils.views.indicator.DVLoadingIndicatorView
-        android:id="@+id/indicator"
-        android:layout_width="@dimen/_35sdp"
-        android:layout_height="@dimen/_35sdp"
-        android:layout_gravity="center_vertical"
-        android:visibility="visible"
-        app:indicatorColor="@android:color/black"
-        app:indicatorName="BallClipRotateIndicator" />
-
-
-</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -11,7 +11,7 @@
     <string name="label_resend_code">Resend Code</string>
 
     <!--activity dashboard-->
-    <string name="menu_today">@string/label_today</string>
+    <string name="menu_home">@string/label_today</string>
     <string name="menu_book">Book</string>
     <string name="menu_shopping">Shop</string>
     <string name="menu_activity">Activity</string>
@@ -53,7 +53,7 @@
 
     <!--fragment today-->
     <string name="label_upcoming">Upcoming</string>
-    <string name="label_today">Today</string>
+    <string name="label_today">Home</string>
     <string name="label_back">Back</string>
 
     <!--fragment guests profile-->
