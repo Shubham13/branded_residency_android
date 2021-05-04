@@ -1,11 +1,11 @@
-package com.paragon.sensonic.data;
+package com.paragon.sensonic.auth.dto;
 
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 
-public class LoginResponse {
+public class PasswordLessLogin {
 
     @SerializedName("code")
     @Expose

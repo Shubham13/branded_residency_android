@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
@@ -27,13 +27,13 @@
         </provider>
 
         <activity
-            android:name="com.paragon.sensonic.ui.activities.otp.OtpActivity"
+            android:name="com.paragon.sensonic.ui.activities.login.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
         </activity>
 
         <activity
-            android:name="com.paragon.sensonic.ui.activities.login.LoginActivity"
+            android:name="com.paragon.sensonic.ui.activities.otp.OtpActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
         </activity>
