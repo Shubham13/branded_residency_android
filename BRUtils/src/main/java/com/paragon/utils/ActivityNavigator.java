@@ -39,6 +39,18 @@ public class ActivityNavigator {
         mContext.startActivity(mainIntent);
     }
 
+    public void startActClearTop(Class<?> cls) {
+        Intent mainIntent = new Intent(mContext, cls);
+        mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        mContext.startActivity(mainIntent);
+    }
+
+    public void startActClearTask(Class<?> cls) {
+        Intent mainIntent = new Intent(mContext, cls);
+        mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        mContext.startActivity(mainIntent);
+    }
+
 
     public void startActForResult(Class<?> cls, Bundle bundle, int requestCode) {
         Intent mainIntent = new Intent(mContext, cls);

@@ -9,6 +9,7 @@ public enum PreferenceKeys {
     /*USER INFO*/
     SESSION("Session"),
     MOBILE("Mobile"),
+    ISMOBILE("Is_mobile"),
     EMAIL("Email"),
     CREDENTIALS("Credentials"),
     USER("User");
