@@ -41,6 +41,4 @@ android {
 dependencies {
     /*utils and data import*/
     implementation project(path: ':BRData')
-    implementation 'com.amplifyframework:aws-auth-cognito:1.17.1'
-    /*implementation("com.apollographql.apollo:apollo-runtime:2.5.2")*/
 }

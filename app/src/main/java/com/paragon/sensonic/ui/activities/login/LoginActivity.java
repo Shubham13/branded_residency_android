@@ -10,11 +10,15 @@ import com.airbnb.paris.Paris;
 
 import com.paragon.sensonic.BR;
 import com.paragon.sensonic.R;
+import com.paragon.sensonic.auth.AWSCredentialsProvider;
+import com.paragon.sensonic.auth.Credentials;
 import com.paragon.sensonic.databinding.ActivityLoginBinding;
 import com.paragon.sensonic.ui.activities.otp.OtpActivity;
 import com.paragon.sensonic.ui.views.countrypicker.CountryPicker;
 import com.paragon.utils.GeneralFunctions;
 import com.paragon.utils.base.BaseActivity;
+
+import io.reactivex.functions.Consumer;
 
 public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewModel> implements LoginNavigator {
 
@@ -49,13 +53,18 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
         CountryPicker countryPicker = new CountryPicker();
         String countryDialCode = countryPicker.getCountryCodeFromSim(GeneralFunctions.getCountryMobileCode(this));
         mViewDataBinding.countryCodeText.setText(countryDialCode);
+
+        new AWSCredentialsProvider().returnObservable().subscribe(credentials -> {
+            String key = credentials.awsAccessKeyId;
+
+        });
     }
 
     @Override
     public void onLoginClick() {
         //if(getViewModel().isValid(mViewDataBinding,isMobile)) {
-            Intent intent = new Intent(this, OtpActivity.class);
-            startActivity(intent);
+        Intent intent = new Intent(this, OtpActivity.class);
+        startActivity(intent);
         //}
     }
 
