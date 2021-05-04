@@ -4,6 +4,7 @@
         <item name="android:background">@drawable/dark_light_gradient_radius_10</item>
     </style>
 
+
     <style name="brandAccentCircle">
         <item name="android:background">@drawable/brand_accent_circle</item>
     </style>

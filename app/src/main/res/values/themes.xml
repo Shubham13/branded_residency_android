@@ -4,7 +4,7 @@
         <item name="colorPrimary">@color/Tomato</item>
         <item name="colorPrimaryDark">@color/dark_background</item>
         <item name="colorAccent">@color/White</item>
-        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="android:windowBackground">@mipmap/ic_app_background</item>
     </style>
 
     <!--bottom navigation-->

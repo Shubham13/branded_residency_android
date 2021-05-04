@@ -13,7 +13,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@mipmap/background">
+    android:background="@mipmap/ic_background">
 
     <View
         android:layout_width="1dp"

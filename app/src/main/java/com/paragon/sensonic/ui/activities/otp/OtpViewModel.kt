@@ -81,7 +81,7 @@ class OtpViewModel : BaseViewModel<OtpNavigator>() {
         }
     }
 
-    fun callEmailOtpApi(mViewDataBinding: ActivityOtpBinding, appPreference: AppPreference){
+    /*fun callEmailOtpApi(mViewDataBinding: ActivityOtpBinding, appPreference: AppPreference){
         if(isValidOtp(mViewDataBinding)){
             navigator.onShowProgress()
             var secretLoginCode : String = mViewDataBinding.otpEditOne.text.toString()+""+
@@ -155,5 +155,5 @@ class OtpViewModel : BaseViewModel<OtpNavigator>() {
                 }
             })
         }
-    }
+    }*/
 }

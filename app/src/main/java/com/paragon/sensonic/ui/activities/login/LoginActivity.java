@@ -59,11 +59,11 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
 
     @Override
     public void onLoginClick() {
-        if(isMobile){
+        /*if(isMobile){
             getViewModel().callLoginMobileApi(mViewDataBinding, isMobile);
         }else {
             getViewModel().callLoginEmailApi(mViewDataBinding, isMobile);
-        }
+        }*/
     }
 
     @Override

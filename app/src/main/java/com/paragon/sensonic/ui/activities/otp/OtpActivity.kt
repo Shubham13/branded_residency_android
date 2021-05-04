@@ -46,11 +46,11 @@ class OtpActivity : BaseActivity<ActivityOtpBinding,OtpViewModel>(), OtpNavigato
     }
 
     override fun onClickVerify() {
-        if(appPreference.getBoolean(PreferenceKeys.ISMOBILE)) {
+       /* if(appPreference.getBoolean(PreferenceKeys.ISMOBILE)) {
             viewModel.callMobileOtpApi(mViewDataBinding, appPreference)
         }else{
             viewModel.callEmailOtpApi(mViewDataBinding, appPreference)
-        }
+        }*/
     }
 
     override fun onClickResend() {
