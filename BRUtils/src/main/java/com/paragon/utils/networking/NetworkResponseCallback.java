@@ -1,8 +1,5 @@
 package com.paragon.utils.networking;
 
-/**
- * Created by Rupesh Saxena
- */
 
 public interface NetworkResponseCallback<T> {
 

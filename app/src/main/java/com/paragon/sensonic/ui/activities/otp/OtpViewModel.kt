@@ -1,18 +1,12 @@
 package com.paragon.sensonic.ui.activities.otp
 
 import android.os.CountDownTimer
-import android.text.Editable
 import android.text.TextUtils
 import com.amazonaws.http.HttpMethodName
-import com.paragon.sensonic.R
 import com.paragon.sensonic.data.OtpMobileRequest
 import com.paragon.sensonic.data.OtpRequest
 import com.paragon.sensonic.data.OtpResponse
 import com.paragon.sensonic.databinding.ActivityOtpBinding
-import com.paragon.sensonic.network.AwsInterceptor
-import com.paragon.sensonic.network.Constant.*
-import com.paragon.sensonic.network.NetworkResponseCallback
-import com.paragon.sensonic.network.OkhttpInstance
 import com.paragon.utils.GeneralFunctions
 import com.paragon.utils.base.BaseViewModel
 import com.paragon.utils.local.AppPreference
@@ -106,7 +100,7 @@ class OtpViewModel : BaseViewModel<OtpNavigator>() {
                 HttpMethodName.POST, OTP_METHOD,
                 GeneralFunctions.serialize(otpRequest, OtpRequest::class.java)
             )
-            OkhttpInstance.getOkhttpClient(awsInterceptor, object : NetworkResponseCallback {
+            OkhttpInstance.getOkhttpClient(awsInterceptor, object {
                 override fun onSuccess(response: String) {
                     navigator.onHideProgress()
                     navigator.onSuccess(
@@ -144,7 +138,7 @@ class OtpViewModel : BaseViewModel<OtpNavigator>() {
                 HttpMethodName.POST, OTP_METHOD,
                 GeneralFunctions.serialize(otpRequest, OtpMobileRequest::class.java)
             )
-            OkhttpInstance.getOkhttpClient(awsInterceptor, object : NetworkResponseCallback {
+            OkhttpInstance.getOkhttpClient(awsInterceptor, object {
                 override fun onSuccess(response: String) {
                     navigator.onHideProgress()
                     navigator.onSuccess(

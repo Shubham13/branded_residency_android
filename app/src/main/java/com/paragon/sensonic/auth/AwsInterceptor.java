@@ -6,6 +6,7 @@ import com.amazonaws.DefaultRequest;
 import com.amazonaws.auth.CognitoCredentialsProvider;
 import com.amazonaws.http.HttpMethodName;
 import com.amazonaws.regions.Regions;
+import com.paragon.utils.networking.NoConnectivityException;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -19,10 +20,12 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import okio.Buffer;
 
-import static com.paragon.sensonic.network.Constant.POOL_ID;
-import static com.paragon.sensonic.network.Constant.REGION;
-import static com.paragon.sensonic.network.Constant.SERVICE_NAME;
+
 import static com.paragon.sensonic.utils.AppConstant.EMPTY;
+import static com.paragon.sensonic.utils.AppConstant.IDENTITY_POOL_ID;
+import static com.paragon.sensonic.utils.AppConstant.REGION;
+import static com.paragon.sensonic.utils.AppConstant.SERVICE_NAME;
+import static com.paragon.utils.GeneralFunctions.isInternetAvailable;
 
 
 class AwsInterceptor implements Interceptor {
@@ -36,7 +39,7 @@ class AwsInterceptor implements Interceptor {
 
 
     public AwsInterceptor(String baseUrl, HttpMethodName methodType, EndPoints endPoint, String body) {
-        this.credentialsProvider = new CognitoCredentialsProvider(POOL_ID, Regions.AP_SOUTH_1);
+        this.credentialsProvider = new CognitoCredentialsProvider(IDENTITY_POOL_ID, Regions.AP_SOUTH_1);
         this.httpMethodName = methodType;
         this.baseUrl = baseUrl;
         this.requestBody = RequestBody.create(MediaType.parse(contentType), body);
@@ -64,6 +67,10 @@ class AwsInterceptor implements Interceptor {
 
     @Override
     public Response intercept(Chain chain) throws IOException {
+        if (!isInternetAvailable()) {
+            throw new NoConnectivityException();
+        }
+
         Request signedRequest = sign(chain.request());
         return chain.proceed(signedRequest);
     }

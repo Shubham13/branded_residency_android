@@ -3,25 +3,12 @@ package com.paragon.sensonic.ui.activities.login;
 import android.text.TextUtils;
 import android.util.Patterns;
 
-import com.amazonaws.http.HttpMethodName;
 import com.paragon.sensonic.auth.PasswordLessLoginResponse;
-import com.paragon.sensonic.data.Login;
-import com.paragon.sensonic.data.LoginResponse;
 import com.paragon.sensonic.databinding.ActivityLoginBinding;
-import com.paragon.sensonic.network.AwsInterceptor;
-import com.paragon.sensonic.network.OkhttpInstance;
-import com.paragon.utils.GeneralFunctions;
 import com.paragon.utils.base.BaseViewModel;
-import com.paragon.utils.local.AppPreference;
-import com.paragon.utils.local.PreferenceKeys;
 import com.paragon.utils.networking.NetworkResponseCallback;
 
 import java.util.HashMap;
-
-import static com.paragon.sensonic.network.Constant.BRAND_ID;
-import static com.paragon.sensonic.network.Constant.LOGIN_METHOD;
-import static com.paragon.sensonic.network.Constant.PROPERTY_ID;
-import static com.paragon.sensonic.network.Constant.SCOPE;
 
 public class LoginViewModel extends BaseViewModel<LoginNavigator> {
 
@@ -64,23 +51,6 @@ public class LoginViewModel extends BaseViewModel<LoginNavigator> {
     public void callLoginApi(ActivityLoginBinding mViewDataBinding, boolean isMobile) {
         if (isValid(mViewDataBinding, isMobile)) {
             getNavigator().onShowProgress();
-            /*Login loginData = new Login(SCOPE, BRAND_ID, PROPERTY_ID, mViewDataBinding.mobileEdit.getText().toString());
-            AwsInterceptor awsInterceptor = new AwsInterceptor(HttpMethodName.POST, LOGIN_METHOD,
-                    GeneralFunctions.serialize(loginData, Login.class));
-            OkhttpInstance.getOkhttpClient(awsInterceptor, new NetworkResponseCallback() {
-                @Override
-                public void onSuccess(String response) {
-                    getNavigator().onHideProgress();
-                    getNavigator().onSuccess(GeneralFunctions.deserialize(response,LoginResponse.class));
-                }
-
-                @Override
-                public void onFailure(String error) {
-                    getNavigator().onHideProgress();
-                    getNavigator().onError(error);
-                }
-            });*/
-
             HashMap<String, String> data = new HashMap<>();
             data.put("type","email");
             data.put("email","rupeshsaxena2015@gmail.com");
@@ -95,6 +65,11 @@ public class LoginViewModel extends BaseViewModel<LoginNavigator> {
                 @Override
                 public void onFailure(String error) {
                     getNavigator().onHideProgress();
+                }
+
+                @Override
+                public void onInternetDisable() {
+
                 }
             });
         }

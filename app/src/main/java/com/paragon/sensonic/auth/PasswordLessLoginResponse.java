@@ -1,10 +1,13 @@
 package com.paragon.sensonic.auth;
 
+import android.util.Log;
+
 import com.amazonaws.http.HttpMethodName;
 import com.paragon.sensonic.utils.AppConstant;
 import com.paragon.utils.GeneralFunctions;
 import com.paragon.utils.base.BaseModel;
 import com.paragon.utils.networking.NetworkResponseCallback;
+import com.paragon.utils.networking.NoConnectivityException;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -13,15 +16,11 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
-/**
- * Created by Rupesh Saxena
- */
 
 public class PasswordLessLoginResponse extends BaseModel<String, String> {
 
     @Override
     public void doNetworkRequest(HashMap<String, String> data, NetworkResponseCallback networkResponseCallback) {
-        if (GeneralFunctions.isInternetAvailable()) {
             AwsInterceptor awsInterceptor;
             if (data.get("type").matches("email")) {
                 awsInterceptor = new AwsInterceptor(AppConstant.BASE_URL, HttpMethodName.POST, EndPoints.PASSWORD_LESS_LOGIN,
@@ -40,6 +39,11 @@ public class PasswordLessLoginResponse extends BaseModel<String, String> {
             OkHttpClient.getOkHttpClient(awsInterceptor).enqueue(new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
+                    if(e instanceof NoConnectivityException){
+                        Log.e("Internet failure","Not Connected");
+                        networkResponseCallback.onInternetDisable();
+                    }
+
                     networkResponseCallback.onFailure(call.toString());
                 }
 
@@ -56,11 +60,6 @@ public class PasswordLessLoginResponse extends BaseModel<String, String> {
                     }
                 }
             });
-
-        } else {
-            networkResponseCallback.onInternetDisable();
-        }
-
     }
 }
 
