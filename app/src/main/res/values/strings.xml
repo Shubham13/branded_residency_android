@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name" translatable="false">BrandedResidences</string>
 
+    <!--sensonic error messages-->
+    <string name="unknown">Invalid Request type</string>
+    <string name="operation_not_allowed">Operation not allowed</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="invalid_parameters">Invalid parameters</string>
+    <string name="invalid_user_name">Invalid phone number or email</string>
+    <string name="token_expired">Token expired</string>
+    <string name="otp_expired">Otp expired</string>
+    <string name="user_not_active">Not a active user</string>
+    <string name="invalid_otp">Invalid otp. Please try again</string>
+
     <!--activity Login-->
     <string name="label_login">Login</string>
     <string name="label_mobile_number">Mobile Number</string>
