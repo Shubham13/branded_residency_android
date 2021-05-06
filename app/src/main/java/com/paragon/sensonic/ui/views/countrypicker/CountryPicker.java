@@ -628,16 +628,6 @@ public class CountryPicker implements BottomSheetInteractionListener, LifecycleO
                 params.width = LinearLayout.LayoutParams.MATCH_PARENT;
                 params.height = LinearLayout.LayoutParams.MATCH_PARENT;
                 dialog.getWindow().setAttributes(params);
-                if (theme == THEME_NEW) {
-                    Drawable background =
-                            ContextCompat.getDrawable(context, R.drawable.ic_dialog_new_background);
-                    if (background != null) {
-                        background.setColorFilter(
-                                new PorterDuffColorFilter(backgroundColor, PorterDuff.Mode.SRC_ATOP));
-                    }
-                    rootView.setBackgroundDrawable(background);
-                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                }
             }
             dialog.show();
         }
@@ -688,8 +678,7 @@ public class CountryPicker implements BottomSheetInteractionListener, LifecycleO
                             searchIcon = null;
                         }
                     }
-                },
-                textColor);
+                });
         countriesRecyclerView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(sheetView.getContext());
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -735,6 +724,10 @@ public class CountryPicker implements BottomSheetInteractionListener, LifecycleO
         for (Country country : countries) {
             if (country.getName().toLowerCase(Locale.ENGLISH).contains(searchQuery.toLowerCase())) {
                 searchResults.add(country);
+            }else if(country.getCode().toLowerCase(Locale.ENGLISH).contains(searchQuery.toLowerCase())){
+                searchResults.add(country);
+            }else if(country.getDialCode().toLowerCase(Locale.ENGLISH).contains(searchQuery.toLowerCase())){
+                searchResults.add(country);
             }
         }
         sortCountries(searchResults);
@@ -750,14 +743,15 @@ public class CountryPicker implements BottomSheetInteractionListener, LifecycleO
                             android.R.attr.drawable
                     };
             TypedArray ta = sheetView.getContext().obtainStyledAttributes(style, attrs);
-            textColor = ta.getColor(0, Color.BLACK);
-            hintColor = ta.getColor(1, Color.GRAY);
-            backgroundColor = ta.getColor(2, Color.WHITE);
+            textColor = ta.getColor(0, Color.WHITE);
+            hintColor = ta.getColor(1, Color.WHITE);
+            backgroundColor = ta.getColor(2, Color.BLACK);
             searchIconId = ta.getResourceId(3, R.drawable.ic_search);
             searchEditText.setTextColor(textColor);
             searchEditText.setHintTextColor(hintColor);
             searchIcon = ContextCompat.getDrawable(searchEditText.getContext(), searchIconId);
             if (searchIconId == R.drawable.ic_search) {
+                searchIcon.setTint(Color.WHITE);
                 searchIcon.setColorFilter(new PorterDuffColorFilter(hintColor, PorterDuff.Mode.SRC_ATOP));
             }
             searchEditText.setCompoundDrawablesWithIntrinsicBounds(searchIcon, null, null, null);
@@ -914,7 +908,6 @@ public class CountryPicker implements BottomSheetInteractionListener, LifecycleO
 
     public static void showPicker(AppCompatActivity appCompatActivity, boolean dialogType, OnCountryPickerListener onCountryPickerListener) {
         Builder builder = new Builder().with(appCompatActivity).listener(onCountryPickerListener);
-        builder.theme(CountryPicker.THEME_NEW);
         builder.canSearch(true);
         builder.sortBy(CountryPicker.SORT_BY_NAME);
         CountryPicker countryPicker = builder.build();

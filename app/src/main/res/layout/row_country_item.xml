@@ -16,9 +16,7 @@
             android:id="@+id/country_flag"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:textAppearance="@style/bodyBaselineRegSystemBlack"
+            android:layout_marginStart="@dimen/_16sdp"
             android:visibility="visible" />
 
         <LinearLayout
@@ -32,20 +30,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:textAppearance="@style/bodyBaselineRegSystemBlack" />
+                android:textAppearance="@style/bodyBaselineSystemWhite" />
 
             <TextView
                 android:id="@+id/countryCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:theme="@style/bodyBaselineRegSystemBlackAlpha50" />
+                android:textAllCaps="true"
+                android:theme="@style/bodyBaselineSystemWhite" />
         </LinearLayout>
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
+        android:layout_height="1dp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:theme="@style/systemBlackAlpha20" />
+        android:theme="@style/systemWhiteAlpha5" />
 </LinearLayout>

@@ -3,28 +3,29 @@
     android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/darkBackground"
     android:orientation="vertical">
+
     <EditText
         android:id="@+id/country_code_picker_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
         android:drawableStart="@drawable/ic_search"
-        android:drawableLeft="@drawable/ic_search"
         android:drawablePadding="8dp"
         android:hint="@string/search"
+        android:drawableTint="@color/White"
+        android:background="@null"
+        android:theme="@style/buttonNavTitleBrandSecoundryEditText"
         android:imeOptions="actionSearch"
         android:inputType="text"
         android:maxLines="1"
-        android:padding="16dp"
-        android:textAppearance="@style/bodyBaselineRegSystemBlack"
-        android:theme="@style/brandAccentEditText" />
+        android:padding="16dp"  />
+
     <View
-        android:id="@+id/divider"
-        style="@style/systemBlackAlpha20"
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:visibility="visible" />
+        android:layout_height="1dp"
+        android:theme="@style/systemWhiteAlpha5" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/countries_recycler_view"
         android:layout_width="match_parent"

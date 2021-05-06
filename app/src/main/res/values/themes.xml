@@ -4,6 +4,7 @@
         <item name="colorPrimary">@color/Tomato</item>
         <item name="colorPrimaryDark">@color/dark_background</item>
         <item name="colorAccent">@color/White</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowBackground">@mipmap/ic_app_background</item>
     </style>
 
@@ -29,6 +30,10 @@
         <item name="android:windowEnterAnimation">@anim/slide_up</item>
         <item name="android:windowExitAnimation">@anim/slide_down</item>
     </style>
+
+
+
+
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

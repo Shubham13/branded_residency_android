@@ -1,206 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <data>
+
         <variable
             name="otpVM"
             type="com.paragon.sensonic.ui.activities.otp.OtpViewModel" />
     </data>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@mipmap/ic_background">
-
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginEnd="@dimen/_16sdp">
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="0dp"
-            android:layout_weight="0.3"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label_enter_code"
-            style="@style/headlineH2SystemWhite"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_16sdp"
-            android:text="@string/label_code_sent"
-            style="@style/bodyBaselineRegBrandSecoundry"/>
-
-        <TextView
-            android:id="@+id/label_error"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/label_code_invalid"
-            style="@style/subXSmallSystemRed"
-            android:layout_marginTop="@dimen/_16sdp"/>
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_background"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_marginBottom="@dimen/_10sdp">
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/otp_edit_one"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/_26sdp"
-                android:paddingEnd="@dimen/_10sdp"
-                android:paddingStart="@dimen/_10sdp"
-                android:paddingBottom="@dimen/_26sdp"
-                android:layout_weight="1"
-                android:lines="1"
-                android:gravity="center"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusRight="@id/otp_edit_two"
-                android:imeOptions="actionNext"
-                android:singleLine="true"
-                android:theme="@style/buttonNavTitleBrandSecoundryEditText"
-                android:layout_marginEnd="@dimen/_10sdp"
-                style="@style/darkLightFlatBorderRadius10"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
 
-            <EditText
-                android:id="@+id/otp_edit_two"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/_26sdp"
-                android:paddingEnd="@dimen/_10sdp"
-                android:paddingStart="@dimen/_10sdp"
+            <LinearLayout
+                android:id="@+id/toolbar_left_layout"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:paddingBottom="@dimen/_26sdp"
-                android:layout_weight="1"
-                android:lines="1"
-                android:maxLength="1"
-                android:inputType="number"
-                android:nextFocusRight="@id/otp_edit_three"
-                android:singleLine="true"
-                android:imeOptions="actionNext"
-                android:layout_marginEnd="@dimen/_10sdp"
-                android:theme="@style/buttonNavTitleBrandSecoundryEditText"
-                style="@style/darkLightFlatBorderRadius10"/>
+                android:onClick="@{() -> otpVM.onClickBack()}"
+                android:theme="@style/barTopBannerCircle">
 
-            <EditText
-                android:id="@+id/otp_edit_three"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/_26sdp"
-                android:paddingEnd="@dimen/_10sdp"
-                android:paddingStart="@dimen/_10sdp"
-                android:gravity="center"
-                android:paddingBottom="@dimen/_26sdp"
-                android:layout_weight="1"
-                android:lines="1"
-                android:maxLength="1"
-                android:inputType="number"
-                android:singleLine="true"
-                android:imeOptions="actionNext"
-                android:theme="@style/buttonNavTitleBrandSecoundryEditText"
-                android:layout_marginEnd="@dimen/_10sdp"
-                style="@style/darkLightFlatBorderRadius10"/>
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@mipmap/ic_back"/>
 
-            <EditText
-                android:id="@+id/otp_edit_four"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/_26sdp"
-                android:paddingEnd="@dimen/_10sdp"
-                android:paddingStart="@dimen/_10sdp"
-                android:gravity="center"
-                android:paddingBottom="@dimen/_26sdp"
-                android:layout_weight="1"
-                android:lines="1"
-                android:maxLength="1"
-                android:inputType="number"
-                android:singleLine="true"
-                android:imeOptions="actionNext"
-                android:theme="@style/buttonNavTitleBrandSecoundryEditText"
-                android:layout_marginEnd="@dimen/_10sdp"
-                style="@style/darkLightFlatBorderRadius10"/>
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/otp_edit_five"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/_26sdp"
-                android:paddingEnd="@dimen/_10sdp"
-                android:paddingStart="@dimen/_10sdp"
-                android:gravity="center"
-                android:paddingBottom="@dimen/_26sdp"
-                android:layout_weight="1"
-                android:lines="1"
-                android:inputType="number"
-                android:maxLength="1"
-                android:singleLine="true"
-                android:imeOptions="actionNext"
-                android:theme="@style/buttonNavTitleBrandSecoundryEditText"
-                android:layout_marginEnd="@dimen/_10sdp"
-                style="@style/darkLightFlatBorderRadius10"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
 
-            <EditText
-                android:id="@+id/otp_edit_six"
-                android:layout_width="0dp"
+            <TextView
+                style="@style/headlineH2SystemWhite"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/_26sdp"
-                android:paddingEnd="@dimen/_10sdp"
-                android:paddingStart="@dimen/_10sdp"
-                android:gravity="center"
-                android:paddingBottom="@dimen/_26sdp"
-                android:layout_weight="1"
-                android:lines="1"
-                android:maxLength="1"
-                android:inputType="number"
-                android:singleLine="true"
-                android:imeOptions="actionDone"
-                android:theme="@style/buttonNavTitleBrandSecoundryEditText"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:text="@string/label_enter_code" />
+
+            <TextView
+                android:id="@+id/code_sent_text"
+                style="@style/bodyBaselineRegBrandSecoundry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:text="@string/label_code_sent" />
+
+            <TextView
+                android:id="@+id/label_error"
+                style="@style/subXSmallSystemRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:text="@string/label_code_invalid" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.paragon.utils.views.otp.OtpView
+                android:id="@+id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"
-                style="@style/darkLightFlatBorderRadius10"/>
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:inputType="number"
+                android:itemBackground="@drawable/dark_light_flat_border_radius_10"
+                app:OtpItemCount="6"
+                android:theme="@style/buttonNavTitleBrandSecoundryEditText"
+                style="@style/OtpWidget.OtpView"
+                app:OtpItemHeight="@dimen/_72sdp"
+                app:OtpItemSpacing="@dimen/_8sdp"
+                app:OtpItemWidth="@dimen/_49sdp"
+                app:OtpViewType="none" />
+
+            <TextView
+                android:id="@+id/verify_btn"
+                style="@style/brandAccentGradientRadius100"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:onClick="@{() -> otpVM.onClickVerify()}"
+                android:text="@string/label_verify"
+                android:textAppearance="@style/buttonLargeDarkDarkFlat" />
+
+            <TextView
+                android:id="@+id/resend_code_text"
+                style="@style/buttonNavTitleBrandSecoundry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:onClick="@{() -> otpVM.onClickResend()}"
+                android:text="@string/label_resend_code" />
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/verify_btn"
-            style="@style/brandAccentGradientRadius100"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_16sdp"
-            android:layout_marginBottom="@dimen/_20sdp"
-            android:gravity="center"
-            android:onClick="@{() -> otpVM.onClickVerify()}"
-            android:text="@string/label_verify"
-            android:textAppearance="@style/buttonLargeDarkDarkFlat" />
-
-        <TextView
-            android:id="@+id/resend_code_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label_resend_code"
-            android:onClick="@{() -> otpVM.onClickResend()}"
-            android:layout_gravity="center"
-            android:layout_marginBottom="@dimen/_20sdp"
-            style="@style/buttonNavTitleBrandSecoundry"/>
-
     </LinearLayout>
-
-</LinearLayout>
 </layout>

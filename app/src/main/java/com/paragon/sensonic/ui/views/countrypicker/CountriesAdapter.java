@@ -22,16 +22,14 @@ public class CountriesAdapter extends RecyclerView.Adapter<CountriesAdapter.View
     private final OnItemClickListener listener;
     private final List<Country> countries;
     private final Context context;
-    private final int textColor;
     // endregion
 
     //region Constructor
     public CountriesAdapter(Context context, List<Country> countries,
-                            OnItemClickListener listener, int textColor) {
+                            OnItemClickListener listener) {
         this.context = context;
         this.countries = countries;
         this.listener = listener;
-        this.textColor = textColor;
     }
     // endregion
 
@@ -47,8 +45,7 @@ public class CountriesAdapter extends RecyclerView.Adapter<CountriesAdapter.View
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final Country country = countries.get(position);
         holder.countryNameText.setText(country.getName());
-        holder.countryCode.setText(country.getDialCode());
-        holder.countryNameText.setTextColor(textColor == 0 ? Color.BLACK : textColor);
+        holder.countryCode.setText(country.getCode());
         holder.countryFlagTv.setText(getFlag(country.getCode()));
         holder.rootView.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -59,9 +59,9 @@ public class VerifyOtpResponse extends BaseModel<String, String> {
                     case 403:
                         networkResponseCallback.onFailure("Invalid Token");
                         break;
-
                     case 200:
-                        networkResponseCallback.onResponse(GeneralFunctions.deserialize(response.body().string(), OtpVerify.class));
+                        networkResponseCallback.onResponse(GeneralFunctions.deserialize(response.body().string(),
+                                OtpVerify.class));
                         break;
                 }
             }

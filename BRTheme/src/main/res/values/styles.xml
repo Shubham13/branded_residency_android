@@ -71,6 +71,10 @@
         <item name="android:background">@drawable/dark_background_radius_10</item>
     </style>
 
+    <style name="darkBackground">
+        <item name="android:background">@color/dark_background</item>
+    </style>
+
     <style name="darkMediumFlatRadius10">
         <item name="android:background">@drawable/dark_medium_flat_radius_10</item>
     </style>
@@ -127,6 +131,10 @@
         <item name="colorControlActivated">@color/brand_accent</item>
     </style>
 
-
+    <style name="OtpWidget.OtpView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
 
 </resources>

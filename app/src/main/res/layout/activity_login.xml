@@ -100,7 +100,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginEnd="@dimen/_16sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
         android:orientation="horizontal">
 
         <TextView
@@ -110,6 +109,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:gravity="center"
+            android:onClick="@{() -> loginVM.onCountyCodeClick()}"
             android:text="+1"
             android:padding="@dimen/_15sdp"
             android:theme="@style/buttonNavTitleBrandSecoundry" />
@@ -130,6 +130,15 @@
 
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        style="@style/subXSmallSystemRed"/>
 
     <TextView
         android:id="@+id/login_btn"

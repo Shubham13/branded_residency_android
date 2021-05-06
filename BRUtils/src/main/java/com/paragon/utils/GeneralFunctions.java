@@ -23,6 +23,7 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.Patterns;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.KeyCharacterMap;
@@ -33,6 +34,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
@@ -47,6 +49,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
+import com.google.i18n.phonenumbers.NumberParseException;
+import com.google.i18n.phonenumbers.PhoneNumberUtil;
+import com.google.i18n.phonenumbers.Phonenumber;
 
 import java.io.File;
 import java.io.IOException;
@@ -1579,4 +1584,36 @@ public class GeneralFunctions {
             return false;
         }
     }
+
+
+    public static boolean isValidPhoneNumber(CharSequence phoneNumber) {
+        if (!TextUtils.isEmpty(phoneNumber)) {
+            return Patterns.PHONE.matcher(phoneNumber).matches();
+        }
+        return false;
+    }
+
+    public static boolean validateUsing_libphonenumber(String countryCode, String phNumber) {
+        PhoneNumberUtil phoneNumberUtil = PhoneNumberUtil.getInstance();
+        String isoCode = phoneNumberUtil.getRegionCodeForCountryCode(Integer.parseInt(countryCode));
+        Phonenumber.PhoneNumber phoneNumber = null;
+        try {
+            //phoneNumber = phoneNumberUtil.parse(phNumber, "IN");  //if you want to pass region code
+            phoneNumber = phoneNumberUtil.parse(phNumber, isoCode);
+        } catch (NumberParseException e) {
+            System.err.println(e);
+        }
+
+        boolean isValid = phoneNumberUtil.isValidNumber(phoneNumber);
+        if (isValid) {
+            String internationalFormat = phoneNumberUtil.format(phoneNumber, PhoneNumberUtil.PhoneNumberFormat.INTERNATIONAL);
+            Log.e("Phone Number Valid","Phone Number Valid");
+            return true;
+        } else {
+            Log.e("Invalid","Phone Number Invalid");
+            //Toast.makeText(this, "Phone Number is Invalid " + phoneNumber, Toast.LENGTH_LONG).show();
+            return false;
+        }
+    }
+
 }

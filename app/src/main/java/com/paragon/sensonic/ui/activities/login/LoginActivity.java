@@ -1,5 +1,6 @@
 package com.paragon.sensonic.ui.activities.login;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Log;
@@ -11,7 +12,9 @@ import com.paragon.sensonic.R;
 import com.paragon.sensonic.auth.dto.PasswordLessLogin;
 import com.paragon.sensonic.databinding.ActivityLoginBinding;
 import com.paragon.sensonic.ui.activities.otp.OtpActivity;
+import com.paragon.sensonic.ui.views.countrypicker.Country;
 import com.paragon.sensonic.ui.views.countrypicker.CountryPicker;
+import com.paragon.sensonic.ui.views.countrypicker.listeners.OnCountryPickerListener;
 import com.paragon.utils.GeneralFunctions;
 import com.paragon.utils.base.BaseActivity;
 import com.paragon.utils.local.AppPreference;
@@ -22,6 +25,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
     private final LoginViewModel loginViewModel = getVM(LoginViewModel.class);
     private String type = "phone";
     private AppPreference appPreference;
+    private Context context;
 
     @Override
     public int getBindingVariable() {
@@ -42,6 +46,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getViewModel().setNavigator(this);
+        context = this;
         getViewModel().init();
     }
 
@@ -57,11 +62,21 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
     @Override
     public void onLoginClick() {
         if (!type.matches("phone")) {
-            loginViewModel.callLoginApi(mViewDataBinding.mobileEdit.getText().toString(), type);
+            loginViewModel.callLoginApi(context,"", mViewDataBinding.mobileEdit.getText().toString(), type);
         } else {
-            loginViewModel.callLoginApi(mViewDataBinding.countryCodeText.getText().toString() + "-" +
+            loginViewModel.callLoginApi(context, mViewDataBinding.countryCodeText.getText().toString(),
                     mViewDataBinding.mobileEdit.getText().toString(), type);
         }
+    }
+
+    @Override
+    public void onCountyCodeClick() {
+        CountryPicker.showPicker(this, true, new OnCountryPickerListener() {
+            @Override
+            public void onSelectCountry(Country country) {
+                mViewDataBinding.countryCodeText.setText(country.getDialCode());
+            }
+        });
     }
 
 
@@ -111,6 +126,17 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
     @Override
     public void onHideProgress() {
         hideProgressDialog();
+    }
+
+    @Override
+    public void setErrorText(boolean show, String errorText) {
+        if(show) {
+            mViewDataBinding.errorText.setVisibility(View.VISIBLE);
+            mViewDataBinding.errorText.setText(errorText);
+        }else{
+            mViewDataBinding.errorText.setVisibility(View.GONE);
+            mViewDataBinding.errorText.setText("");
+        }
     }
 
     @Override

@@ -6,9 +6,15 @@
     <string name="label_mobile_number">Mobile Number</string>
     <string name="label_verify">Verify</string>
     <string name="label_enter_code">Enter 6-digit Verification Code</string>
-    <string name="label_code_sent">Code sent to mobile number ending in 1234</string>
+    <string name="label_code_sent">Code sent to mobile number ending in</string>
     <string name="label_code_invalid">Code Invalid. Try again</string>
     <string name="label_resend_code">Resend Code</string>
+    <string name="label_resend_code_in">Resend Code in</string>
+    <string name="label_secounds">secounds...</string>
+    <string name="error_empty_mobile_number">Mobile number can’t be blank.</string>
+    <string name="error_invalid_mobile_number">Incorrect mobile number.</string>
+    <string name="error_empty_otp">Please enter one time password</string>
+    <string name="error_invalid_otp">Code invalid. Try again.</string>
 
     <!--activity dashboard-->
     <string name="menu_home">@string/label_today</string>

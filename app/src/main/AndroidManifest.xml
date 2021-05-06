@@ -30,12 +30,17 @@
             android:name="com.paragon.sensonic.ui.activities.login.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity
             android:name="com.paragon.sensonic.ui.activities.otp.OtpActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize">
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize">
+
         </activity>
 
         <activity
@@ -48,10 +53,7 @@
             android:name=".ui.activities.profile.ProfileActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
 
         <activity
