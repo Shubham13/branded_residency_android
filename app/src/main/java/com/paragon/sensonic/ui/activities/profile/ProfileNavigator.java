@@ -19,4 +19,6 @@ public interface ProfileNavigator {
     void onInterestsItemClick();
 
     void onGuestHistoryClick();
+
+    void onLogout();
 }

@@ -1,5 +1,7 @@
 package com.paragon.sensonic.auth;
 
+
+
 import com.amazonaws.http.HttpMethodName;
 import com.paragon.sensonic.auth.dto.PasswordLessLogin;
 import com.paragon.sensonic.utils.AppConstant;
@@ -47,7 +49,9 @@ public class PasswordLessLoginResponse extends BaseModel<String, String> {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                ResponseHandler.handleResponse(response, PasswordLessLogin.class, networkResponseCallback);
+                String body = response.body().string();
+                ResponseHandler.handleResponse(response.code(), body,
+                        PasswordLessLogin.class, networkResponseCallback);
             }
         });
     }

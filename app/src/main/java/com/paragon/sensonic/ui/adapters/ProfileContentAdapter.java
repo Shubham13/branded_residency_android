@@ -191,6 +191,10 @@ public class ProfileContentAdapter extends RecyclerView.Adapter<ProfileContentAd
                 profile_list_item_image.setImageResource(R.mipmap.ic_guest_history);
             }
 
+            if(item.getTitle().equalsIgnoreCase(context.getString(R.string.label_logout))){
+                profile_list_item_image.setImageResource(R.mipmap.ic_guest_history);
+            }
+
             if(item.getTitle().equalsIgnoreCase(context.getString(R.string.label_service_directory))){
                 profile_list_item_image.setImageResource(R.mipmap.ic_family_home);
             }

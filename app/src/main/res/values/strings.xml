@@ -8,9 +8,15 @@
     <string name="invalid_parameters">Invalid parameters</string>
     <string name="invalid_user_name">Invalid phone number or email</string>
     <string name="token_expired">Token expired</string>
-    <string name="otp_expired">Otp expired</string>
+    <string name="otp_expired">Invalid OTP.</string>
     <string name="user_not_active">Not a active user</string>
-    <string name="invalid_otp">Invalid otp. Please try again</string>
+    <string name="error_empty_otp">Please enter one time password</string>
+    <string name="error_invalid_otp">Incorrect OTP. Please try again.</string>
+    <string name="error_not_register_mobile">Unregistered phone number.</string>
+    <string name="error_empty">Please enter some value.</string>
+    <string name="error_incorrect">Incorrect format.</string>
+    <string name="error_invalid_email">Unregistered email address.</string>
+
 
     <!--activity Login-->
     <string name="label_login">Login</string>
@@ -22,10 +28,8 @@
     <string name="label_resend_code">Resend Code</string>
     <string name="label_resend_code_in">Resend Code in</string>
     <string name="label_secounds">secounds...</string>
-    <string name="error_empty_mobile_number">Mobile number can’t be blank.</string>
-    <string name="error_invalid_mobile_number">Incorrect mobile number.</string>
-    <string name="error_empty_otp">Please enter one time password</string>
-    <string name="error_invalid_otp">Code invalid. Try again.</string>
+
+
 
     <!--activity dashboard-->
     <string name="menu_home">@string/label_today</string>
@@ -63,6 +67,7 @@
     <string name="label_folio">Folio</string>
     <string name="label_booking_history">Booking History</string>
     <string name="label_guest_history">Guest History</string>
+    <string name="label_logout">Logout</string>
     <string name="label_service_directory">Service Directory</string>
     <string name="label_property_map">Property Map</string>
     <string name="label_contact_info">Contact Info</string>

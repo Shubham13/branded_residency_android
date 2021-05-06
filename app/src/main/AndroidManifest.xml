@@ -28,9 +28,8 @@
         </provider>
 
         <activity
-            android:name="com.paragon.sensonic.ui.activities.login.LoginActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize">
+            android:name=".ui.activities.splash.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -38,10 +37,15 @@
         </activity>
 
         <activity
+            android:name="com.paragon.sensonic.ui.activities.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <activity
             android:name="com.paragon.sensonic.ui.activities.otp.OtpActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize">
-
         </activity>
 
         <activity
@@ -54,7 +58,6 @@
             android:name=".ui.activities.profile.ProfileActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan">
-
         </activity>
 
         <activity

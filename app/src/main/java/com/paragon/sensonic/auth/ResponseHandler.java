@@ -13,12 +13,11 @@ import okhttp3.Response;
 
 public class ResponseHandler {
 
-    public static void handleResponse(Response response, Class<?> mapper, NetworkResponseCallback networkResponseCallback) throws IOException {
-        switch (response.code()) {
+    public static void handleResponse(int code, String response, Class<?> mapper, NetworkResponseCallback networkResponseCallback) throws IOException {
+        switch (code) {
             case 200:
-                networkResponseCallback.onResponse(GeneralFunctions.deserialize(response.body().string(), mapper));
+                networkResponseCallback.onResponse(GeneralFunctions.deserialize(response, mapper));
                 break;
-
             case 401:
             case 403:
                 networkResponseCallback.onSessionExpire();
@@ -26,7 +25,7 @@ public class ResponseHandler {
             case 400:
             case 404:
             case 500:
-                handelResponseCode(getStatusCode(response.body().string()),networkResponseCallback);
+                handelResponseCode(getStatusCode(response),networkResponseCallback);
                 break;
             default:
                 networkResponseCallback.onFailure(App.getAppContext().getString(R.string.unknown));
@@ -51,7 +50,7 @@ public class ResponseHandler {
                 networkResponseCallback.onFailure(App.getAppContext().getString(R.string.otp_expired));
                 break;
             case 1008:
-                networkResponseCallback.onFailure(App.getAppContext().getString(R.string.invalid_otp));
+                networkResponseCallback.onFailure(App.getAppContext().getString(R.string.error_invalid_otp));
                 break;
             case 1003:
                 networkResponseCallback.onFailure(App.getAppContext().getString(R.string.token_expired));

@@ -17,6 +17,7 @@ public enum ProfileType {
     folio,
     bookinghistory,
     guesthistory,
+    logout,
     servicedirectory,
     propertymap,
     contactinfo

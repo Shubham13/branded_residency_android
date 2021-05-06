@@ -8,7 +8,7 @@ interface OtpNavigator {
     fun onClickBack()
     fun onClickVerify()
     fun onClickResend()
-    fun resendCodeIn30Sec(s: String)
+    fun resendCodeIn45Sec(s: String,enable : Boolean)
     fun onVerifyOtp(verify: OtpVerify?)
     fun onResendOtp(resend : PasswordLessLogin)
     fun onError(error: String)

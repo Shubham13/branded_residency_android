@@ -44,6 +44,9 @@ public class ProfileViewModel extends BaseViewModel<ProfileNavigator> {
             case guesthistory:
                 getNavigator().onGuestHistoryClick();
                 break;
+            case logout:
+                getNavigator().onLogout();
+                break;
         }
     }
 

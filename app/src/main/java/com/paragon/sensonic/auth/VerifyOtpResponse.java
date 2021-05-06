@@ -1,14 +1,22 @@
 package com.paragon.sensonic.auth;
 
+import android.util.Log;
+
 import com.amazonaws.http.HttpMethodName;
-import com.paragon.sensonic.auth.dto.PasswordLessLogin;
+import com.paragon.sensonic.App;
+import com.paragon.sensonic.R;
+import com.paragon.sensonic.auth.dto.OtpVerifySession;
 import com.paragon.sensonic.data.OtpVerify;
 import com.paragon.sensonic.utils.AppConstant;
 import com.paragon.utils.GeneralFunctions;
 import com.paragon.utils.base.BaseModel;
-import com.paragon.utils.logger.Logger;
+import com.paragon.utils.local.AppPreference;
+import com.paragon.utils.local.PreferenceKeys;
 import com.paragon.utils.networking.NetworkResponseCallback;
 import com.paragon.utils.networking.NoConnectivityException;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -54,7 +62,15 @@ public class VerifyOtpResponse extends BaseModel<String, String> {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                ResponseHandler.handleResponse(response, OtpVerify.class, networkResponseCallback);
+                String body = response.body().string();
+                OtpVerify otpVerify = GeneralFunctions.deserialize(body,OtpVerify.class);
+                if(otpVerify.getCode()==1008){
+                    OtpVerifySession otpVerifySession = GeneralFunctions.deserialize(body,OtpVerifySession.class);
+                    AppPreference.getInstance(App.getAppContext()).addValue(PreferenceKeys.SESSION, otpVerifySession.getData().getSession());
+                    networkResponseCallback.onFailure(App.getAppContext().getString(R.string.error_invalid_otp));
+                }else{
+                    ResponseHandler.handleResponse(response.code(), body, OtpVerify.class, networkResponseCallback);
+                }
             }
         });
     }

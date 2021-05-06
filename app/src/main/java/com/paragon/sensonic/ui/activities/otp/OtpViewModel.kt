@@ -1,8 +1,8 @@
 package com.paragon.sensonic.ui.activities.otp
 
-import android.content.Context
 import android.os.CountDownTimer
 import android.text.TextUtils
+import com.paragon.sensonic.App
 import com.paragon.sensonic.R
 import com.paragon.sensonic.auth.PasswordLessLoginResponse
 import com.paragon.sensonic.auth.VerifyOtpResponse
@@ -32,12 +32,12 @@ class OtpViewModel : BaseViewModel<OtpNavigator>() {
         navigator.onClickResend()
     }
 
-    private fun isValidOtp(context: Context, otpValue: String): Boolean {
+    private fun isValidOtp(otpValue: String): Boolean {
         if (TextUtils.isEmpty(otpValue)) {
-            navigator.setErrorText(true, context.getString(R.string.error_empty_otp))
+            navigator.setErrorText(true, App.getAppContext().getString(R.string.error_empty_otp))
             return false
         } else if(otpValue.length<6){
-            navigator.setErrorText(true, context.getString(R.string.error_invalid_otp))
+            navigator.setErrorText(true, App.getAppContext().getString(R.string.error_invalid_otp))
             return false
         }else{
             navigator.setErrorText(false, "")
@@ -45,45 +45,46 @@ class OtpViewModel : BaseViewModel<OtpNavigator>() {
         }
     }
 
-    fun resendCodeTimer(context: Context) {
-        object : CountDownTimer(30000, 1000) {
+    fun resendCodeTimer() {
+        object : CountDownTimer(45000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
-                navigator.resendCodeIn30Sec(
-                    context.getString(R.string.label_resend_code_in) + " " +
-                            millisUntilFinished / 1000 + " " + context.getString(R.string.label_secounds)
+                navigator.resendCodeIn45Sec(
+                    App.getAppContext().getString(R.string.label_resend_code_in) + " " +
+                            millisUntilFinished / 1000 + " " + App.getAppContext().getString(R.string.label_secounds),
+                    false
                 )
             }
 
             override fun onFinish() {
-                navigator.resendCodeIn30Sec(context.getString(R.string.label_resend_code))
+                navigator.resendCodeIn45Sec(App.getAppContext().getString(R.string.label_resend_code),true)
             }
         }.start()
     }
 
 
-    fun callOtpVerify(context: Context, otp: String, appPreference: AppPreference,
-                      type: String, value: String) {
-        if (isValidOtp(context,otp)) {
+    fun callOtpVerify(otp: String, appPreference: AppPreference, type: String, value: String) {
+        if (isValidOtp(otp)) {
             navigator.onShowProgress()
-
-            var secretLoginCode: String = otp
-            var data: HashMap<String, String> = HashMap()
-            data.put("otp", secretLoginCode)
-            data.put("type", type)
-            data.put(type, value)
-            data.put("session", appPreference.getValue(PreferenceKeys.SESSION))
+            val secretLoginCode: String = otp
+            val data: HashMap<String, String> = HashMap()
+            data["otp"] = secretLoginCode
+            data["type"] = type
+            data[type] = value
+            data["session"] = appPreference.getValue(PreferenceKeys.SESSION)
 
             VerifyOtpResponse().doNetworkRequest(data, object : NetworkResponseCallback<OtpVerify> {
-                override fun onResponse(data: OtpVerify?) {
-                    navigator.onHideProgress()
-                    navigator.onVerifyOtp(data)
-
+                override fun onResponse(data: OtpVerify) {
+                    navigator.apply {
+                        onHideProgress()
+                        onVerifyOtp(data)
+                    }
                 }
 
-                override fun onFailure(error: String?) {
-                    navigator.onHideProgress()
-                    navigator.onError(error.toString())
-
+                override fun onFailure(error: String) {
+                    navigator.apply {
+                        onHideProgress()
+                        onError(error)
+                    }
                 }
 
             })
@@ -99,13 +100,17 @@ class OtpViewModel : BaseViewModel<OtpNavigator>() {
         PasswordLessLoginResponse().doNetworkRequest(data,
             object : NetworkResponseCallback<PasswordLessLogin> {
                 override fun onResponse(resendData: PasswordLessLogin) {
-                    navigator.onHideProgress()
-                    navigator.onResendOtp(resendData)
+                    navigator.apply {
+                        onHideProgress()
+                        onResendOtp(resendData)
+                    }
                 }
 
                 override fun onFailure(error: String) {
-                    navigator.onHideProgress()
-                    navigator.onError(error)
+                    navigator.apply {
+                        onHideProgress()
+                        onError(error)
+                    }
                 }
 
                 override fun onInternetDisable() {}

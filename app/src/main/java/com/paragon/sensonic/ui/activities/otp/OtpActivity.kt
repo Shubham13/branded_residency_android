@@ -1,6 +1,5 @@
 package com.paragon.sensonic.ui.activities.otp
 
-import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -17,12 +16,10 @@ class OtpActivity : BaseActivity<ActivityOtpBinding, OtpViewModel>(), OtpNavigat
 
     private val otpViewModel: OtpViewModel = getVM(OtpViewModel::class.java)
     private lateinit var appPreference: AppPreference
-    private lateinit var context: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel.navigator = this
-        context = this
         viewModel.init()
     }
 
@@ -40,7 +37,7 @@ class OtpActivity : BaseActivity<ActivityOtpBinding, OtpViewModel>(), OtpNavigat
 
     override fun init() {
         appPreference = AppPreference.getInstance(this)
-        viewModel.resendCodeTimer(context)
+        viewModel.resendCodeTimer()
     }
 
     override fun onClickBack() {
@@ -50,7 +47,6 @@ class OtpActivity : BaseActivity<ActivityOtpBinding, OtpViewModel>(), OtpNavigat
     override fun onClickVerify() {
         if (appPreference.getValue(PreferenceKeys.EMAIL).isNullOrEmpty())
             viewModel.callOtpVerify(
-                context,
                 mViewDataBinding.otpView.text.toString(),
                 appPreference,
                 "phone",
@@ -58,7 +54,6 @@ class OtpActivity : BaseActivity<ActivityOtpBinding, OtpViewModel>(), OtpNavigat
             )
         else
             viewModel.callOtpVerify(
-                context,
                 mViewDataBinding.otpView.text.toString(),
                 appPreference,
                 "email",
@@ -80,12 +75,12 @@ class OtpActivity : BaseActivity<ActivityOtpBinding, OtpViewModel>(), OtpNavigat
         }
     }
 
-    override fun resendCodeIn30Sec(s: String) {
+    override fun resendCodeIn45Sec(s: String, enable : Boolean) {
+        mViewDataBinding.resendCodeText.isEnabled = enable
         mViewDataBinding.resendCodeText.text = s
     }
 
     override fun onVerifyOtp(verify: OtpVerify?) {
-        mViewDataBinding.labelError.visibility = View.GONE
         Log.e("response", verify?.data?.credentials.toString())
         appPreference.addValue(PreferenceKeys.CREDENTIALS, verify?.data?.credentials.toString())
         appPreference.addValue(PreferenceKeys.USER, verify?.data?.user.toString())
@@ -93,15 +88,14 @@ class OtpActivity : BaseActivity<ActivityOtpBinding, OtpViewModel>(), OtpNavigat
     }
 
     override fun onResendOtp(response: PasswordLessLogin) {
-        mViewDataBinding.labelError.visibility = View.GONE
-        appPreference.addValue(PreferenceKeys.SESSION, response.data.session)
+        appPreference.addValue(PreferenceKeys.SESSION, response.data.Session)
+        runOnUiThread { setErrorText(false, "") }
     }
 
 
     override fun onError(error: String) {
-        mViewDataBinding.labelError.visibility = View.VISIBLE
-        mViewDataBinding.labelError.text = error
         Log.e("error", error)
+        runOnUiThread { setErrorText(true, error) }
     }
 
     override fun setErrorText(show: Boolean, error: String) {

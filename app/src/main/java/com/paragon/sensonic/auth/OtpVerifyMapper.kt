@@ -5,7 +5,8 @@ data class EmailOtpVerify(
     val brandId: String = "",
     val secretLoginCode: String = "",
     val propertyId: String = "",
-    val email: String = "", val scope: String = ""
+    val email: String = "",
+    val scope: String = ""
 )
 
 
