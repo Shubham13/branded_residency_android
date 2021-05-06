@@ -54,16 +54,7 @@ public class VerifyOtpResponse extends BaseModel<String, String> {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                switch (response.code()) {
-                    case 401:
-                    case 403:
-                        networkResponseCallback.onFailure("Invalid Token");
-                        break;
-                    case 200:
-                        networkResponseCallback.onResponse(GeneralFunctions.deserialize(response.body().string(),
-                                OtpVerify.class));
-                        break;
-                }
+                ResponseHandler.handleResponse(response, OtpVerify.class, networkResponseCallback);
             }
         });
     }
