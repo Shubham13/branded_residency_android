@@ -9,8 +9,6 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
-import okhttp3.Response;
-
 public class ResponseHandler {
 
     public static void handleResponse(int code, String response, Class<?> mapper, NetworkResponseCallback networkResponseCallback) throws IOException {

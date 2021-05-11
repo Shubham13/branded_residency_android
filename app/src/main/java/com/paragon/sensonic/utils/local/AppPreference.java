@@ -1,8 +1,12 @@
-package com.paragon.utils.local;
+package com.paragon.sensonic.utils.local;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+
+import com.paragon.sensonic.auth.dto.Credentials;
+import com.paragon.sensonic.auth.dto.User;
+import com.paragon.utils.GeneralFunctions;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -180,5 +184,16 @@ public class AppPreference {
         editor = settings.edit();
         editor.putStringSet(preferencesKey.getKey(), set);
         editor.apply();
+    }
+
+    public Credentials getCredentials(){
+        Credentials credentials = GeneralFunctions.
+                deserialize(getValue(PreferenceKeys.CREDENTIALS),Credentials.class);
+        return credentials;
+    }
+
+    public User getUser(){
+        User user = GeneralFunctions.deserialize(getValue(PreferenceKeys.USER),User.class);
+        return user;
     }
 }

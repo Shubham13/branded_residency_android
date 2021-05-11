@@ -1,7 +1,7 @@
 package com.paragon.sensonic.ui.activities.otp
 
+import com.paragon.sensonic.auth.dto.OtpVerify
 import com.paragon.sensonic.auth.dto.PasswordLessLogin
-import com.paragon.sensonic.data.OtpVerify
 
 interface OtpNavigator {
     fun init()

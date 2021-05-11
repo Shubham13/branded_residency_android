@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:textAppearance="@style/bodyBaselineSystemWhite" />
+                android:textAppearance="@style/bodyBaselineSemiTitleSystemWhite" />
 
             <TextView
                 android:id="@+id/countryCode"
@@ -38,13 +38,15 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:textAllCaps="true"
-                android:theme="@style/bodyBaselineSystemWhite" />
+                android:theme="@style/subXSmallSystemWhite" />
         </LinearLayout>
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
         android:layout_marginTop="@dimen/_10sdp"
         android:theme="@style/systemWhiteAlpha5" />
 </LinearLayout>

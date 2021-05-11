@@ -10,6 +10,7 @@ import com.paragon.sensonic.R;
 
 import com.paragon.sensonic.databinding.ActivityProfileBinding;
 import com.paragon.sensonic.ui.activities.splash.SplashActivity;
+import com.paragon.sensonic.ui.fragments.sheets.LogoutBottomDialogFragment;
 import com.paragon.sensonic.utils.AppConstant;
 import com.paragon.sensonic.utils.CustomItemClickListener;
 import com.paragon.sensonic.utils.ProfileType;
@@ -26,7 +27,7 @@ import com.paragon.utils.dialogs.DVDialog;
 import com.paragon.utils.imagepicker.bundle.PickSetup;
 import com.paragon.utils.imagepicker.dialog.PickImageDialog;
 import com.karumi.dexter.PermissionToken;
-import com.paragon.utils.local.AppPreference;
+import com.paragon.sensonic.utils.local.AppPreference;
 
 import java.util.ArrayList;
 import java.util.List;

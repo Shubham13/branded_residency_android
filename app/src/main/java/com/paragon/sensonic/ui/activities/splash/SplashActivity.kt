@@ -8,8 +8,8 @@ import com.paragon.sensonic.R
 import com.paragon.sensonic.ui.activities.login.LoginActivity
 import com.paragon.sensonic.ui.activities.profile.ProfileActivity
 import com.paragon.utils.ActivityNavigator
-import com.paragon.utils.local.AppPreference
-import com.paragon.utils.local.PreferenceKeys
+import com.paragon.sensonic.utils.local.AppPreference
+import com.paragon.sensonic.utils.local.PreferenceKeys
 
 class SplashActivity : AppCompatActivity(){
 
