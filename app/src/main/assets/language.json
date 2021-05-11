@@ -1,0 +1,36 @@
+{
+  "availableLanguages": [
+    {
+      "langCode": "en",
+      "displayName": "English",
+      "position": 1,
+      "image": "english"
+    },
+    {
+      "langCode": "ar",
+      "displayName": "Arabic",
+      "position": 2,
+      "image": "arabic"
+    }
+  ],
+  "multiLingual": [
+    {
+      "tag": "Hello World",
+      "module": "Launch Screen",
+      "translator": [
+        {
+          "code": "en",
+          "value": "Hello World"
+        },
+        {
+          "code": "ar",
+          "value": "مرحبا بالعالم"
+        },
+        {
+          "code": "ZH",
+          "value": "你好世界"
+        }
+      ]
+    }
+  ]
+}
