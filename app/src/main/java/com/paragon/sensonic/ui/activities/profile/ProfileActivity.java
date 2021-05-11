@@ -126,12 +126,9 @@ public class ProfileActivity extends BaseActivity<ActivityProfileBinding, Profil
 
     @Override
     public void onLogout() {
-        LogoutBottomDialogFragment logoutBottomDialogFragment = new LogoutBottomDialogFragment();
-        logoutBottomDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.TransparentDialog);
-        logoutBottomDialogFragment.show(getSupportFragmentManager(),null);
-        /*finish();
+        finish();
         AppPreference.getInstance(this).clearSharedPreference();
-        getActivityNavigator(this).startAct(SplashActivity.class);*/
+        getActivityNavigator(this).startAct(SplashActivity.class);
     }
 
     @Override
