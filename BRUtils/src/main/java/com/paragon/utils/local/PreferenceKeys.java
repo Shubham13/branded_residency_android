@@ -11,7 +11,9 @@ public enum PreferenceKeys {
     MOBILE("Mobile"),
     EMAIL("Email"),
     CREDENTIALS("Credentials"),
-    USER("User");
+    USER("User"),
+    LANGUAGE_JSON("LanguageJson"),
+    APP_LANGUAGE("SelectedLanguage");
 
     private String text;
 
