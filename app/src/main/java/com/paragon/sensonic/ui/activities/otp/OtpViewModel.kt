@@ -5,12 +5,14 @@ import android.text.TextUtils
 import com.paragon.sensonic.App
 import com.paragon.sensonic.R
 import com.paragon.sensonic.auth.PasswordLessLoginResponse
+import com.paragon.sensonic.auth.RefreshTokenResponse
 import com.paragon.sensonic.auth.VerifyOtpResponse
+import com.paragon.sensonic.auth.dto.OtpVerify
 import com.paragon.sensonic.auth.dto.PasswordLessLogin
-import com.paragon.sensonic.data.OtpVerify
+import com.paragon.sensonic.auth.dto.RefreshCredential
 import com.paragon.utils.base.BaseViewModel
-import com.paragon.utils.local.AppPreference
-import com.paragon.utils.local.PreferenceKeys
+import com.paragon.sensonic.utils.local.AppPreference
+import com.paragon.sensonic.utils.local.PreferenceKeys
 import com.paragon.utils.networking.NetworkResponseCallback
 
 
@@ -36,10 +38,10 @@ class OtpViewModel : BaseViewModel<OtpNavigator>() {
         if (TextUtils.isEmpty(otpValue)) {
             navigator.setErrorText(true, App.getAppContext().getString(R.string.error_empty_otp))
             return false
-        } else if(otpValue.length<6){
+        } else if (otpValue.length < 6) {
             navigator.setErrorText(true, App.getAppContext().getString(R.string.error_invalid_otp))
             return false
-        }else{
+        } else {
             navigator.setErrorText(false, "")
             return true
         }
@@ -50,13 +52,16 @@ class OtpViewModel : BaseViewModel<OtpNavigator>() {
             override fun onTick(millisUntilFinished: Long) {
                 navigator.resendCodeIn45Sec(
                     App.getAppContext().getString(R.string.label_resend_code_in) + " " +
-                            millisUntilFinished / 1000 + " " + App.getAppContext().getString(R.string.label_secounds),
+                            millisUntilFinished / 1000 + " " + App.getAppContext()
+                        .getString(R.string.label_secounds),
                     false
                 )
             }
 
             override fun onFinish() {
-                navigator.resendCodeIn45Sec(App.getAppContext().getString(R.string.label_resend_code),true)
+                navigator.resendCodeIn45Sec(
+                    App.getAppContext().getString(R.string.label_resend_code), true
+                )
             }
         }.start()
     }
@@ -115,5 +120,30 @@ class OtpViewModel : BaseViewModel<OtpNavigator>() {
 
                 override fun onInternetDisable() {}
             })
+    }
+
+    fun callRefreshTokenApi(){
+        navigator.onShowProgress()
+        val refreshToken : String = AppPreference.getInstance(App.getAppContext())
+            .credentials.refreshToken
+        val data = HashMap<String,String>()
+        data["refreshToken"] = refreshToken
+        RefreshTokenResponse().doNetworkRequest(data,object : NetworkResponseCallback<RefreshCredential>{
+            override fun onResponse(response : RefreshCredential?) {
+                navigator.apply {
+                    onHideProgress()
+                    //onSuccess(response)
+                }
+            }
+
+            override fun onFailure(error: String?) {
+                navigator.onHideProgress()
+            }
+
+            override fun onInternetDisable() {
+
+            }
+
+        })
     }
 }

@@ -24,6 +24,6 @@
     <string name="image_file_name">current</string>
     <string name="image_content_type">image/*</string>
     <string name="video_content_type">video/*</string>
-    <string name="search">Search&#8230;</string>
+    <string name="search">Search</string>
     <string name="error_no_countries_found">No Countries Found! Did you call build()</string>
 </resources>

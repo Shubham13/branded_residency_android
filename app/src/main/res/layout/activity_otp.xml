@@ -59,7 +59,7 @@
                 style="@style/bodyBaselineRegBrandSecoundry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginStart="@dimen/_32sdp"
                 android:text="@string/label_code_sent" />
 
@@ -82,12 +82,11 @@
                 android:id="@+id/otp_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:inputType="number"
                 android:itemBackground="@drawable/dark_light_flat_border_radius_10"
                 app:OtpItemCount="6"
+                android:layout_gravity="center"
                 android:theme="@style/buttonNavTitleBrandSecoundryEditText"
                 style="@style/OtpWidget.OtpView"
                 app:OtpItemHeight="@dimen/_72sdp"

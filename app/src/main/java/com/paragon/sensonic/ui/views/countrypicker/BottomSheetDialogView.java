@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -29,13 +30,21 @@ public class BottomSheetDialogView extends BottomSheetDialogFragment {
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+        getDialog().getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+        getDialog().getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+    }
+
+    @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle args = getArguments();
         if (args != null) {
             int theme = args.getInt(BUNDLE_KEY_THEME, 0);
             if (theme == THEME_NEW) {
-                setStyle(DialogFragment.STYLE_NORMAL, R.style.MaterialDialogStyle);
+                setStyle(DialogFragment.STYLE_NORMAL, R.style.TransparentDialog);
+                //setStyle(DialogFragment.STYLE_NORMAL, R.style.MaterialDialogStyle);
             } else {
                 setStyle(DialogFragment.STYLE_NORMAL, R.style.DialogStyle);
             }

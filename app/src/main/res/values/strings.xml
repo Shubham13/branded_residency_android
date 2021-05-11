@@ -10,11 +10,13 @@
     <string name="token_expired">Token expired</string>
     <string name="otp_expired">Invalid OTP.</string>
     <string name="user_not_active">Not a active user</string>
-    <string name="error_empty_otp">Please enter one time password</string>
-    <string name="error_invalid_otp">Incorrect OTP. Please try again.</string>
-    <string name="error_not_register_mobile">Unregistered phone number.</string>
-    <string name="error_empty">Please enter some value.</string>
+    <string name="error_empty_otp">OTP can’t be blank.</string>
+    <string name="error_invalid_otp">Code invalid. Try again.</string>
+    <string name="error_not_register_mobile">Not a registered mobile number.</string>
+    <string name="error_empty_email">Email address can’t be blank.</string>
+    <string name="error_empty_mobile">Mobile number can’t be blank.</string>
     <string name="error_incorrect">Incorrect format.</string>
+    <string name="error_incorrect_mobile">Incorrect mobile number.</string>
     <string name="error_invalid_email">Unregistered email address.</string>
 
 

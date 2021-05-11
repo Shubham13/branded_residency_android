@@ -446,9 +446,10 @@
         <item name="android:textColor">@color/gray_gray</item>
     </style>
 
-    <style name="buttonNavTitleBrandSecoundryEditText" parent="ButtonNavTitle">
+    <style name="buttonNavTitleBrandSecoundryEditText" parent="BodySmallSemiTitle">
         <item name="android:editTextColor">@color/gray_gray</item>
         <item name="android:textColorHint">@color/gray_gray</item>
+        <item name="android:background">@drawable/dark_medium_flat_radius_10</item>
     </style>
 
     <style name="bodyBaselineRegBrandSecoundry" parent="BodyBaseline">
@@ -554,6 +555,10 @@
     <!--White-->
 
     <style name="subXSmallMedSystemWhite" parent="SubXSmallMed">
+        <item name="android:textColor">@color/system_white</item>
+    </style>
+
+    <style name="subXSmallSystemWhite" parent="SubXSmall">
         <item name="android:textColor">@color/system_white</item>
     </style>
 

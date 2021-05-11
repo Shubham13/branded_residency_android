@@ -13,8 +13,8 @@ import com.paragon.sensonic.ui.activities.otp.OtpActivity
 import com.paragon.sensonic.ui.views.countrypicker.CountryPicker
 import com.paragon.utils.GeneralFunctions
 import com.paragon.utils.base.BaseActivity
-import com.paragon.utils.local.AppPreference
-import com.paragon.utils.local.PreferenceKeys
+import com.paragon.sensonic.utils.local.AppPreference
+import com.paragon.sensonic.utils.local.PreferenceKeys
 
 class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel?>(), LoginNavigator {
     private val loginViewModel = getVM(LoginViewModel::class.java)
@@ -59,7 +59,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel?>(), Log
     }
 
     override fun onCountyCodeClick() {
-        CountryPicker.showPicker(this, true) { country ->
+        CountryPicker.showPicker(this, false) { country ->
             mViewDataBinding.countryCodeText.text = country.dialCode
         }
     }
@@ -133,6 +133,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel?>(), Log
             )
         }
         getActivityNavigator(this).startAct(OtpActivity::class.java)
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
     }
 
     override fun onError(error: String) {

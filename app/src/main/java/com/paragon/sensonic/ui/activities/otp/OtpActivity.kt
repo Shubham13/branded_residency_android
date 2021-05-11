@@ -4,13 +4,16 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import com.paragon.sensonic.R
+import com.paragon.sensonic.auth.dto.Credentials
+import com.paragon.sensonic.auth.dto.OtpVerify
 import com.paragon.sensonic.auth.dto.PasswordLessLogin
-import com.paragon.sensonic.data.OtpVerify
+import com.paragon.sensonic.auth.dto.User
 import com.paragon.sensonic.databinding.ActivityOtpBinding
-import com.paragon.sensonic.ui.activities.dashboard.DashboardActivity
+import com.paragon.sensonic.ui.activities.profile.ProfileActivity
+import com.paragon.utils.GeneralFunctions
 import com.paragon.utils.base.BaseActivity
-import com.paragon.utils.local.AppPreference
-import com.paragon.utils.local.PreferenceKeys
+import com.paragon.sensonic.utils.local.AppPreference
+import com.paragon.sensonic.utils.local.PreferenceKeys
 
 class OtpActivity : BaseActivity<ActivityOtpBinding, OtpViewModel>(), OtpNavigator {
 
@@ -35,13 +38,18 @@ class OtpActivity : BaseActivity<ActivityOtpBinding, OtpViewModel>(), OtpNavigat
         return otpViewModel
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right)
+    }
+
     override fun init() {
         appPreference = AppPreference.getInstance(this)
         viewModel.resendCodeTimer()
     }
 
     override fun onClickBack() {
-        finish()
+        onBackPressed()
     }
 
     override fun onClickVerify() {
@@ -82,9 +90,9 @@ class OtpActivity : BaseActivity<ActivityOtpBinding, OtpViewModel>(), OtpNavigat
 
     override fun onVerifyOtp(verify: OtpVerify?) {
         Log.e("response", verify?.data?.credentials.toString())
-        appPreference.addValue(PreferenceKeys.CREDENTIALS, verify?.data?.credentials.toString())
-        appPreference.addValue(PreferenceKeys.USER, verify?.data?.user.toString())
-        getActivityNavigator(this).startActClearTask(DashboardActivity::class.java)
+        appPreference.addValue(PreferenceKeys.CREDENTIALS, GeneralFunctions.serialize(verify?.data?.credentials,Credentials::class.java))
+        appPreference.addValue(PreferenceKeys.USER, GeneralFunctions.serialize(verify?.data?.user,User::class.java))
+        getActivityNavigator(this).startActClearTask(ProfileActivity::class.java)
     }
 
     override fun onResendOtp(response: PasswordLessLogin) {

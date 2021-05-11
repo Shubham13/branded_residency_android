@@ -910,6 +910,7 @@ public class CountryPicker implements BottomSheetInteractionListener, LifecycleO
         Builder builder = new Builder().with(appCompatActivity).listener(onCountryPickerListener);
         builder.canSearch(true);
         builder.sortBy(CountryPicker.SORT_BY_NAME);
+        builder.theme = THEME_NEW;
         CountryPicker countryPicker = builder.build();
         if(dialogType) {
             countryPicker.showDialog(appCompatActivity);

@@ -5,11 +5,15 @@ import android.util.Patterns
 import com.paragon.sensonic.App
 import com.paragon.sensonic.R
 import com.paragon.sensonic.auth.PasswordLessLoginResponse
+import com.paragon.sensonic.auth.RefreshTokenResponse
+import com.paragon.sensonic.auth.dto.Credentials
 import com.paragon.sensonic.auth.dto.PasswordLessLogin
 import com.paragon.utils.GeneralFunctions
 import com.paragon.utils.base.BaseViewModel
+import com.paragon.sensonic.utils.local.AppPreference
+import com.paragon.sensonic.utils.local.PreferenceKeys
 import com.paragon.utils.networking.NetworkResponseCallback
-import java.util.*
+import kotlin.collections.HashMap
 
 class LoginViewModel : BaseViewModel<LoginNavigator>() {
 
@@ -38,19 +42,19 @@ class LoginViewModel : BaseViewModel<LoginNavigator>() {
             if (TextUtils.isEmpty(value)) {
                 navigator.setErrorText(
                     true,
-                    App.getAppContext().getString(R.string.error_empty)
+                    App.getAppContext().getString(R.string.error_empty_mobile)
                 )
                 false
             } else if (!GeneralFunctions.isValidPhoneNumber(value)) {
                 navigator.setErrorText(
                     true,
-                    App.getAppContext().getString(R.string.error_incorrect)
+                    App.getAppContext().getString(R.string.error_incorrect_mobile)
                 )
                 false
             } else if (!GeneralFunctions.validateUsing_libphonenumber(code, value)) {
                 navigator.setErrorText(
                     true,
-                    App.getAppContext().getString(R.string.error_incorrect)
+                    App.getAppContext().getString(R.string.error_incorrect_mobile)
                 )
                 false
             } else {
@@ -61,7 +65,7 @@ class LoginViewModel : BaseViewModel<LoginNavigator>() {
             if (TextUtils.isEmpty(value)) {
                 navigator.setErrorText(
                     true,
-                    App.getAppContext().getString(R.string.error_empty)
+                    App.getAppContext().getString(R.string.error_empty_email)
                 )
                 false
             } else if (!Patterns.EMAIL_ADDRESS.matcher(value).matches()) {
@@ -115,4 +119,6 @@ class LoginViewModel : BaseViewModel<LoginNavigator>() {
                 })
         }
     }
+
+
 }
