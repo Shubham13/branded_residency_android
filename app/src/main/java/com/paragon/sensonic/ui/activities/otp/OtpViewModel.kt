@@ -11,8 +11,8 @@ import com.paragon.sensonic.auth.dto.OtpVerify
 import com.paragon.sensonic.auth.dto.PasswordLessLogin
 import com.paragon.sensonic.auth.dto.RefreshCredential
 import com.paragon.utils.base.BaseViewModel
-import com.paragon.sensonic.utils.local.AppPreference
-import com.paragon.sensonic.utils.local.PreferenceKeys
+import com.paragon.sensonic.utils.AppPreference
+import com.paragon.sensonic.utils.PreferenceKeys
 import com.paragon.utils.networking.NetworkResponseCallback
 
 

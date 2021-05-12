@@ -8,19 +8,17 @@ import android.util.DisplayMetrics;
 
 import com.paragon.sensonic.localization.dto.Language;
 import com.paragon.sensonic.utils.AppConstant;
+import com.paragon.sensonic.utils.AppPreference;
+import com.paragon.sensonic.utils.PreferenceKeys;
 import com.paragon.utils.GeneralFunctions;
-import com.paragon.utils.local.AppPreference;
-import com.paragon.utils.local.PreferenceKeys;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
 public class LanguageManager {
-
     private AppPreference appPreference;
     private String response;
     private final String fileName = "language";
@@ -59,28 +57,39 @@ public class LanguageManager {
     }
 
     public String getTranslation(String tag) {
-
-        return null;
+        String result = AppConstant.EMPTY;
+        try {
+            JSONObject mainNode = new JSONObject(response);
+            JSONArray multiLingual = mainNode.getJSONArray("multiLingual");
+            for (int i = 0; i < multiLingual.length(); i++) {
+                JSONObject item = multiLingual.getJSONObject(i);
+                String key = item.getString("tag") + "|" + item.getString("module");
+                if (key.equals(tag)) {
+                    JSONArray translator = item.getJSONArray("translator");
+                    for (int j = 0; j < translator.length(); j++) {
+                        JSONObject word = translator.getJSONObject(j);
+                        if (word.getString("code").matches(appPreference.getValue(PreferenceKeys.APP_LANGUAGE))) {
+                            result = word.getString("value");
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 
-    public  void setLocale(Context context, String languageCode) {
+    public void setLocale(Context context, String languageCode) {
         try {
             Locale locale = new Locale(languageCode);
             Resources resources = context.getResources();
             DisplayMetrics displayMetrics = resources.getDisplayMetrics();
             Configuration configuration = resources.getConfiguration();
             configuration.locale = locale;
-
-            if (Build.VERSION.SDK_INT >= 17) {
-                configuration.setLayoutDirection(locale);
-            }
-
+            configuration.setLayoutDirection(locale);
             resources.updateConfiguration(configuration, displayMetrics);
             appPreference.addValue(PreferenceKeys.APP_LANGUAGE, languageCode);
-        } catch (NullPointerException n) {
-            n.printStackTrace();
-        } catch (RuntimeException rte) {
-            rte.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }

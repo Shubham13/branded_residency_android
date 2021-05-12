@@ -11,8 +11,8 @@ import com.paragon.sensonic.auth.dto.OtpVerifySession;
 import com.paragon.sensonic.utils.AppConstant;
 import com.paragon.utils.GeneralFunctions;
 import com.paragon.utils.base.BaseModel;
-import com.paragon.sensonic.utils.local.AppPreference;
-import com.paragon.sensonic.utils.local.PreferenceKeys;
+import com.paragon.sensonic.utils.AppPreference;
+import com.paragon.sensonic.utils.PreferenceKeys;
 import com.paragon.utils.networking.NetworkResponseCallback;
 import com.paragon.utils.networking.NoConnectivityException;
 

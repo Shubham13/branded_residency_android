@@ -5,13 +5,9 @@ import android.util.Patterns
 import com.paragon.sensonic.App
 import com.paragon.sensonic.R
 import com.paragon.sensonic.auth.PasswordLessLoginResponse
-import com.paragon.sensonic.auth.RefreshTokenResponse
-import com.paragon.sensonic.auth.dto.Credentials
 import com.paragon.sensonic.auth.dto.PasswordLessLogin
 import com.paragon.utils.GeneralFunctions
 import com.paragon.utils.base.BaseViewModel
-import com.paragon.sensonic.utils.local.AppPreference
-import com.paragon.sensonic.utils.local.PreferenceKeys
 import com.paragon.utils.networking.NetworkResponseCallback
 import kotlin.collections.HashMap
 

@@ -12,8 +12,8 @@ import com.paragon.sensonic.databinding.ActivityOtpBinding
 import com.paragon.sensonic.ui.activities.profile.ProfileActivity
 import com.paragon.utils.GeneralFunctions
 import com.paragon.utils.base.BaseActivity
-import com.paragon.sensonic.utils.local.AppPreference
-import com.paragon.sensonic.utils.local.PreferenceKeys
+import com.paragon.sensonic.utils.AppPreference
+import com.paragon.sensonic.utils.PreferenceKeys
 
 class OtpActivity : BaseActivity<ActivityOtpBinding, OtpViewModel>(), OtpNavigator {
 

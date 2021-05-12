@@ -1,4 +1,4 @@
-package com.paragon.sensonic.utils.local;
+package com.paragon.sensonic.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

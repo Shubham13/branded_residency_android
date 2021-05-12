@@ -13,8 +13,8 @@ import com.paragon.sensonic.ui.activities.otp.OtpActivity
 import com.paragon.sensonic.ui.views.countrypicker.CountryPicker
 import com.paragon.utils.GeneralFunctions
 import com.paragon.utils.base.BaseActivity
-import com.paragon.sensonic.utils.local.AppPreference
-import com.paragon.sensonic.utils.local.PreferenceKeys
+import com.paragon.sensonic.utils.AppPreference
+import com.paragon.sensonic.utils.PreferenceKeys
 
 class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel?>(), LoginNavigator {
     private val loginViewModel = getVM(LoginViewModel::class.java)

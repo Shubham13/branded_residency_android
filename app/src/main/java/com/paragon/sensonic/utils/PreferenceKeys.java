@@ -1,11 +1,10 @@
-package com.paragon.sensonic.utils.local;
+package com.paragon.sensonic.utils;
 
 
 /**
  * The enum Preference keys.
  */
 public enum PreferenceKeys {
-
     /*USER INFO*/
     SESSION("Session"),
     MOBILE("Mobile"),

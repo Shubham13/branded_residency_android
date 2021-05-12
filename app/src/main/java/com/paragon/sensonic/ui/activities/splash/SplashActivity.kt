@@ -8,8 +8,8 @@ import com.paragon.sensonic.R
 import com.paragon.sensonic.ui.activities.login.LoginActivity
 import com.paragon.sensonic.ui.activities.profile.ProfileActivity
 import com.paragon.utils.ActivityNavigator
-import com.paragon.sensonic.utils.local.AppPreference
-import com.paragon.sensonic.utils.local.PreferenceKeys
+import com.paragon.sensonic.utils.AppPreference
+import com.paragon.sensonic.utils.PreferenceKeys
 
 class SplashActivity : AppCompatActivity(){
 
@@ -21,7 +21,8 @@ class SplashActivity : AppCompatActivity(){
 
     private fun startThread(timeInMilli: Long) {
         Handler().postDelayed({
-            if (!TextUtils.isEmpty(AppPreference.getInstance(this)
+            if (!TextUtils.isEmpty(
+                    AppPreference.getInstance(this)
                     .getValue(PreferenceKeys.CREDENTIALS))) {
                 launchHomeScreen()
                 finish()
